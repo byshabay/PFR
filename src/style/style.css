@@ -1,0 +1,98 @@
+/*font-size: calc( (100vw - 350px)/(1280 - 350) * (72 - 28) + 28px);*/
+
+/*Фон*/
+.prev{
+    background:url("./src/main_bkg.png");
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.start-cont{
+    max-width: 1440px;
+    width: 75vw;
+    height: 90vh;
+    background-color: #fff;
+    margin: 4vh auto;
+    border: 1px solid black;
+    border-radius: 24px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/*Логотипы*/
+.start-cont__logo-box{
+    display: flex;
+    width: 60%;
+    margin: 2vh auto 0;
+    justify-content: space-around;
+}
+.start-cont__logo-pfr-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.start-cont__logo-pfr-img{
+    width: 8vw;
+}
+
+.start-cont__logo-guu{
+    width: 10vw;
+}
+
+.start-cont__logo-pfr-text{
+    font-size: calc( (100vw - 800px)/(1440 - 800) * (19 - 14) + 14px);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 22px;
+    color: #2B313C;
+    width: 60%;
+}
+
+/*Основной текст*/
+.start-cont__h1{
+    font-size: 19px;
+    line-height: 22px;
+    color: #1F3E76;
+}
+
+.start-cont__text-box{
+    width: 90%;
+    margin: 7vh auto;
+    text-align: center;
+}
+.start-cont__h2{
+    font-size: 19px;
+    line-height: 22px;
+    color: #E0585A;
+    margin-top: 5vh;
+}
+
+.start-cont__text-1{
+    margin-top: 14vh;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 135.2%;
+    color: #1F3E76;    
+}
+
+.start-cont__btn{
+    border: 1px solid #E0585A;
+    border-radius: 8px;
+    padding: 6px 20px;
+    margin-top: 7vh;
+    background: #fff; 
+    text-decoration: none;
+}
+ a{
+    color: #E0585A;
+    font-family: 'Roboto';
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    text-decoration: none;
+ }
+
+/*ШРИФТЫ*/
+@font-face{
+    font-family: 'Roboto';
+    src: url("./src/style/roboto.ttf");
+}
