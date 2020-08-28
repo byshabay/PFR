@@ -1,0 +1,73 @@
+.main{
+    padding: 2vh 0 0 5vh;
+}
+
+
+/*ВЕРХНИЙ ТЕКСТ*/
+.main__text-1{
+    width: 60vw;
+    margin-top: 2vh;
+    margin-left: 2vw;
+}
+
+.main__text-2, .main__text-3{
+    margin-left: 2vw;
+    font-weight: bold;
+    font-size: calc( (100vw - 800px)/(1440 - 800) * (15 - 10) + 10px);
+    line-height: calc( (100vw - 800px)/(1440 - 800) * (21 - 17) + 17px);
+    
+}
+.main__text-2{
+    margin-top: 4vh;
+}
+.main__text-3{
+    margin-top: 2.5vh;
+}
+.main__h1{
+    margin-left: 2vw;
+}
+
+
+/*БЛОК С ТЕКСТОМ*/
+.main__middle-box{
+    border: 2px solid #E1E9F5;
+    border-radius: 24px;
+    width:87%;
+    margin-top: 4vh;
+    padding: 1.5vh  0 2vh 2vw;
+}
+.main__middle-box a{
+    margin-left: 0.4vw;
+}
+.main__middle-box p img{
+  /*  margin-left: 0.5vw;*/
+
+}
+.main__middle-box p{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 2vh;
+    
+}
+.main__middle-h1-2{
+    margin-top:4vh!important; 
+}
+
+/*БЛОК С КОНТАКТАМИ*/
+.contact{
+    color: #8D9EB9;
+    font-size: calc( (100vw - 800px)/(1440 - 800) * (12 - 10) + 10px);
+    line-height: calc( (100vw - 800px)/(1440 - 800) * (19 - 17) + 17px);
+    margin-top: 2vh;
+    margin-left: 2vw;
+
+}
+.contact p{
+    color: #8D9EB9;
+
+}
+
+.contact__phone, .contact__email{
+    font-weight: bold;
+    color: #8D9EB9;
+}

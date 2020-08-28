@@ -9,6 +9,26 @@
     padding-top: 2vh;
 }
 
+/*ОБЩИЕ СТИЛИ*/
+
+.text-main{/*узкий синий*/
+    font-size: calc( (100vw - 800px)/(1440 - 800) * (15 - 10) + 10px);
+    line-height: calc( (100vw - 800px)/(1440 - 800) * (20 - 17) + 17px);
+
+}
+
+.text-h1{/*заголовки*/
+    font-size: calc( (100vw - 800px)/(1440 - 800) * (18 - 10) + 10px);
+    font-weight: bold;
+
+}
+
+.red{/*красный*/
+    color: #E0585A;
+}
+
+
+
 /*Меню полное*/
 .nav-full{
     flex:1;
@@ -109,7 +129,5 @@
 /*Контент*/
 .main{
     flex:3.5;
-    height: 95vh;
-    background-color: lightcoral;
-
+    height: 90vh;
 }
