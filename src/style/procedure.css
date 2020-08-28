@@ -58,7 +58,7 @@
     color: #8D9EB9;
     font-size: calc( (100vw - 800px)/(1440 - 800) * (12 - 10) + 10px);
     line-height: calc( (100vw - 800px)/(1440 - 800) * (19 - 17) + 17px);
-    margin-top: 2vh;
+    margin-top: 3vh;
     margin-left: 2vw;
 
 }

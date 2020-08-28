@@ -5,6 +5,7 @@
     <title>Учебный план</title>
     <link rel="stylesheet" href="../style/menu_temp.css">
     <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style/plan.css">
 </head>
 <body class="body">
  <!--Скрипт на кнопку-->
@@ -17,6 +18,30 @@
         function mini(){
             document.getElementById('nav-full').style.display = 'block';
             document.getElementById('nav-mini').style.display = 'none';
+        }
+
+        function about(){
+            
+            document.getElementById('main__main-box-2').style.display = 'none';
+            document.getElementById('main__main-box').style.display = 'block';
+            document.getElementById('main__btn-1').style.color = '#E0585A';
+            document.getElementById('main__btn-2').style.color = '#8D9EB9';
+            document.getElementById('main__btn-1').style.border = '2px solid #E1E9F5';
+            document.getElementById('main__btn-1').style.borderBottom = '2px solid #fff';
+            document.getElementById('main__btn-2').style.border = 'none';
+            document.getElementById('main__btn-2').style.borderBottom = '2px solid #E1E9F5';
+        }
+
+        function plan(){
+            document.getElementById('main__main-box').style.display = 'none';
+            document.getElementById('main__main-box-2').style.display = 'block';
+          
+            document.getElementById('main__btn-1').style.color = '#8D9EB9';
+            document.getElementById('main__btn-1').style.border = 'none';
+            document.getElementById('main__btn-2').style.color = '#E0585A';
+            document.getElementById('main__btn-2').style.border = '2px solid #E1E9F5';
+            document.getElementById('main__btn-2').style.borderBottom = 'none';
+            document.getElementById('main__btn-1').style.borderBottom = '2px solid #E1E9F5';
         }
 
     </script>
@@ -62,7 +87,187 @@
    
     <!--Контент-->
     <main class="main">
-        
+        <div class="main__btn-box">
+            <button id="main__btn-1" class="main__btn-1" onclick="about()">
+                О программе 
+            </button>
+            <button id="main__btn-2" class="main__btn-2" onclick="plan()">
+                Учебный план
+            </button>
+        </div>
+
+<!----------------Блок с рамкой----------------->
+        <div id="main__main-box" class="main__main-box">
+            <table class="main__table">
+                <tr class="main__tr">
+                    <td class="main__td td-1">
+                        Цель
+                    </td>
+                    <td class="main__td">
+                        формирование антикоррупционного поведения работников системы ПФР, впервые принятых на работу для замещения должностей, включенных в перечни должностей, на которые распространяются запреты и ограничения
+                    </td>
+                </tr>
+
+                <tr class="main__tr">
+                    <td class="main__td">
+                        Категория обучающихся
+                    </td>
+                    <td class="main__td">
+                        работники системы Пенсионного фонда Российской Федерации
+                    </td>
+                </tr>
+
+                <tr class="main__tr">
+                    <td class="main__td">
+                        Срок обучения
+                    </td>
+                    <td class="main__td">
+                        2 недели 
+                    </td>
+                </tr>
+
+                <tr class="main__tr">
+                    <td class="main__td">
+                        Форма обучения
+                    </td>
+                    <td class="main__td">
+                        заочная форма обучения с применением ЭО и ДОТ
+                    </td>
+                </tr>
+
+                <tr class="main__tr">
+                    <td class="main__td">
+                        Режим занятий
+                    </td>
+                    <td class="main__td">
+                        Консультационный период 5 раз в неделю (будние дни с 9.00 до 18.00 по местному времени), максимально 10 часов в неделю
+                    </td>
+                </tr>
+                
+
+            </table>
+<!-------------------------КНОПКА----------------------------------->
+            <button class="start-cont__btn"> <a href="#">Начать обучение</a> </button>
+           
+        </div>
+
+<!--------------------------УЧЕБНЫЙ ПЛАН ------------------------------------------>
+
+        <div id="main__main-box-2" class="main__main-box-2">
+            <table class="main_table-2">
+                <tr class="tr-1">
+                    <td rowspan="2" class="box-2__td-1">№ п/п</td>
+                    <td rowspan="2" class="box-2__td-2">Наименование разделов, тем</td>
+                    <td rowspan="2" class="box-2__td-3">Всего часов учебных занятий</td>
+                    <td colspan="2" class="center" > в том числе</td>
+                    <td rowspan="2">Форма контроля</td>
+                    <td rowspan="2">Лектор (наименование организации)</td>
+                </tr>
+                <tr class="tr-1">
+                    <td class="center" >лекции</td>
+                    <td class="center box-2__td-4" >практические и семинарские занятия	</td>
+                    
+                </tr>
+
+                <tr class="center tr-2"  >
+                    <td >1</td>
+                    <td >2</td>
+                    <td >3</td>
+                    <td >4</td>
+                    <td >5</td>
+                    <td >6</td>
+                    <td>7</td>
+                </tr>
+
+               <tr>
+                   <td>1</td>
+                   <td>Система государственных органов и системы законодательства в сфере противодействия коррупции</td>
+                   <td class="center" >2</td>
+                   <td class="center" >1</td>
+                   <td class="center" >1</td>
+                   <td>Электронный тест</td>
+                   <td>Чудновский А.Д., д.э.н., профессор ГУУ
+                    Жукова М.А. д.э.н., профессор ГУУ</td>
+               </tr>
+               <tr>
+                   <td>2</td>
+                   <td>Нормативные правовые акты Пенсионного фонда Российской Федерации по вопросам противодействия коррупции.</td>
+                   <td class="center" >2</td>
+                   <td class="center" >1</td>
+                   <td class="center" >1</td>
+                   <td>Электронный тест</td>
+                   <td>Жуков В.А., к.э.н., доцент ГУУ</td>
+               </tr>
+               <tr>
+                   <td>3</td>
+                   <td>Соблюдение работниками системы Пенсионного фонда Российской Федерации ограничений и запретов, требований к предотвращению или урегулированию конфликта интересов, исполнения ими обязанностей, установленных законодательством Российской Федерации о противодействии коррупции.</td>
+                   <td class="center" >2</td>
+                   <td class="center" >1</td>
+                   <td class="center" >1</td>
+                   <td>Электронный тест</td>
+                   <td>Чудновский А.Д., д.э.н., профессор ГУУ</td>
+               </tr>
+               <tr>
+                   <td>4</td>
+                   <td>Представление работниками системы Пенсионного фонда Российской Федерации сведений о доходах, расходах, об имуществе и обязательствах имущественного характера и членов своей семьи.</td>
+                   <td class="center" >2</td>
+                   <td class="center" >1</td>
+                   <td class="center" >1</td>
+                   <td>Электронный тест</td>
+                   <td>Мохова Г.В. к.э.н., доцент ГУУ</td>
+               </tr>
+               <tr>
+                   <td>5</td>
+                   <td>Понятие конфликта интересов. Принятие работниками системы Пенсионного фонда Российской Федерации мер по предотвращению (урегулированию) возникновения конфликта интересов.</td>
+                   <td class="center" >2</td>
+                   <td class="center" >1</td>
+                   <td class="center" >1</td>
+                   <td>Электронный тест</td>
+                   <td>Фролова Е.А., к.э.н., доцент ГУУ</td>
+               </tr>
+               <tr>
+                   <td>6</td>
+                   <td>Соблюдение норм служебной этики в системе Пенсионного фонда Российской Федерации</td>
+                   <td class="center" >2</td>
+                   <td class="center" >1</td>
+                   <td class="center" >1</td>
+                   <td>Электронный тест</td>
+                   <td>Чудновский А.Д., д.э.н., профессор ГУУ
+                    Жукова М.А. д.э.н., профессор ГУУ
+                    </td>
+               </tr>
+               <tr>
+                   <td>7</td>
+                   <td>Основные виды правонарушений коррупционного характера в системе Пенсионного фонда Российской Федерации. Принятие мер юридической ответственности за коррупционные правонарушения</td>
+                   <td class="center" >2</td>
+                   <td class="center" >1</td>
+                   <td class="center" >1</td>
+                   <td>Электронный тест</td>
+                   <td>Мохова Г.В. к.э.н., доцент ГУУ, Жукова М.А. д.э.н., профессор ГУУ</td>
+               </tr>
+               <tr>
+                   <td>8</td>
+                   <td>Итоговая аттестация</td>
+                   <td class="center">2</td>
+                   <td class="center" >-</td>
+                   <td class="center" >-</td>
+                   <td class="center" >-</td>
+                   <td class="center" >-</td>
+               </tr>
+               <tr>
+                    <td ></td>
+                   <td style="font-weight: bold;">ИТОГО</td>
+                   <td class="center" >16</td>
+                   <td class="center" >7</td>
+                   <td class="center" >7</td>
+                   <td class="center" >-</td>
+                   <td class="center" >-</td>
+                   
+               </tr>
+                
+            </table>
+        </div>
+
     </main>
 
 </body>
