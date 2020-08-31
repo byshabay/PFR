@@ -1,0 +1,83 @@
+.main{
+    margin-left: 0.2vw;
+    margin-top: 3vh;
+}
+button{
+    outline: none;
+    border: none;
+    background-color:  #F5F7FA;
+}
+
+/*ПОЛНОЕ МЕНЮ 2*/
+.min-menu-full{
+    width: 16vw;
+    height: 88vh;
+    background-color:  #F5F7FA;
+    border-radius: 24px;
+    padding: 2vh;
+}
+
+.active-btn{
+    background: #FAE8E9;
+}
+
+.min-menu-full_btn-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 4vh;
+}
+
+#min-menu-full__close{
+    margin-top: 2vh;
+    margin-left: 85%;
+}
+.min-menu-full__h2{
+    width: 91%;
+ /*   font-size: calc( (100vw - 300px)/(1440 - 300) * (14 -6) + 6px);
+*/
+}
+.min-menu-full_btn-menu button{
+    padding:2vh;
+    border-radius: 12px;
+    width: 98%;
+    text-align: start;
+  /*  font-size: calc( (100vw - 300px)/(1440 - 300) * (14 -6) + 6px);
+    
+  */display: flex;
+    align-items: center;
+
+}
+.min-menu-full_btn-menu button img{
+    margin-right: 1vw;
+}
+
+
+/*СВЕРНУТОЕ МЕНЮ 2*/
+.min-menu-mini{
+    width: 4vw;
+    height: 88vh;
+    background-color:  #F5F7FA;
+    border-radius: 24px;
+    padding: 2vh;
+    text-align: center;
+    display: none;
+}
+#min-menu-mini__btn-mini{
+    margin-top: 2vh;
+}
+.btn-mini{
+    text-align: center !important;
+    display: flex;
+    align-items: center; 
+}
+
+@media(max-width: 700px ){
+    .min-menu-full{
+        width: 20vw;
+    }
+    .min-menu-mini{
+        width: 8vw;
+    }
+
+}

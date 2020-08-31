@@ -29,7 +29,7 @@
     z-index: 1;
     margin-top: -2px;
     border-radius: 0px 0px 24px 24px;
-    width: 93%;
+    width: 89%;
     height: 75vh;
     padding: 10vh 0 2vh 5vh;
 }
@@ -46,6 +46,7 @@
 .main__main-box-2{
     display: none;
     height: 90vh;
+    width: 100%;
     overflow: scroll;
 }
 td, tr{

@@ -18,6 +18,8 @@
         function mini(){
             document.getElementById('nav-full').style.display = 'block';
             document.getElementById('nav-mini').style.display = 'none';
+
+            about();
         }
 
         function about(){
@@ -35,13 +37,14 @@
         function plan(){
             document.getElementById('main__main-box').style.display = 'none';
             document.getElementById('main__main-box-2').style.display = 'block';
-          
             document.getElementById('main__btn-1').style.color = '#8D9EB9';
             document.getElementById('main__btn-1').style.border = 'none';
             document.getElementById('main__btn-2').style.color = '#E0585A';
             document.getElementById('main__btn-2').style.border = '2px solid #E1E9F5';
             document.getElementById('main__btn-2').style.borderBottom = 'none';
-            document.getElementById('main__btn-1').style.borderBottom = '2px solid #E1E9F5';
+            document.getElementById('main__btn-1').style.borderBottom = 'none';
+
+            full();
         }
 
     </script>
@@ -49,7 +52,7 @@
     <!--Меню полное-->
     <nav id="nav-full" class="nav-full">
         <div class="nav-full__logo-btn-box">
-            <img src="../img/logo-pfr.png" alt="Логотип ПФР" class="nav-full__logo-pfr">
+            <a href="../../START.html"><img src="../img/logo-pfr.png" alt="Логотип ПФР" class="nav-full__logo-pfr"></a> 
             <button id="nav-full__back-btn"  onclick="full()"><img src="../img/back_ico.png" alt="Кнопка сворачивания меню" class="nav-full__back-btn"></button>
         </div>
         <h1 class="nav-full__h1">Курс «‎Профилактика коррупции»‎</h1>

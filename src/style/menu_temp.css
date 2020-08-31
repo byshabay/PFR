@@ -18,7 +18,7 @@
 }
 
 .text-h1{/*заголовки*/
-    font-size: calc( (100vw - 800px)/(1440 - 800) * (16 - 10) + 10px);
+    font-size: calc( (100vw - 800px)/(1440 - 800) * (16 - 12) + 12px);
     font-weight: bold;
 
 }

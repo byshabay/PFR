@@ -2,9 +2,10 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>01 система</title>
+    <title>Раздел 1</title>
     <link rel="stylesheet" href="../style/menu_temp.css">
     <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style/system.css">
 </head>
 <body class="body">
  <!--Скрипт на кнопку-->
@@ -24,7 +25,7 @@
     <!--Меню полное-->
     <nav id="nav-full" class="nav-full">
         <div class="nav-full__logo-btn-box">
-            <img src="../img/logo-pfr.png" alt="Логотип ПФР" class="nav-full__logo-pfr">
+           <a href="../../START.html"><img src="../img/logo-pfr.png" alt="Логотип ПФР" class="nav-full__logo-pfr"></a> 
             <button id="nav-full__back-btn"  onclick="full()"><img src="../img/back_ico.png" alt="Кнопка сворачивания меню" class="nav-full__back-btn"></button>
         </div>
         <h1 class="nav-full__h1">Курс «‎Профилактика коррупции»‎</h1>
@@ -62,7 +63,76 @@
    
     <!--Контент-->
     <main class="main">
+<!---------------------СКРИПТ НА MENU 2 FULL-------------------------------------------------------->
+
+        <script>
+            function min_full(){
+                document.getElementById('min-menu-full').style.display = 'none';
+                document.getElementById('min-menu-mini').style.display = 'block';
+            }
+
+            function min_mini(){
+                document.getElementById('min-menu-mini').style.display = 'none';
+                document.getElementById('min-menu-full').style.display = 'block';
+            }
+
+        </script>
         
+<!------------------МЕНЮ 2 FULL----------------------------------------------------------->
+        <section id="min-menu-full" class="min-menu-full">
+            <button id="min-menu-full__close" onclick="min_full()">
+                <img src="../img/back_ico.png" alt="Иконка открытия второго меню">
+            </button>
+            <p class="text-h1  red min-menu-full__h1">
+                Раздел 1
+            </p>
+            <p class="text-h1 min-menu-full__h2">
+                Системы государственных органов и системы законодательства в сфере противодействия коррупции
+            </p>
+            <div class="min-menu-full_btn-menu">
+                <button class="text-h1 active-btn red" id="min-menu-full__btn-1">
+                    <img src="../img/pres-ico.png" alt="Иконка презентации">
+                    Презентация
+                </button>
+
+                <button class="text-h1" id="min-menu-full__btn-2">
+                    <img src="../img/pdf-ico.png" alt="Иконка пдф">
+                    Лекция
+                </button>
+
+                <button class="text-h1" id="min-menu-full__btn-3">
+                    <img src="../img/pract-ico.png" alt="Иконка практических занятиц">
+                    Практическое занятие
+                </button>
+            </div>
+        </section>
+<!------------------МЕНЮ 2 MINI----------------------------------------------------------->
+        <section id="min-menu-mini" class="min-menu-mini">
+            <button id="min-menu-mini__btn-mini" onclick="min_mini()">
+                <img src="../img/forward-btn.png" alt="Иконка расскрытия меню 2">
+            </button>
+
+            <div class="min-menu-full_btn-menu">
+                <button class="text-h1 active-btn btn-mini" id="min-menu-full__btn-1">
+                    <img src="../img/pres-ico.png" alt="Иконка презентации">
+                </button>
+
+                <button class="text-h1" id="min-menu-full__btn-2 btn-mini">
+                    <img src="../img/pdf-ico.png" alt="Иконка пдф">
+                </button>
+
+                <button class="text-h1" id="min-menu-full__btn-3 btn-mini">
+                    <img src="../img/pract-ico.png" alt="Иконка практических занятиц">
+                </button>
+            </div>
+        </section>
+
+
+<!-----------------ПРЕЗЕНТАЦИЙ БЛОК ----------------------------------------------------------->
+
+<!-----------------ЛЕКЦИЙ БЛОК ----------------------------------------------------------->
+
+<!-----------------ПРАКТИЧЕСКИХ ЗАНЯТИЙ БЛОК ----------------------------------------------------------->
     </main>
 
 </body>
