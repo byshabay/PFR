@@ -20,6 +20,179 @@
             document.getElementById('nav-mini').style.display = 'none';
         }
 
+//---------------------СКРИПТ НА MENU 2 FULL--------------------------------------------------------
+
+        function min_full(){
+             document.getElementById('min-menu-full').style.display = 'none';
+             document.getElementById('min-menu-mini').style.display = 'block';
+        }
+
+        function min_mini(){
+            document.getElementById('min-menu-mini').style.display = 'none';
+            document.getElementById('min-menu-full').style.display = 'block';
+        }
+//-----------------------СКРИПТ НА КНОПКИ В САБМЕНЮ----------------------------------------------------
+
+        function pres(){
+            document.getElementById('min-menu-full__btn-1').style.color = '#E0585A';
+            document.getElementById('min-menu-full__btn-2').style.color = '#1F3E76';
+            document.getElementById('min-menu-full__btn-3').style.color = '#1F3E76';
+
+            
+            document.getElementById('present').style.display = 'block';
+            document.getElementById('lection').style.display = 'none';
+            document.getElementById('pract').style.display = 'none';
+
+
+            document.getElementById('min-menu-full__btn-1').style.background = '#FAE8E9';
+            document.getElementById('min-menu-full__btn-2').style.background = 'none';
+            document.getElementById('min-menu-full__btn-3').style.background = 'none';
+
+            document.getElementById('pres-ico').style.display = 'none';
+            document.getElementById('pres-ico-red').style.display = 'block';
+            document.getElementById('pdf-ico-red').style.display = 'none';
+            document.getElementById('pract-ico-red').style.display = 'none';
+            document.getElementById('pract-ico').style.display = 'block';
+            document.getElementById('pdf-ico').style.display = 'block';
+
+            
+
+        }
+        function pres_mini(){
+            document.getElementById('pres-ico-mini').style.display = 'none';
+            document.getElementById('pres-ico-red-mini').style.display = 'block';
+            document.getElementById('pdf-ico-red-mini').style.display = 'none';
+            document.getElementById('pract-ico-red-mini').style.display = 'none';
+            document.getElementById('pract-ico-mini').style.display = 'block';
+            document.getElementById('pdf-ico-mini').style.display = 'block';
+
+            document.getElementById('min-menu-full__btn-4').style.background = '#FAE8E9';
+            document.getElementById('min-menu-full__btn-5').style.background = 'none';
+            document.getElementById('min-menu-full__btn-6').style.background = 'none';
+
+            document.getElementById('present').style.display = 'block';
+            document.getElementById('lection').style.display = 'none';
+            document.getElementById('pract').style.display = 'none';
+
+        }
+
+        function lec(){
+            document.getElementById('present').style.display = 'none';
+            document.getElementById('lection').style.display = 'block';
+            document.getElementById('pract').style.display = 'none';
+
+            document.getElementById('min-menu-full__btn-2').style.color = '#E0585A';
+            document.getElementById('min-menu-full__btn-1').style.color = '#1F3E76';
+            document.getElementById('min-menu-full__btn-3').style.color = '#1F3E76';
+
+            document.getElementById('min-menu-full__btn-2').style.background = '#FAE8E9';
+            document.getElementById('min-menu-full__btn-1').style.background = 'none';
+            document.getElementById('min-menu-full__btn-3').style.background = 'none';
+
+            document.getElementById('pres-ico').style.display = 'block';
+            document.getElementById('pres-ico-red').style.display = 'none';
+            document.getElementById('pdf-ico-red').style.display = 'block';
+            document.getElementById('pract-ico-red').style.display = 'none';
+            document.getElementById('pract-ico').style.display = 'block';
+            document.getElementById('pdf-ico').style.display = 'none';
+
+
+        }
+
+        function lec_mini(){
+            document.getElementById('pres-ico-mini').style.display = 'block';
+            document.getElementById('pres-ico-red-mini').style.display = 'none';
+            document.getElementById('pdf-ico-red-mini').style.display = 'block';
+            document.getElementById('pract-ico-red-mini').style.display = 'none';
+            document.getElementById('pract-ico-mini').style.display = 'block';
+            document.getElementById('pdf-ico-mini').style.display = 'none'; 
+
+            document.getElementById('min-menu-full__btn-5').style.background = '#FAE8E9';
+            document.getElementById('min-menu-full__btn-4').style.background = 'none';
+            document.getElementById('min-menu-full__btn-6').style.background = 'none';
+
+            document.getElementById('present').style.display = 'none';
+            document.getElementById('lection').style.display = 'block';
+            document.getElementById('pract').style.display = 'none';
+
+
+
+        }
+
+        function pract(){
+            document.getElementById('present').style.display = 'none';
+            document.getElementById('lection').style.display = 'none';
+            document.getElementById('pract').style.display = 'block';
+
+
+            document.getElementById('min-menu-full__btn-3').style.color = '#E0585A';
+            document.getElementById('min-menu-full__btn-2').style.color = '#1F3E76';
+            document.getElementById('min-menu-full__btn-1').style.color = '#1F3E76';
+
+            document.getElementById('min-menu-full__btn-3').style.background = '#FAE8E9';
+            document.getElementById('min-menu-full__btn-2').style.background = 'none';
+            document.getElementById('min-menu-full__btn-1').style.background = 'none';
+
+            document.getElementById('pres-ico').style.display = 'block';
+            document.getElementById('pres-ico-red').style.display = 'none';
+            document.getElementById('pdf-ico-red').style.display = 'none';
+            document.getElementById('pract-ico-red').style.display = 'block';
+            document.getElementById('pract-ico').style.display = 'none';
+            document.getElementById('pdf-ico').style.display = 'block';
+
+
+        }
+
+        function pract_mini(){
+            document.getElementById('present').style.display = 'none';
+            document.getElementById('lection').style.display = 'none';
+            document.getElementById('pract').style.display = 'block';
+
+            document.getElementById('pres-ico-mini').style.display = 'block';
+            document.getElementById('pres-ico-red-mini').style.display = 'none';
+            document.getElementById('pdf-ico-red-mini').style.display = 'none';
+            document.getElementById('pract-ico-red-mini').style.display = 'block';
+            document.getElementById('pract-ico-mini').style.display = 'none';
+            document.getElementById('pdf-ico-mini').style.display = 'block';
+
+            document.getElementById('min-menu-full__btn-6').style.background = '#FAE8E9';
+            document.getElementById('min-menu-full__btn-5').style.background = 'none';
+            document.getElementById('min-menu-full__btn-4').style.background = 'none';
+        }
+
+
+
+        function about(){
+            
+            document.getElementById('main__main-box-2').style.display = 'none';
+            document.getElementById('main__main-box').style.display = 'block';
+            document.getElementById('main__btn-1').style.color = '#E0585A';
+            document.getElementById('main__btn-2').style.color = '#8D9EB9';
+            document.getElementById('main__btn-1').style.border = '2px solid #E1E9F5';
+            document.getElementById('main__btn-1').style.borderBottom = '2px solid #fff';
+            document.getElementById('main__btn-2').style.border = 'none';
+            document.getElementById('main__btn-2').style.borderBottom = '2px solid #E1E9F5';
+        }
+
+        function plan(){
+            document.getElementById('main__main-box').style.display = 'none';
+            document.getElementById('main__main-box-2').style.display = 'block';
+            document.getElementById('main__btn-1').style.color = '#8D9EB9';
+            document.getElementById('main__btn-1').style.border = 'none';
+            document.getElementById('main__btn-2').style.color = '#E0585A';
+            document.getElementById('main__btn-2').style.border = '2px solid #E1E9F5';
+            document.getElementById('main__btn-2').style.borderBottom = 'none';
+            document.getElementById('main__btn-1').style.borderBottom = 'none';
+
+            full();
+        }
+
+
+// СКРИПТ НА НИЖНИЕ КНОПКИ ПРАКТИЧЕСКОГО ЗАНЯТИЯ 
+        function answer(){
+            document.getElementById('main__answer').style.display = 'block'
+        }
+
     </script>
 
     <!--Меню полное-->
@@ -63,21 +236,8 @@
    
     <!--Контент-->
     <main class="main">
-<!---------------------СКРИПТ НА MENU 2 FULL-------------------------------------------------------->
 
-        <script>
-            function min_full(){
-                document.getElementById('min-menu-full').style.display = 'none';
-                document.getElementById('min-menu-mini').style.display = 'block';
-            }
 
-            function min_mini(){
-                document.getElementById('min-menu-mini').style.display = 'none';
-                document.getElementById('min-menu-full').style.display = 'block';
-            }
-
-        </script>
-        
 <!------------------МЕНЮ 2 FULL----------------------------------------------------------->
         <section id="min-menu-full" class="min-menu-full">
             <button id="min-menu-full__close" onclick="min_full()">
@@ -90,18 +250,24 @@
                 Системы государственных органов и системы законодательства в сфере противодействия коррупции
             </p>
             <div class="min-menu-full_btn-menu">
-                <button class="text-h1 active-btn red" id="min-menu-full__btn-1">
-                    <img src="../img/pres-ico.png" alt="Иконка презентации">
+                <button class="text-h1 active-btn red" id="min-menu-full__btn-1"  onclick="pres()">
+                    <img id="pres-ico-red" src="../img/pres-ico.png" alt="Иконка презентации">
+                    <img id="pres-ico" src="../img/prec-ico-red.png" alt="Иконка презентации серая">
+
                     Презентация
                 </button>
 
-                <button class="text-h1" id="min-menu-full__btn-2">
-                    <img src="../img/pdf-ico.png" alt="Иконка пдф">
+                <button class="text-h1" id="min-menu-full__btn-2"  onclick="lec()">
+                    <img id="pdf-ico" src="../img/pdf-ico.png" alt="Иконка пдф">
+                    <img id="pdf-ico-red" src="../img/pdf-ico-red.png" alt="Иконка пдф красная">
+
                     Лекция
                 </button>
 
-                <button class="text-h1" id="min-menu-full__btn-3">
-                    <img src="../img/pract-ico.png" alt="Иконка практических занятиц">
+                <button class="text-h1" id="min-menu-full__btn-3"  onclick="pract()">
+                    <img id="pract-ico" src="../img/pract-ico.png" alt="Иконка практических занятиц">
+                    <img id="pract-ico-red" src="../img/pract-ico-red.png" alt="Иконка практических занятиц красная">
+
                     Практическое занятие
                 </button>
             </div>
@@ -113,27 +279,87 @@
             </button>
 
             <div class="min-menu-full_btn-menu">
-                <button class="text-h1 active-btn btn-mini" id="min-menu-full__btn-1">
-                    <img src="../img/pres-ico.png" alt="Иконка презентации">
+                <button class="text-h1 active-btn btn-mini" id="min-menu-full__btn-4" onclick="pres_mini()">
+                    <img id="pres-ico-red-mini" src="../img/pres-ico.png" alt="Иконка презентации">
+                    <img id="pres-ico-mini" src="../img/prec-ico-red.png" alt="Иконка презентации серая">
                 </button>
 
-                <button class="text-h1" id="min-menu-full__btn-2 btn-mini">
-                    <img src="../img/pdf-ico.png" alt="Иконка пдф">
+                <button class="text-h1" id="min-menu-full__btn-5" onclick="lec_mini()">
+                    <img id="pdf-ico-mini" src="../img/pdf-ico.png" alt="Иконка пдф">
+                    <img id="pdf-ico-red-mini" src="../img/pdf-ico-red.png" alt="Иконка пдф красная">
                 </button>
 
-                <button class="text-h1" id="min-menu-full__btn-3 btn-mini">
-                    <img src="../img/pract-ico.png" alt="Иконка практических занятиц">
+                <button class="text-h1" id="min-menu-full__btn-6"  onclick="pract_mini()">
+                    <img id="pract-ico-mini" src="../img/pract-ico.png" alt="Иконка практических занятиц">
+                    <img id="pract-ico-red-mini" src="../img/pract-ico-red.png" alt="Иконка практических занятиц красная">
+
                 </button>
             </div>
         </section>
 
-
 <!-----------------ПРЕЗЕНТАЦИЙ БЛОК ----------------------------------------------------------->
+        <section id="present">
 
+        </section>
 <!-----------------ЛЕКЦИЙ БЛОК ----------------------------------------------------------->
+        <section id="lection">
 
+        </section>
 <!-----------------ПРАКТИЧЕСКИХ ЗАНЯТИЙ БЛОК ----------------------------------------------------------->
-    </main>
+        <section id="pract">
+            <div class="main__btn-box">
+                <button id="main__btn-1" class="main__btn-1" onclick="about()">
+                    Практическое задание 
+                </button>
+                <button id="main__btn-2" class="main__btn-2" onclick="plan()">
+                    Тестирование к разделу 1
+                </button>
+            </div>
+    
+    <!----------------Блок с рамкой----------------->
+            <div id="main__main-box" class="main__main-box">
+
+                <div class="main__answer-box">
+                    <object data="" class="main__object">
+                        <embed class="main__object" src="../pdf/Pr_01_min.pdf" >
+                    </object>
+                    <div id="main__answer">
+                     ОТВЕТ:<br> Статья 13.3. Обязанность организаций принимать меры по предупреждению коррупции (введена Федеральным законом от 03.12.2012 № 231-ФЗ) <br>
+                     1. Организации обязаны разрабатывать и принимать меры по предупреждению коррупции.<br>
+                     2. Меры по предупреждению коррупции, принимаемые в организации, могут включать:<br>
+                     1) определение подразделений или должностных лиц, ответственных за профилактику коррупционных и иных правонарушений;<br>
+                     2) сотрудничество организации с правоохранительными органами;<br>
+                     3) разработку и внедрение в практику стандартов и процедур, направленных на обеспечение добросовестной работы организации;<br>
+                     4) принятие кодекса этики и служебного поведения работников организации;<br>
+                     5) предотвращение и урегулирование конфликта интересов;<br>
+                     6) недопущение составления неофициальной отчетности и использования поддельных документов<br>
+                     
+                    </div>
+                </div>
+                
+               
+
+               <div class="main__btn-sec">
+                <button id="main__show-answer" onclick="answer()">Показать ответ</button>
+
+                <button id="main__download-pdf">
+                    <a href="../pdf/1.pdf" download>Скачать файл </a>
+                    
+                </button>
+            </div>
+            </div>
+
+            
+    
+    <!--------------------------УЧЕБНЫЙ ПЛАН ------------------------------------------>
+    
+            <div id="main__main-box-2" class="main__main-box-2">
+                fff
+            </div>
+        </section>
+
+
+</main>
 
 </body>
 </html>

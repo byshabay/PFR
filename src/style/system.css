@@ -1,6 +1,7 @@
 .main{
     margin-left: 0.2vw;
     margin-top: 3vh;
+    display: flex;
 }
 button{
     outline: none;
@@ -10,11 +11,12 @@ button{
 
 /*ПОЛНОЕ МЕНЮ 2*/
 .min-menu-full{
-    width: 16vw;
+    flex: 1;
     height: 88vh;
     background-color:  #F5F7FA;
     border-radius: 24px;
     padding: 2vh;
+    margin-right: 2vw;
 }
 
 .active-btn{
@@ -52,6 +54,9 @@ button{
     margin-right: 1vw;
 }
 
+#pres-ico, #pract-ico-red, #pdf-ico-red, #pres-ico-mini, #pract-ico-red-mini, #pdf-ico-red-mini, #lection, #pract{
+    display: none;
+}
 
 /*СВЕРНУТОЕ МЕНЮ 2*/
 .min-menu-mini{
@@ -62,6 +67,7 @@ button{
     padding: 2vh;
     text-align: center;
     display: none;
+    margin-right: 2vw;
 }
 #min-menu-mini__btn-mini{
     margin-top: 2vh;
@@ -72,6 +78,32 @@ button{
     align-items: center; 
 }
 
+/*ПРЕЗЕНТАЦИИ БЛОК*/
+#present{
+    flex: 3;
+    width: 60%;
+    height: 90vh;
+    background-color: lawngreen;
+}
+
+/*ЛЕКЦИИ БЛОК*/
+
+#lection{
+    flex: 3;
+    width: 60%;
+    height: 90vh;
+    background-color: rosybrown;
+}
+
+/*ПРАКТИЧ ЗАН БЛОК*/
+
+#pract{
+    flex: 3;
+    width: 60%;
+    height: 90vh;
+    
+}
+
 @media(max-width: 700px ){
     .min-menu-full{
         width: 20vw;
@@ -80,4 +112,65 @@ button{
         width: 8vw;
     }
 
+}
+
+/**/
+.main__btn-1, .main__btn-2{
+    background-color: #fff;
+    color: #8D9EB9;
+    font-weight: bold;
+    padding: 1vh 2vh;
+    border: 0px solid white;
+    border-radius: 24px 24px 0px 0px;
+    outline: none;
+    border-bottom: none;
+    z-index: 10;
+    
+}
+.main__btn-1{
+    color: #E0585A;
+    border: 2px solid #E1E9F5;
+    border-bottom: 2px solid #fff;
+}
+
+.main__btn-2{
+    border-bottom:2px solid #E1E9F5;
+}
+
+.main__main-box{
+    border: 2px solid #E1E9F5;
+    z-index: 1;
+    margin-top: -2px;
+    border-radius: 0px 0px 24px 24px;
+    width: 89%;
+    height: 75vh;
+    padding: 10vh 0 2vh 5vh;
+}
+
+.main__main-box-2{
+    display: none;
+    height: 90vh;
+    width: 100%;
+    overflow: scroll;
+}
+
+.main__object{
+    width: 95%;
+    height: 100%;
+    flex:2;
+    
+}
+
+.main__answer-box{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 50vh;
+}
+
+#main__answer{
+    display: none;
+    flex:1;
+    height: 100%;
+    overflow-y: scroll;
 }
