@@ -176,12 +176,12 @@
 
         function plan(){
             document.getElementById('main__main-box').style.display = 'none';
-            document.getElementById('main__main-box-2').style.display = 'block';
+            document.getElementById('main__main-box-2').style.display = 'flex';
             document.getElementById('main__btn-1').style.color = '#8D9EB9';
             document.getElementById('main__btn-1').style.border = 'none';
             document.getElementById('main__btn-2').style.color = '#E0585A';
             document.getElementById('main__btn-2').style.border = '2px solid #E1E9F5';
-            document.getElementById('main__btn-2').style.borderBottom = 'none';
+            document.getElementById('main__btn-2').style.borderBottom = '2px solid #fff';
             document.getElementById('main__btn-1').style.borderBottom = 'none';
 
             full();
@@ -299,7 +299,21 @@
 
 <!-----------------ПРЕЗЕНТАЦИЙ БЛОК ----------------------------------------------------------->
         <section id="present">
+            <form  name="myform" class="myform">
 
+                <div class="" id="q1__box">
+                    <input type="radio" name="q1" value="a"> 111
+                    <input type="radio" name="q1" value="b"> 112
+
+                </div>
+
+                <div class="" id="q1__box">
+                    <input type="radio" name="q1" value="a"> 111
+                    <input type="radio" name="q1" value="b"> 112
+                </div>
+                <button onclick="check()">ff</button>
+                
+            </form>
         </section>
 <!-----------------ЛЕКЦИЙ БЛОК ----------------------------------------------------------->
         <section id="lection">
@@ -324,7 +338,8 @@
                         <embed class="main__object" src="../pdf/Pr_01_min.pdf" >
                     </object>
                     <div id="main__answer">
-                     ОТВЕТ:<br> Статья 13.3. Обязанность организаций принимать меры по предупреждению коррупции (введена Федеральным законом от 03.12.2012 № 231-ФЗ) <br>
+                     <span> ОТВЕТ:</span>
+                     <br> Статья 13.3. Обязанность организаций принимать меры по предупреждению коррупции (введена Федеральным законом от 03.12.2012 № 231-ФЗ) <br>
                      1. Организации обязаны разрабатывать и принимать меры по предупреждению коррупции.<br>
                      2. Меры по предупреждению коррупции, принимаемые в организации, могут включать:<br>
                      1) определение подразделений или должностных лиц, ответственных за профилактику коррупционных и иных правонарушений;<br>
@@ -340,21 +355,128 @@
                
 
                <div class="main__btn-sec">
-                <button id="main__show-answer" onclick="answer()">Показать ответ</button>
+                <button id="main__show-answer"  class="start-cont__btn" onclick="answer()">Показать ответ</button>
 
-                <button id="main__download-pdf">
-                    <a href="../pdf/1.pdf" download>Скачать файл </a>
-                    
-                </button>
+            
             </div>
             </div>
 
             
     
-    <!--------------------------УЧЕБНЫЙ ПЛАН ------------------------------------------>
+    <!--------------------------ТЕСТИРОВАНИЕ ------------------------------------------>
     
-            <div id="main__main-box-2" class="main__main-box-2">
-                fff
+            <div id="main__main-box-2" class="main__main-box-2 test">
+               <div id="test__block-left">
+                    <p id="text-1-1" class="main__text-cont">
+                        Для начала тестирования нажмите кнопку ПРОДОЛЖИТЬ
+                    </p>
+                    <button id="btn-1-1" class="test__btn-strt" id="count" onclick="start()">Продолжить</button>
+
+                    <form  name="myform" class="myform">
+
+                        <div class="" id="q1__box">
+                            <input type="radio" name="q1" value="a"> 111
+                            <input type="radio" name="q1" value="b"> 112
+    
+                        </div>
+    
+                        <div class="" id="q1__box">
+                            <input type="radio" name="q1" value="a"> 111
+                            <input type="radio" name="q1" value="b"> 112
+                        </div>
+                        <button onclick="check()">ff</button>
+                        
+                    </form>
+
+                    <script>
+                        function start(){
+                            document.getElementById("text-1-1").style.display = "none";
+                            document.getElementById("btn-1-1").style.display = "none";
+                            document.myform.style.display = "block";
+                        }
+        
+                        function check(){
+                            var q1 = document.myform.q1.value;
+                            var q2 = document.myform.q2.value;
+                            
+                            var count = 0;
+        
+                            if(q1 == 'a'){
+                                count++;
+                            }
+        
+                            if(q2 == 'a'){
+                                count++;
+                            }
+        
+                            
+                            
+                            if(count == 0){
+                                var res = "0" 
+                                localStorage.setItem("key", 0);
+                            } else if(count == 1){
+                                var res = "1"
+                                localStorage.setItem("key", 1);
+                            } else{
+                                var res = "2"
+                                localStorage.setItem("key", 2);
+                            }
+
+                            alert(localStorage("key"));
+        
+                           // var count1 = count.toString();
+                         //   localStorage.setItem("someVarKey", res)
+                           // var count2 = localStorage.getItem("someVarKey");
+                          // alert(res);
+                          // console.log(count2);
+                        }
+                    </script>
+                </div>
+                <div id="test__block-right">
+                    <ul class="test__raz">
+                        <li class="test__rz-li">
+                            <span class="test__quest-li  text-h1">
+                               Вопрос 1.
+                            </span> <br>
+                            Система институтов государственной власти в сфере противодействия...
+                        </li>
+                        <li class="test__rz-li">
+                            <span class="test__quest-li text-h1">
+                                Вопрос 2. 
+                            </span> <br>
+                            Основные направления государственной политики в области противодейс...
+                        </li>
+                        <li class="test__rz-li">
+                            <span class="test__quest-li  text-h1">
+                                Вопрос 3.
+                            </span><br>
+                            К какой группе в системе государственных органов, осуществляющих про...
+                        </li>
+                        <li class="test__rz-li">
+                            <span class="test__quest-li  text-h1">
+                                Вопрос 4.
+                            </span><br>
+                            Первым антикоррупционным нормативно-правовым актом российского зако...
+                        </li>
+                        <li class="test__rz-li">
+                            <span class="test__quest-li  text-h1">
+                                Вопрос 5.
+                            </span><br>
+                            Основными международно-правовыми актами, которые определяют обязател...
+                        </li>
+                        <li class="test__rz-li">
+                            <span class="test__quest-li  text-h1">
+                                Вопрос 6.
+                            </span><br>
+                            Администрацией Президента РФ формируются следующие подразделения по пр...
+                        </li>
+                    </ul>
+
+                </div>
+
+ 
+
+          
             </div>
         </section>
 

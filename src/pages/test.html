@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form  name="myform" class="myform">
+
+        <div class="" id="q1__box">
+            <input type="radio" name="q1" value="a"> 111
+            <input type="radio" name="q1" value="b"> 112
+
+        </div>
+
+        <div class="" id="q1__box">
+            <input type="radio" name="q2" value="a"> 111
+            <input type="radio" name="q2" value="b"> 112
+        </div>
+        
+       
+        
+    </form>
+
+    <button onclick="check()">ff</button>
+
+    <div id="eee">ййй</div>
+    <script>
+        function start(){
+            document.getElementById("text-1-1").style.display = "none";
+            document.getElementById("btn-1-1").style.display = "none";
+            document.myform.style.display = "block";
+        }
+        
+       
+        function check(){
+            var q1 = document.myform.q1.value;
+            var q2 = document.myform.q2.value;
+            var count1 = "0";
+            var count = 0;
+            if(q1 == 'a'){
+                count++;
+            }
+
+            if(q2 == 'a'){
+                count++;
+            }
+            var count1 = count.toString();
+            localStorage.setItem("someVarKey", count1);
+            window.location.reload();
+            document.getElementById("eee").textContent = localStorage.getItem("someVarKey");
+            //alert(localStorage.getItem("someVarKey"));
+            //var res = document.getElementById("eee");
+            //res.textContent = localStorage.getItem("someVarKey");
+            
+            /*if(count == 0){
+                var res = "0" 
+                localStorage.setItem("key", 0);
+            } else if(count == 1){
+                var res = "1"
+                localStorage.setItem("key", 1);
+            } else{
+                var res = "2"
+                localStorage.setItem("key", 2);
+            }
+
+            alert(localStorage("key"));*/
+
+           // var count1 = count.toString();
+         //   localStorage.setItem("someVarKey", res)
+           // var count2 = localStorage.getItem("someVarKey");
+          // alert(res);
+          // console.log(count2);
+        }
+        
+           
+    </script>
+</body>
+</html>

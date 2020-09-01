@@ -69,6 +69,10 @@ button{
     display: none;
     margin-right: 2vw;
 }
+
+.min-menu-mini .min-menu-full_btn-menu{
+    margin-top: 21vh;
+}
 #min-menu-mini__btn-mini{
     margin-top: 2vh;
 }
@@ -80,6 +84,7 @@ button{
 
 /*ПРЕЗЕНТАЦИИ БЛОК*/
 #present{
+
     flex: 3;
     width: 60%;
     height: 90vh;
@@ -114,7 +119,7 @@ button{
 
 }
 
-/**/
+/*возможно общие*/
 .main__btn-1, .main__btn-2{
     background-color: #fff;
     color: #8D9EB9;
@@ -125,6 +130,7 @@ button{
     outline: none;
     border-bottom: none;
     z-index: 10;
+    font-size: calc( (100vw - 800px)/(1440 - 800) * (13 - 11) + 11px);
     
 }
 .main__btn-1{
@@ -148,24 +154,29 @@ button{
 }
 
 .main__main-box-2{
+    
     display: none;
-    height: 90vh;
-    width: 100%;
+    margin-top: -2px;
+    height:96%;
+    width: 95%;
     overflow: scroll;
+    border: 2px solid #E1E9F5;
+    border-radius: 0px 0px 24px 24px;
 }
 
 .main__object{
-    width: 95%;
+    width: 98%;
     height: 100%;
-    flex:2;
+    flex:1;
     
 }
 
 .main__answer-box{
     display: flex;
     flex-direction: column;
-    width: 90%;
-    height: 50vh;
+    width: 100%;
+    height: 66vh;
+    margin-bottom: 3vh;
 }
 
 #main__answer{
@@ -173,4 +184,103 @@ button{
     flex:1;
     height: 100%;
     overflow-y: scroll;
+    margin: 3vh 0 0;
+    width: 92.5%;
+    padding-right:3% ;
+    text-align: justify;
+    font-weight: normal;
+    font-size: calc( (100vw - 800px)/(1440 - 800) * (16 - 12) + 12px);
+    line-height: 22px;
+}
+
+#main__answer span{
+    font-weight: bold;
+    color: #E0585A;
+
+}
+
+.start-cont__btn{
+    border: 1px solid #E0585A;
+    border-radius: 8px;
+    padding: 6px 20px;
+    margin-bottom: 5vh;
+    margin-left: 35%;
+    background: #fff; 
+    text-decoration: none;
+    color: #E0585A;
+    font-weight: normal;
+    font-size: calc( (100vw - 800px)/(1440 - 800) * (16 - 12) + 12px);
+    line-height: 22px;
+}
+
+/*тестирование*/
+.test{
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    font-size: calc( (100vw - 800px)/(1440 - 800) * (14 - 12) + 12px);
+
+}
+
+#test__block-right{
+    flex: 1;
+    height: 100%;
+    background: #F5F7FA;
+    border-radius: 0px 0px 23px 0px;
+    overflow-y: scroll;
+}
+
+.main__text-cont{
+    margin-top: 40%;
+}
+
+#test__block-left{
+    text-align: center;
+    flex:2;
+}
+
+.test__btn-strt{
+    border: 1px solid #E0585A;
+    border-radius: 8px;
+    padding: 6px 20px;
+    background: #fff; 
+    color: #E0585A;
+    font-weight: normal;
+    margin: 28%  0 0;
+    font-size: calc( (100vw - 800px)/(1440 - 800) * (14 - 12) + 12px);
+}
+
+.test__raz{
+    width: 100%;
+  
+    list-style-type: none;
+    font-size: calc( (100vw - 800px)/(1440 - 800) * (14 - 12) + 12px);
+    line-height:calc( (100vw - 800px)/(1440 - 800) * (20 - 12) + 12px);
+}
+.test__quest-li{
+    font-size: calc( (100vw - 800px)/(1440 - 800) * (14 - 12) + 12px);
+
+}
+.test__rz-li{
+    border-bottom: 1px solid #E1E9F5;
+    width: 96%;
+    padding:5% 0 5% 4%;
+}
+.myform{
+    display: block; /*none*/
+}
+
+@media (max-width: 600px){
+    .nav-full{
+        display: none;
+    }
+    .nav-mini{
+        display: block;
+    }
+    .min-menu-full{
+        display: none;
+    }
+    .min-menu-mini{
+        display: block;
+    }
 }
