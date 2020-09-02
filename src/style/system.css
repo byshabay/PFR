@@ -270,6 +270,71 @@ button{
     display: block; /*none*/
 }
 
+#a-r-1-1, #a-f-1-1, #a-r-1-2,#a-r-1-3,#a-r-1-4,#a-r-1-5,#a-r-1-6, #a-f-1-2, #a-f-1-3, #a-f-1-4, #a-f-1-5, #a-f-1-6{
+    display: none;
+}
+.test__quest-li {
+    display: flex;
+}
+
+/*форма*/
+.q1__box{
+    text-align: start;
+    font-weight: bold;
+    width: 90%;
+    margin-left: 1vw;
+}
+.q1__box p{
+    color: #8D9EB9;
+    margin-top: 20%;
+    margin-bottom: 3%;
+}
+
+.q1__box input{
+    margin-right: 0.5vw ;
+    border: 1px solid #8D9EB9;
+}
+
+#q1-question{
+    margin: 5% auto 0;
+    opacity: 0.3;
+}
+input:checked + label{
+    color: #E0585A;
+    font-weight: bold;
+}
+#a-l ~ #q1-question{
+    display: none !important;
+}
+.q1__answ{
+    display: flex;
+    align-items: center;
+    padding: 1.5vh 0.7vw;
+    width: 80%;
+    list-style: none;
+    
+}
+.q1__answ label{
+    font-size: calc( (100vw - 800px)/(1440 - 800) * (14 - 10) + 10px);
+    line-height:calc( (100vw - 800px)/(1440 - 800) * (20 - 12) + 12px);
+    color: #8D9EB9;
+    font-weight: normal;
+}
+.q1__answ:hover{
+    background: #F5F7FA;
+    border-radius: 8px;
+}
+
+
+.form__input{
+    margin-top: 4vh;
+    margin-left: -0.7vw ;
+}
+
+#q2__box, #q3__box, #q4__box, #q5__box, #q6__box{
+    display: none;
+}
+
 @media (max-width: 600px){
     .nav-full{
         display: none;
