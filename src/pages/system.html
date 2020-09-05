@@ -300,14 +300,115 @@
 
 <!-----------------ПРЕЗЕНТАЦИЙ БЛОК ----------------------------------------------------------->
         <section id="present">
-           
-                
+            <!-----------------СЛАЙДЕР НАЧАЛО ----------------------------------------------------------->
+            <div class="test__cont">
 
+            </div>
+            
+            <div class="arr">
+                <a href="#" class="arrow_wrap arrow-rew"><img src="../img/left.png" alt="Стрелка влево"></a>
+                <span class="arr_text">
+                    <span class="text-slide">1</span> <span class="next-slide"></span>
+                </span>
+                <a href="#" class="arrow_wrap arrow-fwd"><img src="../img/right.png" alt="Стрелка влево"></a>
+            </div>
+            <div class="main_wraper">
+                <div class="view_wraper">
+                  <div class="view_image"></div>
+                 
+                </div>
+                <img  src="../img/Rectangle 3.png" alt="1">
+                <img src="../img/Rectangle 24.png" alt="2">
+                <img src="../img/Rectangle 24.png" alt="3">
+                <img src="../img/info-ico-grey.png" alt="4">
+                <img src="http://via.placeholder.com/160x120/6666bb/ffffff?text=5" alt="5">
+                <img src="http://via.placeholder.com/160x120/ffaaaa/ffffff?text=6" alt="6">
+                <img src="http://via.placeholder.com/160x120/ffcc66/ffffff?text=7" alt="7">
+                <img src="http://via.placeholder.com/160x120/00CED1/444444?text=8" alt="8">
+                <img src="http://via.placeholder.com/160x120/66bb66/ffffff?text=9" alt="9">
+                <img src="http://via.placeholder.com/160x120/6666bb/ffffff?text=10" alt="10">
+              </div>
+            
+            
+              <script>
+                  var test = document.querySelector('.test__cont');
+              //  var oViewImage = document.querySelector('.view_image');
+                var aImages = Array.prototype.slice.call(document.querySelectorAll('.main_wraper > img'));
+                var aArrow = document.querySelectorAll('.arr > a');
+            
+            aImages.forEach(function(item, index) {
+              item.addEventListener('click', function() {
+               // oViewImage.style.backgroundImage = 'url(' + this.src + ')';
+                test.style.backgroundImage = 'url(' + this.src + ')';
+            
+                if (oSel = document.querySelector('.thumb-select')) {
+                  oSel.classList.remove('thumb-select')
+                };
+                this.classList.add('thumb-select');
+                aArrow[0].classList.remove('thumb-hide');
+                aArrow[1].classList.remove('thumb-hide');
+                if (index == 0) {
+                  aArrow[0].classList.add('thumb-hide');
+                }
+                if (index == aImages.length - 1) {
+                  aArrow[1].classList.add('thumb-hide');
+                }
+                
+                document.querySelector('.arr_text > .text-slide').textContent = this.alt;
+                document.querySelector('.arr_text > .next-slide').textContent =" / 10";
+              });
+            });
+            
+            aArrow[0].addEventListener('click', function() {
+              let i = aImages.length;
+              while (i--) {
+                if (aImages[i].classList.contains('thumb-select')) break;
+              }
+              if (i > 0) {
+                aImages[i - 1].dispatchEvent(new Event('click'));
+                if (aImages[i - 1].classList.contains('thumb-hide')) {
+                  aImages[i - 1].classList.remove('thumb-hide');
+                }
+              }
+            });
+            aArrow[1].addEventListener('click', function() {
+              let i = aImages.length;
+              while (i--) {
+                if (aImages[i].classList.contains('thumb-select')) break;
+              }
+              if (i < aImages.length - 1) {
+                aImages[i + 1].dispatchEvent(new Event('click'));
+                if (i + 1 > 7) {
+                  aImages[i - 7].classList.add('thumb-hide');
+                }
+              }
+            });
+            
+            aArrow[1].dispatchEvent(new Event('click'));
+              </script>
+                
+            <!-----------------СЛАЙДЕР КОНЕЦ ----------------------------------------------------------->
+              <div class="pres__btn-box">
+                  <button class="pres__btn-dwn start-cont__btn"> <a download href="../pdf/UsoevaShabaykinaMgu.pptx"> Скачать презентацию</a></button>
+              </div>
         </section>
 <!-----------------ЛЕКЦИЙ БЛОК ----------------------------------------------------------->
         <section id="lection">
+            <div class="lec__box">
+                <object data="" class="lec__object">
+                    <embed class="lec__object" src="../pdf/l-1.pdf" >
+                </object>
+            </div>
+            
 
+            <button class="lec__btn start-cont__btn">
+                <a href="../pdf/l-1.pdf" download>
+                    Скачать документ на устройство
+                </a>
+                
+            </button>
         </section>
+        
 <!-----------------ПРАКТИЧЕСКИХ ЗАНЯТИЙ БЛОК ----------------------------------------------------------->
         <section id="pract">
             <div class="main__btn-box">
@@ -339,15 +440,21 @@
                      6) недопущение составления неофициальной отчетности и использования поддельных документов<br>
                      
                     </div>
+
+                    <div class="main__btn-sec">
+                        <button id="main__show-answer"  class="start-cont__btn" onclick="answer()">Показать ответ</button>
+                        <button class="pract__btn start-cont__btn">
+                            <a href="../pdf/l-1.pdf" download>
+                                Скачать документ на устройство
+                            </a>
+                            
+                        </button>
+                    </div>
                 </div>
                 
                
 
-               <div class="main__btn-sec">
-                <button id="main__show-answer"  class="start-cont__btn" onclick="answer()">Показать ответ</button>
-
-            
-            </div>
+              
             </div>
 
             
@@ -515,7 +622,10 @@
                         </div>
     
                     </form>
-                        <button id="q1-question" class="start-cont__btn" onclick="check1()"  disabled >Продолжить</button>
+                    <div id="pract__res" class="pract__res">
+                        oooooooooo
+                    </div>
+                    <button id="q1-question" class="start-cont__btn" onclick="check1()"  disabled >Продолжить</button>
                         
                    
                 </div>
@@ -523,7 +633,7 @@
                     <ul class="test__raz">
                         <li class="test__rz-li" id="q-1-a-1">
                             <span id="q-1-a-1-a" class="test__quest-li  text-h1">
-                               Вопрос 1. 
+                               Вопрос 1 
                                <img id="a-r-1-1" src="../img/right-ico.png" alt="Правильный ответ"> 
                                <img id="a-f-1-1"  src="../img/false-ico.png" alt="Неправильный ответ">
                             </span> <br>
@@ -531,7 +641,7 @@
                         </li>
                         <li id="q-1-a-2" class="test__rz-li">
                             <span id="q-1-a-2-a" class="test__quest-li text-h1">
-                                Вопрос 2. 
+                                Вопрос 2
                                 <img id="a-r-1-2" src="../img/right-ico.png" alt="Правильный ответ"> 
                                <img id="a-f-1-2" src="../img/false-ico.png" alt="Неправильный ответ">
                             </span> <br>
@@ -539,7 +649,7 @@
                         </li>
                         <li id="q-1-a-3" class="test__rz-li">
                             <span id="q-1-a-3-a"  class="test__quest-li  text-h1">
-                                Вопрос 3.
+                                Вопрос 3
                                 <img id="a-r-1-3" src="../img/right-ico.png" alt="Правильный ответ"> 
                                <img id="a-f-1-3" src="../img/false-ico.png" alt="Неправильный ответ">
                             </span><br>
@@ -547,7 +657,7 @@
                         </li>
                         <li id="q-1-a-4" class="test__rz-li">
                             <span id="q-1-a-4-a" class="test__quest-li  text-h1">
-                                Вопрос 4.
+                                Вопрос 4
                                 <img id="a-r-1-4" src="../img/right-ico.png" alt="Правильный ответ"> 
                                <img id="a-f-1-4" src="../img/false-ico.png" alt="Неправильный ответ">
                             </span><br>
@@ -555,7 +665,7 @@
                         </li>
                         <li id="q-1-a-5" class="test__rz-li">
                             <span id="q-1-a-5-a" class="test__quest-li  text-h1">
-                                Вопрос 5.
+                                Вопрос 5
                                 <img id="a-r-1-5" src="../img/right-ico.png" alt="Правильный ответ"> 
                                <img id="a-f-1-5" src="../img/false-ico.png" alt="Неправильный ответ">
                             </span><br>
@@ -563,13 +673,14 @@
                         </li>
                         <li id="q-1-a-6" class="test__rz-li">
                             <span id="q-1-a-6-a" class="test__quest-li  text-h1">
-                                Вопрос 6.
+                                Вопрос 6
                                 <img id="a-r-1-6" src="../img/right-ico.png" alt="Правильный ответ"> 
                                <img id="a-f-1-6" src="../img/false-ico.png" alt="Неправильный ответ">
                             </span><br>
                             Администрацией Президента РФ формируются следующие подразделения по пр...
                         </li>
                     </ul>
+                   
 
                 </div>
 
@@ -595,6 +706,7 @@
                         document.getElementById("text-1-1").style.display = "none";
                         document.getElementById("btn-1-1").style.display = "none";
                         document.myform.style.display = "block";
+                        document.getElementById("q1-question").style.display = "block";
                     }
 
                     function q2__style(){
@@ -655,7 +767,8 @@
 
                     function q6__style(){
                         document.getElementById("q1-question").style.opacity = "0.3";
-
+                        document.getElementById("q6__box").style.display = "none";
+                        document.getElementById("pract__res").style.display = "block";
                         $("#q-1-a-6").css({
                             'color': '#8D9EB9'
                         });
@@ -690,7 +803,7 @@
                         var count = 0;
                         if(q1 == 'a'){
                             document.getElementById("a-r-1-1").style.display = "block";
-                            
+                            count ++;
                            
 
                         } else{
@@ -704,6 +817,7 @@
                         if(q2 == 'a'){
                             document.getElementById("a-r-1-2").style.display = "block";
                             q2__style();
+                            count ++;
                         } else if(q2 == 'b'){
                             document.getElementById("a-f-1-2").style.display = "block";
                             q2__style();
@@ -712,6 +826,7 @@
                         if(q3 == 'a'){
                             document.getElementById("a-r-1-3").style.display = "block";
                             q3__style();
+                            count ++;
                         } else if(q3 == 'b'){
                             document.getElementById("a-f-1-3").style.display = "block";
                             q3__style();
@@ -720,6 +835,7 @@
                         if(q4 == 'a'){
                             document.getElementById("a-r-1-4").style.display = "block";
                             q4__style();
+                            count ++;
                         } else if(q4 == 'b'){
                             document.getElementById("a-f-1-4").style.display = "block";
                             q4__style();
@@ -728,6 +844,7 @@
                         if(q5 == 'a'){
                             document.getElementById("a-r-1-5").style.display = "block";
                             q5__style();
+                            count ++;
                         } else if(q5 == 'b'){
                             document.getElementById("a-f-1-5").style.display = "block";
                             q5__style();
@@ -736,12 +853,21 @@
                         if(q6 == 'a'){
                             document.getElementById("a-r-1-6").style.display = "block";
                             q6__style();
+                            count ++;
+                            alert(count);
+                            var count__text = count.toString();
+
+                            document.querySelector('.pract__res').textContent = "Результат Вашего тестирования " + count;
+
+                            
                         } else if(q6 == 'b'){
                             document.getElementById("a-f-1-6").style.display = "block";
                             q6__style();
+                            alert(count);
+                            document.querySelector('.pract__res').textContent = "Результат Вашего тестирования " + count;
                         }
 
-
+                        
                         
                         $("#q-1-a-1").css({
                             'color': '#8D9EB9'
@@ -752,7 +878,7 @@
                         $('#q1-question').removeAttr("disabled");
                     
                     }
-                    
+                
                 </script>
 
           

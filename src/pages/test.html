@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+<link rel="stylesheet" href="../../test.css">
 </head>
 <body>
     <form  name="myform" class="myform">
@@ -76,5 +77,91 @@
         
            
     </script>
+
+
+<div class="test">
+
+</div>
+
+<div class="arr">
+    <a href="#" class="arrow_wrap arrow-rew">&#9668;&nbsp;</a>
+    <span class="arr_text">
+        <span>1</span>/3
+    </span>
+    <a href="#" class="arrow_wrap arrow-fwd">&nbsp;&#9658;</a>
+</div>
+<div class="main_wraper">
+    <div class="view_wraper">
+      <div class="view_image"></div>
+     
+    </div>
+    <img  src="../img/Rectangle 3.png" alt="1">
+    <img src="../img/Rectangle 24.png" alt="2">
+    <img src="../img/Rectangle 24.png" alt="3">
+    <img src="../img/info-ico-grey.png" alt="4">
+    <img src="http://via.placeholder.com/160x120/6666bb/ffffff?text=5" alt="5">
+    <img src="http://via.placeholder.com/160x120/ffaaaa/ffffff?text=6" alt="6">
+    <img src="http://via.placeholder.com/160x120/ffcc66/ffffff?text=7" alt="7">
+    <img src="http://via.placeholder.com/160x120/00CED1/444444?text=8" alt="8">
+    <img src="http://via.placeholder.com/160x120/66bb66/ffffff?text=9" alt="9">
+    <img src="http://via.placeholder.com/160x120/6666bb/ffffff?text=10" alt="10">
+  </div>
+
+
+  <script>
+      var test = document.querySelector('.test');
+  //  var oViewImage = document.querySelector('.view_image');
+    var aImages = Array.prototype.slice.call(document.querySelectorAll('.main_wraper > img'));
+    var aArrow = document.querySelectorAll('.arr > a');
+
+aImages.forEach(function(item, index) {
+  item.addEventListener('click', function() {
+   // oViewImage.style.backgroundImage = 'url(' + this.src + ')';
+    test.style.backgroundImage = 'url(' + this.src + ')';
+
+    if (oSel = document.querySelector('.thumb-select')) {
+      oSel.classList.remove('thumb-select')
+    };
+    this.classList.add('thumb-select');
+    aArrow[0].classList.remove('thumb-hide');
+    aArrow[1].classList.remove('thumb-hide');
+    if (index == 0) {
+      aArrow[0].classList.add('thumb-hide');
+    }
+    if (index == aImages.length - 1) {
+      aArrow[1].classList.add('thumb-hide');
+    }
+    
+    document.querySelector('.arr_text').textContent = this.alt + '/10';
+  });
+});
+
+aArrow[0].addEventListener('click', function() {
+  let i = aImages.length;
+  while (i--) {
+    if (aImages[i].classList.contains('thumb-select')) break;
+  }
+  if (i > 0) {
+    aImages[i - 1].dispatchEvent(new Event('click'));
+    if (aImages[i - 1].classList.contains('thumb-hide')) {
+      aImages[i - 1].classList.remove('thumb-hide');
+    }
+  }
+});
+aArrow[1].addEventListener('click', function() {
+  let i = aImages.length;
+  while (i--) {
+    if (aImages[i].classList.contains('thumb-select')) break;
+  }
+  if (i < aImages.length - 1) {
+    aImages[i + 1].dispatchEvent(new Event('click'));
+    if (i + 1 > 7) {
+      aImages[i - 7].classList.add('thumb-hide');
+    }
+  }
+});
+
+aArrow[1].dispatchEvent(new Event('click'));
+  </script>
 </body>
 </html>
