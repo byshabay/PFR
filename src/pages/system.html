@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="../style/system.css">
     <script src="../style/jq.js"></script>
-    <script src="../../jquery-1.9.1.min.js"></script>
+    <script src="../style/jquery-1.9.1.min.js"></script>
 </head>
 <body class="body">
  <!--Скрипт на кнопку-->
@@ -192,7 +192,12 @@
 
 // СКРИПТ НА НИЖНИЕ КНОПКИ ПРАКТИЧЕСКОГО ЗАНЯТИЯ 
         function answer(){
-            document.getElementById('main__answer').style.display = 'block'
+            $(".main__object").css({
+                'flex': '1',
+                'height': 'auto'
+            });
+            document.getElementById('main__answer').style.display = 'block';
+            
         }
 
     </script>
