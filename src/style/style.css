@@ -27,21 +27,20 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 43%;
+    flex: 1;
 }
 
 .start-cont__logo-pfr-img{
     width: 6vw;
 }
-
 .start-cont__logo-guu {
-    width: 11%;
+    display: flex;
+    flex: 1;
+    align-items: center;
 }
-
-@media (max-width: 900px){
-    .start-cont__logo-guu {
-        width: 20%;
-    }
+.start-cont__logo-guu img{
+    width: 25%;
+    margin-right: 2vw;
 }
 .start-cont__logo-pfr-text{
     font-size: calc( (100vw - 800px)/(1440 - 800) * (16 - 11) + 11px);
@@ -52,7 +51,17 @@
     width: 60%;
 
 }
+.rrr{
+    display: flex;
+    align-items: baseline;
+    margin-top: -31%;
+    width: 49vw;
+    margin: -31% 0 0 16vw;
+    font-size: calc( (100vw - 800px)/(1440 - 800) * (16 - 12) + 12px);
+    justify-content: space-between;
 
+
+}
 /*Основной текст*/
 .start-cont__h1{
     font-size: calc( (100vw - 800px)/(1440 - 800) * (14 - 11) + 11px);
@@ -90,7 +99,6 @@
     border-radius: 8px;
     padding: 6px 20px;
     margin-bottom: 5vh;
-    margin-left: 35%;
     background: #fff; 
     text-decoration: none;
 }
@@ -134,22 +142,11 @@ p{
 }
 .start-cont__bkg-ing-comp{
     width: 25vw;
-    margin-left: 52vw;
+    /* margin-left: 52vw;
     margin-bottom: 3%;
     position: absolute;
+    
+    bottom: 5vh;*/
+
     z-index: 0;
-    bottom: 5vh;
-}
-
-
-@media (max-width: 1000px){
-    .start-cont__bkg-ing-comp{
-        display: none;
-    }
-}
-
-/*ШРИФТЫ*/
-@font-face{
-    font-family: 'Roboto';
-    src: url("./src/style/roboto.ttf");
 }
