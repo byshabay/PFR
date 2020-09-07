@@ -466,7 +466,7 @@ input:checked + label{
       margin: 5% auto 2vh !important;
   }
   .arrow_wrap {
-    background: #F5F7FA;
+
     border-radius: 100%;
     cursor: pointer;
     height: 40px;
