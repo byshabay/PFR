@@ -2,9 +2,12 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>04 Представление</title>
+    <title>Раздел 4</title>
     <link rel="stylesheet" href="../style/menu_temp.css">
     <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style/system.css">
+    <script src="../style/jq.js"></script>
+    <script src="../style/jquery-1.9.1.min.js"></script>
 </head>
 <body class="body">
  <!--Скрипт на кнопку-->
@@ -18,13 +21,193 @@
             document.getElementById('nav-full').style.display = 'block';
             document.getElementById('nav-mini').style.display = 'none';
         }
+               //---------------------СКРИПТ НА MENU 2 FULL--------------------------------------------------------
+
+               function min_full(){
+             document.getElementById('min-menu-full').style.display = 'none';
+             document.getElementById('min-menu-mini').style.display = 'block';
+        }
+
+        function min_mini(){
+            document.getElementById('min-menu-mini').style.display = 'none';
+            document.getElementById('min-menu-full').style.display = 'block';
+        }
+//-----------------------СКРИПТ НА КНОПКИ В САБМЕНЮ----------------------------------------------------
+
+        function pres(){
+            document.getElementById('min-menu-full__btn-1').style.color = '#E0585A';
+            document.getElementById('min-menu-full__btn-2').style.color = '#1F3E76';
+            document.getElementById('min-menu-full__btn-3').style.color = '#1F3E76';
+
+            
+            document.getElementById('present').style.display = 'block';
+            document.getElementById('lection').style.display = 'none';
+            document.getElementById('pract').style.display = 'none';
+
+
+            document.getElementById('min-menu-full__btn-1').style.background = '#FAE8E9';
+            document.getElementById('min-menu-full__btn-2').style.background = 'none';
+            document.getElementById('min-menu-full__btn-3').style.background = 'none';
+
+            document.getElementById('pres-ico').style.display = 'none';
+            document.getElementById('pres-ico-red').style.display = 'block';
+            document.getElementById('pdf-ico-red').style.display = 'none';
+            document.getElementById('pract-ico-red').style.display = 'none';
+            document.getElementById('pract-ico').style.display = 'block';
+            document.getElementById('pdf-ico').style.display = 'block';
+
+            
+
+        }
+        function pres_mini(){
+            document.getElementById('pres-ico-mini').style.display = 'none';
+            document.getElementById('pres-ico-red-mini').style.display = 'block';
+            document.getElementById('pdf-ico-red-mini').style.display = 'none';
+            document.getElementById('pract-ico-red-mini').style.display = 'none';
+            document.getElementById('pract-ico-mini').style.display = 'block';
+            document.getElementById('pdf-ico-mini').style.display = 'block';
+
+            document.getElementById('min-menu-full__btn-4').style.background = '#FAE8E9';
+            document.getElementById('min-menu-full__btn-5').style.background = 'none';
+            document.getElementById('min-menu-full__btn-6').style.background = 'none';
+
+            document.getElementById('present').style.display = 'block';
+            document.getElementById('lection').style.display = 'none';
+            document.getElementById('pract').style.display = 'none';
+
+        }
+
+        function lec(){
+            document.getElementById('present').style.display = 'none';
+            document.getElementById('lection').style.display = 'block';
+            document.getElementById('pract').style.display = 'none';
+
+            document.getElementById('min-menu-full__btn-2').style.color = '#E0585A';
+            document.getElementById('min-menu-full__btn-1').style.color = '#1F3E76';
+            document.getElementById('min-menu-full__btn-3').style.color = '#1F3E76';
+
+            document.getElementById('min-menu-full__btn-2').style.background = '#FAE8E9';
+            document.getElementById('min-menu-full__btn-1').style.background = 'none';
+            document.getElementById('min-menu-full__btn-3').style.background = 'none';
+
+            document.getElementById('pres-ico').style.display = 'block';
+            document.getElementById('pres-ico-red').style.display = 'none';
+            document.getElementById('pdf-ico-red').style.display = 'block';
+            document.getElementById('pract-ico-red').style.display = 'none';
+            document.getElementById('pract-ico').style.display = 'block';
+            document.getElementById('pdf-ico').style.display = 'none';
+
+
+        }
+
+        function lec_mini(){
+            document.getElementById('pres-ico-mini').style.display = 'block';
+            document.getElementById('pres-ico-red-mini').style.display = 'none';
+            document.getElementById('pdf-ico-red-mini').style.display = 'block';
+            document.getElementById('pract-ico-red-mini').style.display = 'none';
+            document.getElementById('pract-ico-mini').style.display = 'block';
+            document.getElementById('pdf-ico-mini').style.display = 'none'; 
+
+            document.getElementById('min-menu-full__btn-5').style.background = '#FAE8E9';
+            document.getElementById('min-menu-full__btn-4').style.background = 'none';
+            document.getElementById('min-menu-full__btn-6').style.background = 'none';
+
+            document.getElementById('present').style.display = 'none';
+            document.getElementById('lection').style.display = 'block';
+            document.getElementById('pract').style.display = 'none';
+
+
+
+        }
+
+        function pract(){
+            document.getElementById('present').style.display = 'none';
+            document.getElementById('lection').style.display = 'none';
+            document.getElementById('pract').style.display = 'block';
+
+
+            document.getElementById('min-menu-full__btn-3').style.color = '#E0585A';
+            document.getElementById('min-menu-full__btn-2').style.color = '#1F3E76';
+            document.getElementById('min-menu-full__btn-1').style.color = '#1F3E76';
+
+            document.getElementById('min-menu-full__btn-3').style.background = '#FAE8E9';
+            document.getElementById('min-menu-full__btn-2').style.background = 'none';
+            document.getElementById('min-menu-full__btn-1').style.background = 'none';
+
+            document.getElementById('pres-ico').style.display = 'block';
+            document.getElementById('pres-ico-red').style.display = 'none';
+            document.getElementById('pdf-ico-red').style.display = 'none';
+            document.getElementById('pract-ico-red').style.display = 'block';
+            document.getElementById('pract-ico').style.display = 'none';
+            document.getElementById('pdf-ico').style.display = 'block';
+
+
+        }
+
+        function pract_mini(){
+            document.getElementById('present').style.display = 'none';
+            document.getElementById('lection').style.display = 'none';
+            document.getElementById('pract').style.display = 'block';
+
+            document.getElementById('pres-ico-mini').style.display = 'block';
+            document.getElementById('pres-ico-red-mini').style.display = 'none';
+            document.getElementById('pdf-ico-red-mini').style.display = 'none';
+            document.getElementById('pract-ico-red-mini').style.display = 'block';
+            document.getElementById('pract-ico-mini').style.display = 'none';
+            document.getElementById('pdf-ico-mini').style.display = 'block';
+
+            document.getElementById('min-menu-full__btn-6').style.background = '#FAE8E9';
+            document.getElementById('min-menu-full__btn-5').style.background = 'none';
+            document.getElementById('min-menu-full__btn-4').style.background = 'none';
+        }
+
+
+
+        function about(){
+            
+            document.getElementById('main__main-box-2').style.display = 'none';
+            document.getElementById('main__main-box').style.display = 'block';
+            document.getElementById('main__btn-1').style.color = '#E0585A';
+            document.getElementById('main__btn-2').style.color = '#8D9EB9';
+            document.getElementById('main__btn-1').style.border = '2px solid #E1E9F5';
+            document.getElementById('main__btn-1').style.borderBottom = '2px solid #fff';
+            document.getElementById('main__btn-2').style.border = 'none';
+            document.getElementById('main__btn-2').style.borderBottom = '2px solid #E1E9F5';
+        }
+
+        function plan(){
+            document.getElementById('main__main-box').style.display = 'none';
+            document.getElementById('main__main-box-2').style.display = 'flex';
+            document.getElementById('main__btn-1').style.color = '#8D9EB9';
+            document.getElementById('main__btn-1').style.border = 'none';
+            document.getElementById('main__btn-2').style.color = '#E0585A';
+            document.getElementById('main__btn-2').style.border = '2px solid #E1E9F5';
+            document.getElementById('main__btn-2').style.borderBottom = '2px solid #fff';
+            document.getElementById('main__btn-1').style.borderBottom = 'none';
+
+            full();
+        }
+
+
+// СКРИПТ НА НИЖНИЕ КНОПКИ ПРАКТИЧЕСКОГО ЗАНЯТИЯ 
+        function answer(){
+            $(".main__object").css({
+                'flex': '1',
+                'height': 'auto'
+            });
+            $(".main__answer").css({
+                'display': 'block',
+                
+            });
+            
+        }
 
     </script>
 
     <!--Меню полное-->
     <nav id="nav-full" class="nav-full">
         <div class="nav-full__logo-btn-box">
-            <img src="../img/logo-pfr.png" alt="Логотип ПФР" class="nav-full__logo-pfr">
+            <a href="../../START.html">  <img src="../img/logo-pfr.png" alt="Логотип ПФР" class="nav-full__logo-pfr"></a>
             <button id="nav-full__back-btn"  onclick="full()"><img src="../img/back_ico.png" alt="Кнопка сворачивания меню" class="nav-full__back-btn"></button>
         </div>
         <h1 class="nav-full__h1">Курс «‎Профилактика коррупции»‎</h1>
@@ -62,7 +245,842 @@
    
     <!--Контент-->
     <main class="main">
+        <!------------------МЕНЮ 2 FULL----------------------------------------------------------->
+       <section id="min-menu-full" class="min-menu-full">
+        <button id="min-menu-full__close" onclick="min_full()">
+            <img src="../img/back_ico.png" alt="Иконка открытия второго меню">
+        </button>
+        <p class="text-h1  red min-menu-full__h1">
+            Раздел 4
+        </p>
+        <p class="text-h1 min-menu-full__h2">
+            Представление работниками системы Пенсионного фонда Российской Федерации сведений о доходах, расходах, об имуществе и обязательствах имущественного характера и членов своей семьи       </p>
+        <div class="min-menu-full_btn-menu">
+            <button class="text-h1 active-btn red" id="min-menu-full__btn-1"  onclick="pres()">
+                <img id="pres-ico-red" src="../img/pres-ico.png" alt="Иконка презентации">
+                <img id="pres-ico" src="../img/prec-ico-red.png" alt="Иконка презентации серая">
+
+                Презентация
+            </button>
+
+            <button class="text-h1" id="min-menu-full__btn-2"  onclick="lec()">
+                <img id="pdf-ico" src="../img/pdf-ico.png" alt="Иконка пдф">
+                <img id="pdf-ico-red" src="../img/pdf-ico-red.png" alt="Иконка пдф красная">
+
+                Лекция
+            </button>
+
+            <button class="text-h1" id="min-menu-full__btn-3"  onclick="pract()">
+                <img id="pract-ico" src="../img/pract-ico.png" alt="Иконка практических занятиц">
+                <img id="pract-ico-red" src="../img/pract-ico-red.png" alt="Иконка практических занятиц красная">
+
+                Практическое занятие
+            </button>
+        </div>
+    </section>
+<!------------------МЕНЮ 2 MINI----------------------------------------------------------->
+    <section id="min-menu-mini" class="min-menu-mini">
+        <button id="min-menu-mini__btn-mini" onclick="min_mini()">
+            <img src="../img/forward-btn.png" alt="Иконка расскрытия меню 2">
+        </button>
+
+        <div class="min-menu-full_btn-menu">
+            <button class="text-h1 active-btn btn-mini" id="min-menu-full__btn-4" onclick="pres_mini()">
+                <img id="pres-ico-red-mini" src="../img/pres-ico.png" alt="Иконка презентации">
+                <img id="pres-ico-mini" src="../img/prec-ico-red.png" alt="Иконка презентации серая">
+            </button>
+
+            <button class="text-h1" id="min-menu-full__btn-5" onclick="lec_mini()">
+                <img id="pdf-ico-mini" src="../img/pdf-ico.png" alt="Иконка пдф">
+                <img id="pdf-ico-red-mini" src="../img/pdf-ico-red.png" alt="Иконка пдф красная">
+            </button>
+
+            <button class="text-h1" id="min-menu-full__btn-6"  onclick="pract_mini()">
+                <img id="pract-ico-mini" src="../img/pract-ico.png" alt="Иконка практических занятиц">
+                <img id="pract-ico-red-mini" src="../img/pract-ico-red.png" alt="Иконка практических занятиц красная">
+
+            </button>
+        </div>
+    </section>
+
+<!-----------------ПРЕЗЕНТАЦИЙ БЛОК ----------------------------------------------------------->
+    <section id="present">
+        <!-----------------СЛАЙДЕР НАЧАЛО ----------------------------------------------------------->
+        <div class="test__cont">
+
+        </div>
         
+        <div class="arr">
+            <a href="#" class="arrow_wrap arrow-rew"><img src="../img/left.png" alt="Стрелка влево"></a>
+            <span class="arr_text">
+                <span class="text-slide">1</span> <span class="next-slide"></span>
+            </span>
+            <a href="#" class="arrow_wrap arrow-fwd"><img src="../img/right.png" alt="Стрелка влево"></a>
+        </div>
+        <div class="main_wraper">
+            <div class="view_wraper">
+              <div class="view_image"></div>
+             
+            </div>
+            <img src="../img/pres_4/1.png" alt="1">
+            <img src="../img/pres_4/2.png" alt="2">
+            <img src="../img/pres_4/3.png" alt="3">
+            <img src="../img/pres_4/4.png" alt="4">
+            <img src="../img/pres_4/5.png" alt="5">
+            <img src="../img/pres_4/6.png" alt="6">
+            <img src="../img/pres_4/7.png" alt="7">
+            <img src="../img/pres_4/8.png" alt="8">
+           
+            
+          </div>
+        
+        
+          <script>
+              var test = document.querySelector('.test__cont');
+          //  var oViewImage = document.querySelector('.view_image');
+            var aImages = Array.prototype.slice.call(document.querySelectorAll('.main_wraper > img'));
+            var aArrow = document.querySelectorAll('.arr > a');
+        
+        aImages.forEach(function(item, index) {
+          item.addEventListener('click', function() {
+           // oViewImage.style.backgroundImage = 'url(' + this.src + ')';
+            test.style.backgroundImage = 'url(' + this.src + ')';
+        
+            if (oSel = document.querySelector('.thumb-select')) {
+              oSel.classList.remove('thumb-select')
+            };
+            this.classList.add('thumb-select');
+            aArrow[0].classList.remove('thumb-hide');
+            aArrow[1].classList.remove('thumb-hide');
+            if (index == 0) {
+              aArrow[0].classList.add('thumb-hide');
+            }
+            if (index == aImages.length - 1) {
+              aArrow[1].classList.add('thumb-hide');
+            }
+            
+            document.querySelector('.arr_text > .text-slide').textContent = this.alt;
+            document.querySelector('.arr_text > .next-slide').textContent =" / 8";
+          });
+        });
+        
+        aArrow[0].addEventListener('click', function() {
+          let i = aImages.length;
+          while (i--) {
+            if (aImages[i].classList.contains('thumb-select')) break;
+          }
+          if (i > 0) {
+            aImages[i - 1].dispatchEvent(new Event('click'));
+            if (aImages[i - 1].classList.contains('thumb-hide')) {
+              aImages[i - 1].classList.remove('thumb-hide');
+            }
+          }
+        });
+        aArrow[1].addEventListener('click', function() {
+          let i = aImages.length;
+          while (i--) {
+            if (aImages[i].classList.contains('thumb-select')) break;
+          }
+          if (i < aImages.length - 1) {
+            aImages[i + 1].dispatchEvent(new Event('click'));
+            if (i + 1 > 7) {
+              aImages[i - 7].classList.add('thumb-hide');
+            }
+          }
+        });
+        
+        aArrow[1].dispatchEvent(new Event('click'));
+          </script>
+            
+        <!-----------------СЛАЙДЕР КОНЕЦ ----------------------------------------------------------->
+          <div class="pres__btn-box">
+              <button class="pres__btn-dwn start-cont__btn"> <a download target="blank" href="../pdf/pres_4.pptx"> Скачать презентацию</a></button>
+          </div>
+    </section>
+<!-----------------ЛЕКЦИЙ БЛОК ----------------------------------------------------------->
+    <section id="lection">
+        <div class="lec__box">
+            <object data="" class="lec__object">
+                <embed class="lec__object" src="../pdf/l-4.pdf" >
+            </object>
+        </div>
+        
+
+        <button class="lec__btn start-cont__btn">
+            <a target="blank" href="../pdf/l-4.pdf" download>
+                Скачать документ на устройство
+            </a>
+            
+        </button>
+    </section>
+    
+<!-----------------ПРАКТИЧЕСКИХ ЗАНЯТИЙ БЛОК ----------------------------------------------------------->
+    <section id="pract">
+        <div class="main__btn-box">
+            <button id="main__btn-1" class="main__btn-1" onclick="about()">
+                Практическое задание 
+            </button>
+            <button id="main__btn-2" class="main__btn-2" onclick="plan()">
+                Тестирование к разделу 4
+            </button>
+        </div>
+
+<!----------------Блок с рамкой (Практические занятия)----------------->
+        <div id="main__main-box" class="main__main-box">
+
+            <div class="main__answer-box">
+                <object data="" class="main__object">
+                    <embed class="main__object" src="../pdf/Pr_04_min.pdf" >
+                </object>
+                <div class="main__answer" id="main__answer">
+                 <span> ОТВЕТ 1:</span>
+                 <br> действия в рамках текущей работы ПФР по обсуждению конфиденциальных сведений о работниках не являются нарушением, если они не предоставлены третьим лицам. Перечень сведений конфиденциального характера утвержден Указ Президента РФ от 06.03.1997 N 188 (ред. от 13.07.2015) "Об утверждении Перечня сведений конфиденциального характера". Этот перечень распространяется на информацию и о работниках ПФР. Представление работниками, замещающими должности в ПФР и его территориальных органах, сведений о доходах, расходах, об имуществе и обязательствах имущественного характера, регулируется Постановлением Правления ПФР от 06.06.2018 N 293п.
+                 <br>
+                 <span> ОТВЕТ 2:</span>
+                 <br>
+                 По запросам прокуратуры сведения могут предоставлять любые учреждения, если эти запросы связаны с функциями прокуратуры и необходимы для их реализации, информационного обеспечения (ст. 22 Федерального закона от 17.01.1992 N 2202-1 (ред. от 06.02.2020) "О прокуратуре Российской Федерации"). В то же время прокурор обязан принять меры в целях неразглашения служебной информации.
+                 <br>
+                 <span> ОТВЕТ 3:</span> <br>
+                 Сообщенные на конференции ведения не носят конфиденциального характера, ведь речь не идет, например, о конкретных сведениях о доходах, расходах, об имуществе и обязательствах имущественного характера работников ПФР. Более того, часть подобных сведений – открытая информация, поскольку размещена на сайте ПФ РФ. Порядок размещения сведений о доходах, расходах, об имуществе и обязательствах имущественного характера отдельных категорий лиц и членов их семей на официальных сайтах федеральных государственных органов, органов государственной власти субъектов РФ и организаций и предоставления этих сведений общероссийским средствам массовой информации для опубликования, утвержденный Указом Президента РФ от 08.07.2013 N 613 (ред. от 15.07.2015), применяется к сведениям и о работниках ПФР. Перечень сведений конфиденциального характера утвержден Указ Президента РФ от 06.03.1997 N 188 (ред. от 13.07.2015) "Об утверждении Перечня сведений конфиденциального характера". Этот перечень распространяется на информацию и о работниках ПФР.
+                <br>
+                <span> ОТВЕТ 4:</span> <br>
+                Вмешательств в доходы работников ПФР нет, поскольку чтобы такое вмешательство в данном случае если осуществить – то на основании специального закона, а не просто указанием в бюджете соответствующей обязанности работника ПФР. Более того, указанное вмешательство незаконно, поскольку никто не может быть лишен своего имущества (в том числе денежных средств), за исключением случаев, установленных законом (ст. 35 Конституции РФ). Однако в приведенной ситуации нарушены требования Бюджетного кодекса РФ к содержанию, составлению закона о бюджете ПФР – в части видов доходов (раздел 2 Бюджетного кодекса РФ).
+                <br>
+                <span> ОТВЕТ 5:</span> <br>
+                Действия ПФР законны. Порядок, точнее, процедуры представления гражданами, претендующими на замещение должностей в ПФР и его территориальных органах, и работниками, замещающими должности в ПФР и его территориальных органах, сведений о доходах, расходах, об имуществе и обязательствах имущественного характера, регулируется Постановлением Правления ПФР от 06.06.2018 N 293п. Предусмотренные процедуры применяются к более широкому кругу лиц, нежели работники ПФР: также к супругам и несовершеннолетним детям. Круг обязанных лиц детализирован Постановлением Правления ПФР от 04.12.2017 N 772п "Об утверждении Перечня должностей в Пенсионном фонде Российской Федерации и его территориальных органах, при назначении на которые граждане и при замещении которых работники обязаны представлять сведения о своих доходах, об имуществе и обязательствах имущественного характера, а также сведения о доходах, об имуществе и обязательствах имущественного характера своих супруги (супруга) и несовершеннолетних детей". 
+                </div>
+
+                <div class="main__btn-sec">
+                    <button id="main__show-answer"  class="start-cont__btn" onclick="answer()">Показать ответ</button>
+                    <button class="pract__btn start-cont__btn">
+                        <a target="blank" href="../pdf/Pr_04_min.pdf" download>
+                            Скачать документ на устройство
+                        </a>
+                        
+                    </button>
+                </div>
+            </div>
+            
+           
+
+          
+        </div>
+
+        
+
+<!--------------------------ТЕСТИРОВАНИЕ ------------------------------------------>
+
+        <div id="main__main-box-2" class="main__main-box-2 test">
+
+ <!--------------------------ЛЕВЫЙ БЛОК С ВОПРОСАМИ  ------------------------------------------>            
+           <div id="test__block-left">
+                <p id="text-1-1" class="main__text-cont">
+                    Для начала тестирования нажмите кнопку ПРОДОЛЖИТЬ
+                </p>
+                <button id="btn-1-1" class="test__btn-strt" id="count" onclick="start()">Продолжить</button>
+               
+
+                <form  name="myform" class="myform">
+
+                    <div class="q1__box" id="q1__box">
+                        <p><span class="red">Вопрос 1</span> из 7</p>
+                        
+                        <label class="text-h1 form__label" >Представление работниками системы ПФР сведений о доходах, расходах, об имуществе и обязательствах имущественного характера и членов своей семьи относится к обязанностям какого характера?</label> <br>
+                      <ul class="form__input">
+                          <li class="q1__answ user">
+                            <input  id="a-1" type="radio" name="q1" value="b" onclick="qq()"> 
+                            <label class="l-1 l-b-1" for="a-1"> Имущественного</label> <br>
+                          </li>
+                          <li class="q1__answ">
+                            <input id="a-2"  type="radio" name="q1" value="a" onclick="qq()"> 
+                            <label class="l-2 l-a-1" for="a-2"> Информационного</label> 
+                        </li>
+                          <li class="q1__answ">
+                            <input id="a-3"  type="radio" name="q1" value="c" onclick="qq()"> 
+                            <label  class="l-1 l-c-1" for="a-3">Дисциплинарно-служебного</label> 
+                        </li>
+                         
+                      </ul>
+             
+                    </div>
+
+                    <div class="q1__box" id="q2__box">
+                        <p><span class="red">Вопрос 2</span> из 7</p>
+                        
+                        <label class="text-h1 form__label" >Какие управленческие решения работников ПФР относятся к мерам по выполнению обязанностей представлять сведения о своих доходах, имущественных обязательствах, доходах членов семьи и связанных с этим обязанностей:</label> <br>
+                      <ul class="form__input">
+                          <li class="q1__answ">
+                            <input id="a-5" type="radio" name="q2"  value="a"  onclick="qq()"> 
+                            <label class=" l-2 l-a-2" for="a-5"> Представление требуемых сведений о доходах в соответствии с законом</label> <br>
+                          </li>
+                          <li class="q1__answ">
+                            <input id="a-6"  type="radio" name="q2" value="c" onclick="qq()"> 
+                            <label class="l-1 l-c-2" for="a-6">Разработка финансовых планов внутрисемейного бюджета относительно того, какую информацию представлять о деньгах семьи в ПФР </label> 
+                        </li>
+                          <li class="q1__answ">
+                            <input id="a-7"  type="radio" name="q2" value="b" onclick="qq()"> 
+                            <label  class="l-1 l-b-2 " for="a-7">Координация усилий относительно снижения уровня иных доходов, помимо заработной платы в ПФР</label> 
+                          </li>
+                      </ul>
+             
+                    </div>
+
+                    <div class="q1__box" id="q3__box">
+                        <p><span class="red">Вопрос 3</span> из 7</p>
+                        
+                        <label class="text-h1 form__label" >В настоящее время представление работниками системы ПФР сведений о доходах регламентируется: </label> <br>
+                      <ul class="form__input">
+                          
+                          <li class="q1__answ">
+                            <input id="a-10"  type="radio" name="q3" value="c" onclick="qq()"> 
+                            <label class="l-1 l-c-3" for="a-10">Кодексом этики и служебного поведения работника системы ПФР, утвержденного Правлением ПФР </label> 
+                        </li>
+                          <li class="q1__answ">
+                            <input id="a-11"  type="radio" name="q3" value="b"   onclick="qq()"> 
+                            <label  class="l-1 l-b-3 " for="a-11">Различными подзаконными актами Правления ПФР, регулирующими обязанности работников системы ПФР</label> 
+                          </li>
+
+                          <li class="q1__answ">
+                            <input id="a-9" type="radio" name="q3" value="a" onclick="qq()"> 
+                            <label class=" l-2 l-a-3" for="a-9"> Постановлением Правления ПФР, специально принятым по данному вопросу </label> <br>
+                          </li>
+                      </ul>
+             
+                    </div>
+
+                    <div class="q1__box" id="q4__box">
+                        <p><span class="red">Вопрос 4</span> из 7</p>
+                        
+                        <label class="text-h1 form__label" >Работники системы ПФР представляют сведения о доходах, расходах, об имуществе и обязательствах имущественного характера и членов своей семьи при назначении на должности в ПФР и его территориальные органы, назначение на которые осуществляется Правлением ПФР, Председателем Правления ПФР, в …</label> <br>
+                      <ul class="form__input">
+
+                        <li class="q1__answ">
+                            <input id="a-14"  type="radio" name="q4" value="a" onclick="qq()"> 
+                            <label  class="l-2 l-a-4" for="a-14">в Департамент кадровой политики</label> 
+                        </li>
+                          <li class="q1__answ">
+                            <input id="a-13" type="radio" name="q4" value="b" onclick="qq()"> 
+                            <label class="l-1 l-b-4" for="a-13">В кадровую службу межрегионального территориального органа ПФР </label> <br>
+                          </li>
+                        
+                          <li class="q1__answ">
+                            <input id="a-15"  type="radio" name="q4" value="c" onclick="qq()"> 
+                            <label class="l-1 l-c-4"  for="a-15">В кадровую службу межрегионального территориального органа ПФР</label> 
+                        </li>
+                          
+                      </ul>
+             
+                    </div>
+
+                    <div class="q1__box" id="q5__box">
+                        <p><span class="red">Вопрос 5</span> из 7</p>
+                        
+                        <label class="text-h1 form__label" >Работники системы ПФР представляют сведения о доходах за отчетный период </label> <br>
+                      <ul class="form__input">
+                          <li class="q1__answ">
+                            <input id="a-17" type="radio" name="q5" value="c"   onclick="qq()"> 
+                            <label  class=" l-1  l-c-5" for="a-17"> Ограниченный кварталом</label> <br>
+                          </li>
+                          <li class="q1__answ">
+                            <input id="a-18"  type="radio" name="q5"  value="a" onclick="qq()"> 
+                            <label class=" l-2  l-a-5 " for="a-18">С 1 января по 31 декабря</label> 
+                        </li>
+                          <li class="q1__answ">
+                            <input id="a-19"  type="radio" name="q5"  value="b" onclick="qq()"> 
+                            <label class="l-1 l-b-5" for="a-19">Ограниченный пределом одного месяца</label> 
+                        </li>
+                         
+                      </ul>
+             
+                    </div>
+
+                    <div class="q1__box" id="q6__box">
+                        <p><span class="red">Вопрос 6</span> из 7</p>
+                        
+                        <label class="text-h1 form__label" >В ПФР работники системы ПФР представляют сведения о </label> <br>
+                      <ul class="form__input">
+                          <li class="q1__answ">
+                            <input id="a-19" type="radio" name="q6"  value="a"   onclick="qq()"> 
+                            <label  class="l-2  l-a-6" for="a-19"> Доходах супруги</label> <br>
+                          </li>
+                          <li class="q1__answ">
+                            <input id="a-20"  type="radio" name="q6"   value="c" onclick="qq()"> 
+                            <label class="  l-1  l-c-6   " for="a-20">Доходах родителей</label> 
+                        </li>
+                          <li class="q1__answ">
+                            <input id="a-21"  type="radio" name="q6"  value="b" onclick="qq()"> 
+                            <label class="l-1 l-b-6" for="a-21">Имуществе всех близких родственников</label> 
+                        </li>
+                         
+                      </ul>
+             
+                    </div>
+
+                    <div class="q1__box" id="q7__box">
+                        <p><span class="red">Вопрос 7</span> из 7</p>
+                        
+                        <label class="text-h1 form__label" >Представление сведений о доходах, расходах, об имуществе и обязательствах имущественного характера и членов своей семьи установление для работников системы ПФР</label> <br>
+                      <ul class="form__input">
+                          <li class="q1__answ">
+                            <input id="a-2" type="radio" name="q7" value="c"   onclick="qq()"> 
+                            <label  class=" l-1  l-c-7" for="a-22"> Всех категорий</label> <br>
+                          </li>
+                          <li class="q1__answ">
+                            <input id="a-24"  type="radio" name="q7"  value="a" onclick="qq()"> 
+                            <label class="l-2  l-a-7 " for="a-24">Отдельных категорий, согласно утвержденному перечню</label> 
+                        </li>
+                          <li class="q1__answ">
+                            <input id="a-23"  type="radio" name="q7"  value="b"   onclick="qq()"> 
+                            <label class=" l-1  l-b-7 " for="a-23">Отдельных категорий, по запросу Правления ПФР</label> 
+                        </li>
+                         
+                         
+                      </ul>
+             
+                    </div>
+
+
+                  
+
+
+                </form>
+                <div id="pract__res" class="pract__res">
+                    <span class="text-res text-h1">
+                        Результат Вашего тестирования: 
+                    </span>
+                    <span class="pract__res-int red text-h1">
+
+                    </span> <br>
+                    <button id="res__btn-print" class="start-cont__btn myprint" > Распечатать результаты теста</button>
+
+                    <div class="res-print ">
+                        <span class="text-res text-h1">
+                            Результат Вашего тестирования: 
+                        </span>
+                        <span class="pract__res-int-print red text-h1">
+
+                        </span> <br>
+                        1. Представление работниками системы ПФР сведений о доходах, расходах, об имуществе и обязательствах имущественного характера и членов своей семьи относится к обязанностям какого характера? <br> <br>
+                        ВАШ ОТВЕТ: <br>
+                        <span class="ans-1-pr">
+
+                        </span> <br> <br> <br>
+                         2. Какие управленческие решения работников ПФР относятся к мерам по выполнению обязанностей представлять сведения о своих доходах, имущественных обязательствах, доходах членов семьи и связанных с этим обязанностей: <br> <br>
+                         ВАШ ОТВЕТ: <br>
+                        <span class="ans-2-pr">
+                            
+                        </span>  <br> <br> <br>
+
+                        3. В настоящее время представление работниками системы ПФР сведений о доходах регламентируется:  <br> <br>
+                        ВАШ ОТВЕТ: <br>
+                        <span class="ans-3-pr">
+                            
+                        </span>  <br> <br> <br>
+                        4. Работники системы ПФР представляют сведения о доходах, расходах, об имуществе и обязательствах имущественного характера и членов своей семьи при назначении на должности в ПФР и его территориальные органы, назначение на которые осуществляется Правлением ПФР, Председателем Правления ПФР, в … <br> <br>
+                        ВАШ ОТВЕТ: <br>
+                        <span class="ans-4-pr">
+                            
+                        </span>  <br> <br> <br>
+                        5.Работники системы ПФР представляют сведения о доходах за отчетный период  <br> <br>
+                        ВАШ ОТВЕТ: <br>
+                        <span class="ans-5-pr">
+                            
+                        </span>  <br> <br> <br>
+                        6.В ПФР работники системы ПФР представляют сведения о  <br> <br>
+                        ВАШ ОТВЕТ: <br>
+                        <span class="ans-6-pr">
+                            
+                        </span>  <br> <br> <br>
+                        7.Представление сведений о доходах, расходах, об имуществе и обязательствах имущественного характера и членов своей семьи установление для работников системы ПФР<br> <br>
+                        ВАШ ОТВЕТ: <br>
+                        <span class="ans-7-pr">
+                            
+                        </span> 
+                        
+
+                    </div>
+
+                </div>
+                
+                <button id="q1-question" class="start-cont__btn" onclick="check1()"  disabled >Продолжить</button>
+                    
+               
+            </div>
+ <!--------------------------ПРАВЫЙ БЛОК С ВОПРОСАМИ  ------------------------------------------>                    
+            <div id="test__block-right">
+                <ul class="test__raz">
+                    <li class="test__rz-li" id="q-1-a-1">
+                        <span id="q-1-a-1-a" class="test__quest-li  text-h1">
+                           Вопрос 1 
+                           <img id="a-r-1-1" src="../img/right-ico.png" alt="Правильный ответ"> 
+                           <img id="a-f-1-1"  src="../img/false-ico.png" alt="Неправильный ответ">
+                        </span> <br>
+                        Представление работниками системы ПФР ...
+                    </li>
+                    <li id="q-1-a-2" class="test__rz-li">
+                        <span id="q-1-a-2-a" class="test__quest-li text-h1">
+                            Вопрос 2
+                            <img id="a-r-1-2" src="../img/right-ico.png" alt="Правильный ответ"> 
+                           <img id="a-f-1-2" src="../img/false-ico.png" alt="Неправильный ответ">
+                        </span> <br>
+                        Какие управленческие решения ...
+                    </li>
+                    <li id="q-1-a-3" class="test__rz-li">
+                        <span id="q-1-a-3-a"  class="test__quest-li  text-h1">
+                            Вопрос 3
+                            <img id="a-r-1-3" src="../img/right-ico.png" alt="Правильный ответ"> 
+                           <img id="a-f-1-3" src="../img/false-ico.png" alt="Неправильный ответ">
+                        </span><br>
+                        В настоящее время представление ...
+                    </li>
+                    <li id="q-1-a-4" class="test__rz-li">
+                        <span id="q-1-a-4-a" class="test__quest-li  text-h1">
+                            Вопрос 4
+                            <img id="a-r-1-4" src="../img/right-ico.png" alt="Правильный ответ"> 
+                           <img id="a-f-1-4" src="../img/false-ico.png" alt="Неправильный ответ">
+                        </span><br>
+                        Работники системы ПФР представляют  ...
+                    </li>
+                    <li id="q-1-a-5" class="test__rz-li">
+                        <span id="q-1-a-5-a" class="test__quest-li  text-h1">
+                            Вопрос 5
+                            <img id="a-r-1-5" src="../img/right-ico.png" alt="Правильный ответ"> 
+                           <img id="a-f-1-5" src="../img/false-ico.png" alt="Неправильный ответ">
+                        </span><br>
+                        Работники системы ПФР представляют сведения  ...
+                    </li>
+                    <li id="q-1-a-6" class="test__rz-li">
+                        <span id="q-1-a-6-a" class="test__quest-li  text-h1">
+                            Вопрос 6
+                            <img id="a-r-1-6" src="../img/right-ico.png" alt="Правильный ответ"> 
+                           <img id="a-f-1-6" src="../img/false-ico.png" alt="Неправильный ответ">
+                        </span><br>
+                        В ПФР работники системы ПФР   ...
+                    </li>
+                    <li id="q-1-a-7" class="test__rz-li">
+                        <span id="q-1-a-7-a" class="test__quest-li  text-h1">
+                            Вопрос 7
+                            <img id="a-r-1-7" src="../img/right-ico.png" alt="Правильный ответ"> 
+                           <img id="a-f-1-7" src="../img/false-ico.png" alt="Неправильный ответ">
+                        </span><br>
+                        Представление сведений о доходах,...
+                    </li>
+                    
+                   
+                </ul>
+               
+
+            </div>
+
+            <script>
+                //скрипт на выбор ответа
+                function qq(){
+                    document.getElementById("q1-question").style.opacity = "1";
+                    $('#q1-question').removeAttr("disabled");
+
+                
+                    $(".l-1").css({
+                            'opacity' : '0.3'
+                        });    
+                    
+                    $(".l-2").css({
+                            'color' : '#0283FD',
+                            'opacity' : '1',
+                            'font-weight' : 'bold'
+                        });        
+                    $("input").prop('disabled', true);           
+
+                }
+                //скрипт на начало теста 
+                function start(){
+                    document.getElementById("text-1-1").style.display = "none";
+                    document.getElementById("btn-1-1").style.display = "none";
+                    document.myform.style.display = "block";
+                    document.getElementById("q1-question").style.display = "block";
+                }
+                //скрипты на каждый вопрос
+                function q2__style(){
+                    document.getElementById("q3__box").style.display = "block";
+                    document.getElementById("q1-question").style.opacity = "0.3";
+                    document.getElementById("q2__box").style.display = "none";
+
+                    $("#q-1-a-2").css({
+                        'color': '#8D9EB9'
+                    });
+                    $("#q-1-a-2-a").css({
+                        'color': '#8D9EB9'
+                    });
+                    $('#q1-question').removeAttr("disabled");
+                }
+
+                function q3__style(){
+                    document.getElementById("q4__box").style.display = "block";
+                    document.getElementById("q1-question").style.opacity = "0.3";
+                    document.getElementById("q3__box").style.display = "none";
+
+                    $("#q-1-a-3").css({
+                        'color': '#8D9EB9'
+                    });
+                    $("#q-1-a-3-a").css({
+                        'color': '#8D9EB9'
+                    });
+                    $('#q1-question').removeAttr("disabled");
+                }
+
+                function q4__style(){
+                    document.getElementById("q5__box").style.display = "block";
+                    document.getElementById("q1-question").style.opacity = "0.3";
+                    document.getElementById("q4__box").style.display = "none";
+
+                    $("#q-1-a-4").css({
+                        'color': '#8D9EB9'
+                    });
+                    $("#q-1-a-4-a").css({
+                        'color': '#8D9EB9'
+                    });
+                    $('#q1-question').removeAttr("disabled");
+                }
+                 function q5__style(){
+                    document.getElementById("q6__box").style.display = "block";
+                    document.getElementById("q1-question").style.opacity = "0.3";
+                    document.getElementById("q5__box").style.display = "none";
+
+                    $("#q-1-a-5").css({
+                        'color': '#8D9EB9'
+                    });
+                    $("#q-1-a-5-a").css({
+                        'color': '#8D9EB9'
+                    });
+                    $('#q1-question').removeAttr("disabled");
+                }
+                function q6__style(){
+                    document.getElementById("q7__box").style.display = "block";
+                    document.getElementById("q1-question").style.opacity = "0.3";
+                    document.getElementById("q6__box").style.display = "none";
+
+                    $("#q-1-a-6").css({
+                        'color': '#8D9EB9'
+                    });
+                    $("#q-1-a-6-a").css({
+                        'color': '#8D9EB9'
+                    });
+                    $('#q1-question').removeAttr("disabled");
+                }
+               
+
+
+                function q7__style(){
+                    document.getElementById("pract__res").style.display = "block";
+                    document.getElementById("q1-question").style.display = "none";
+                    document.getElementById("q7__box").style.display = "none";
+
+                    $("#q-1-a-7").css({
+                        'color': '#8D9EB9'
+                    });
+                    $("#q-1-a-7-a").css({
+                        'color': '#8D9EB9'
+                    });
+                    
+                }
+
+
+
+
+                //скрипт проверки
+                function check1(){
+                    $(".l-1").css({
+                            'opacity' : '1'
+                        });    
+                    
+                    $(".l-2").css({
+                            'color' : '#8D9EB9',
+                            'opacity' : '1',
+                            'font-weight' : 'normal'
+                        });    
+                    $("input").prop('disabled', false);    
+                    var q1 = document.myform.q1.value;
+                    var q2 = document.myform.q2.value;
+                    var q3 = document.myform.q3.value;
+                    var q4 = document.myform.q4.value;
+                    var q5 = document.myform.q5.value;
+                    var q6 = document.myform.q6.value;
+                    var q7 = document.myform.q7.value;
+                 
+                   
+
+                    var count = 0;
+                    
+                    if(q1 == 'a'){
+                        document.getElementById("a-r-1-1").style.display = "block";
+                        count ++;
+                        var res_1= $(".l-a-1").text();
+
+                    } 
+                    else if(q1 == 'b') 
+                    {
+                        document.getElementById("a-f-1-1").style.display = "block";
+                        var res_1= $(".l-b-1").text();
+
+                    }else if(q1 == 'c')
+                     {
+                        document.getElementById("a-f-1-1").style.display = "block";
+                        var res_1= $(".l-c-1").text();
+                    } 
+                    document.getElementById("q2__box").style.display = "block";
+                    document.getElementById("q1-question").style.opacity = "0.3";
+                    document.getElementById("q1__box").style.display = "none";
+
+                   
+                    if(q2 == 'a'){
+                        document.getElementById("a-r-1-2").style.display = "block";
+                        q2__style();
+                        count ++;
+                        var res_2= $(".l-a-2").text();
+                    } else if(q2 == 'b'){
+                        document.getElementById("a-f-1-2").style.display = "block";
+                        q2__style();
+                        var res_2= $(".l-b-2").text();
+                    } else if(q2 == 'c'){
+                        document.getElementById("a-f-1-2").style.display = "block";
+                        q2__style();
+                        var res_2= $(".l-c-2").text();
+                    }
+
+                    if(q3 == 'a'){
+                        document.getElementById("a-r-1-3").style.display = "block";
+                        q3__style();
+                        count ++;
+                        var res_3= $(".l-a-3").text();
+                    } else if(q3 == 'b'){
+                        document.getElementById("a-f-1-3").style.display = "block";
+                        q3__style();
+                        var res_3= $(".l-b-3").text();
+                    }else if(q3 == 'c'){
+                        document.getElementById("a-f-1-3").style.display = "block";
+                        q3__style();
+                        var res_3= $(".l-c-3").text();
+                    }
+                    if(q4 == 'a'){
+                        document.getElementById("a-r-1-4").style.display = "block";
+                        q4__style();
+                        count ++;
+                        var res_4= $(".l-a-4").text();
+                    } else if(q4 == 'b'){
+                        document.getElementById("a-f-1-4").style.display = "block";
+                        q4__style();
+                        var res_4= $(".l-b-4").text();
+                    } else if(q4 == 'c'){
+                        document.getElementById("a-f-1-4").style.display = "block";
+                        q4__style();
+                        var res_4= $(".l-c-4").text();
+                    }  
+                    if(q5 == 'a'){
+                        document.getElementById("a-r-1-5").style.display = "block";
+                        q5__style();
+                        count ++;
+                        var res_5= $(".l-a-5").text();
+                    } else if(q5 == 'b'){
+                        document.getElementById("a-f-1-5").style.display = "block";
+                        q5__style();
+                        var res_5= $(".l-b-5").text();
+                    } else if(q5 == 'c'){
+                        document.getElementById("a-f-1-5").style.display = "block";
+                        q5__style();
+                        var res_5= $(".l-c-5").text();
+                    }  
+                    
+                    if(q6 == 'a'){
+                        document.getElementById("a-r-1-6").style.display = "block";
+                        q6__style();
+                        count ++;
+                        var res_6= $(".l-a-6").text();
+                    } else if(q6 == 'b'){
+                        document.getElementById("a-f-1-6").style.display = "block";
+                        q6__style();
+                        var res_6= $(".l-b-6").text();
+                    } else if(q6 == 'c'){
+                        document.getElementById("a-f-1-6").style.display = "block";
+                        q6__style();
+                        var res_6= $(".l-c-6").text();
+                    }  
+                    
+                   
+                    if(q7 == 'a'){
+                        document.getElementById("a-r-1-7").style.display = "block";
+                        q7__style();
+                        count ++;
+                        var res_7= $(".l-a-7").text();
+                        var res = Math.round( (100 * count) / 7 );
+                        document.querySelector('.pract__res-int').textContent = "   " + res + "%";
+                    } else if(q7 == 'b'){
+                        document.getElementById("a-f-1-7").style.display = "block";
+                        q7__style();
+                        var res_7= $(".l-b-7").text();
+                        var res = Math.round( (100 * count) / 7 );
+                        document.querySelector('.pract__res-int').textContent = "   " + res + "%";
+                    } else if(q7 == 'c'){
+                        document.getElementById("a-f-1-7").style.display = "block";
+                        q7__style();
+                        var res_7= $(".l-c-7").text();
+                        var res = Math.round( (100 * count) / 7);
+                        document.querySelector('.pract__res-int').textContent = "   " + res + "%";
+                    } 
+
+                   
+                    $("#q-1-a-1").css({
+                        'color': '#8D9EB9'
+                    });
+                    $("#q-1-a-1-a").css({
+                        'color': '#8D9EB9'
+                    });
+                    $('#q1-question').removeAttr("disabled");
+                    localStorage.setItem("res", res);
+                    localStorage.setItem("res_1", res_1);
+                    localStorage.setItem("res_2", res_2);
+                    localStorage.setItem("res_3", res_3);
+                    localStorage.setItem("res_4", res_4);
+                    localStorage.setItem("res_5", res_5);
+                    localStorage.setItem("res_6", res_6);
+                    localStorage.setItem("res_7", res_7);
+                   
+                
+                }
+               
+            
+            </script>
+
+
+<!-- 2. Распечатать любой элемент страницы -->
+<script>
+$(function(){
+$('.myprint').click(function(){             //при клике на что срабатывает печать
+   // document.querySelector('.res-print').style.display = "block";
+    document.querySelector('.pract__res-int-print').textContent = "   " + localStorage.getItem("res") + "%";
+    document.querySelector('.ans-1-pr').textContent = localStorage.getItem("res_1");
+    document.querySelector('.ans-2-pr').textContent = localStorage.getItem("res_2");
+    document.querySelector('.ans-3-pr').textContent = localStorage.getItem("res_3");
+    document.querySelector('.ans-4-pr').textContent = localStorage.getItem("res_4");
+    document.querySelector('.ans-5-pr').textContent = localStorage.getItem("res_5");
+    document.querySelector('.ans-6-pr').textContent = localStorage.getItem("res_6");
+    document.querySelector('.ans-7-pr').textContent = localStorage.getItem("res_7");
+ 
+var html_to_print=$('.res-print').html();    //что печатаем
+var iframe=$('<iframe id="print_frame">');
+    
+$('body').append(iframe);
+var doc = $('#print_frame')[0].contentDocument || $('#print_frame')[0].contentWindow.document;
+var win = $('#print_frame')[0].contentWindow || $('#print_frame')[0];
+doc.getElementsByTagName('body')[0].innerHTML=html_to_print;
+win.print();
+$('iframe').remove();
+});
+});
+</script>
+<style>#print_frame{display: none;}</style>
+
+      
+        </div>
+    </section> 
     </main>
 
 </body>
