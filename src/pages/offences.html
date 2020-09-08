@@ -2,9 +2,12 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>07 правонарушения</title>
+    <title>Раздел 7</title>
     <link rel="stylesheet" href="../style/menu_temp.css">
     <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style/system.css">
+    <script src="../style/jq.js"></script>
+    <script src="../style/jquery-1.9.1.min.js"></script>
 </head>
 <body class="body">
  <!--Скрипт на кнопку-->
@@ -18,13 +21,192 @@
             document.getElementById('nav-full').style.display = 'block';
             document.getElementById('nav-mini').style.display = 'none';
         }
+                             //---------------------СКРИПТ НА MENU 2 FULL--------------------------------------------------------
 
+                             function min_full(){
+             document.getElementById('min-menu-full').style.display = 'none';
+             document.getElementById('min-menu-mini').style.display = 'block';
+        }
+
+        function min_mini(){
+            document.getElementById('min-menu-mini').style.display = 'none';
+            document.getElementById('min-menu-full').style.display = 'block';
+        }
+//-----------------------СКРИПТ НА КНОПКИ В САБМЕНЮ----------------------------------------------------
+
+        function pres(){
+            document.getElementById('min-menu-full__btn-1').style.color = '#E0585A';
+            document.getElementById('min-menu-full__btn-2').style.color = '#1F3E76';
+            document.getElementById('min-menu-full__btn-3').style.color = '#1F3E76';
+
+            
+            document.getElementById('present').style.display = 'block';
+            document.getElementById('lection').style.display = 'none';
+            document.getElementById('pract').style.display = 'none';
+
+
+            document.getElementById('min-menu-full__btn-1').style.background = '#FAE8E9';
+            document.getElementById('min-menu-full__btn-2').style.background = 'none';
+            document.getElementById('min-menu-full__btn-3').style.background = 'none';
+
+            document.getElementById('pres-ico').style.display = 'none';
+            document.getElementById('pres-ico-red').style.display = 'block';
+            document.getElementById('pdf-ico-red').style.display = 'none';
+            document.getElementById('pract-ico-red').style.display = 'none';
+            document.getElementById('pract-ico').style.display = 'block';
+            document.getElementById('pdf-ico').style.display = 'block';
+
+            
+
+        }
+        function pres_mini(){
+            document.getElementById('pres-ico-mini').style.display = 'none';
+            document.getElementById('pres-ico-red-mini').style.display = 'block';
+            document.getElementById('pdf-ico-red-mini').style.display = 'none';
+            document.getElementById('pract-ico-red-mini').style.display = 'none';
+            document.getElementById('pract-ico-mini').style.display = 'block';
+            document.getElementById('pdf-ico-mini').style.display = 'block';
+
+            document.getElementById('min-menu-full__btn-4').style.background = '#FAE8E9';
+            document.getElementById('min-menu-full__btn-5').style.background = 'none';
+            document.getElementById('min-menu-full__btn-6').style.background = 'none';
+
+            document.getElementById('present').style.display = 'block';
+            document.getElementById('lection').style.display = 'none';
+            document.getElementById('pract').style.display = 'none';
+
+        }
+
+        function lec(){
+            document.getElementById('present').style.display = 'none';
+            document.getElementById('lection').style.display = 'block';
+            document.getElementById('pract').style.display = 'none';
+
+            document.getElementById('min-menu-full__btn-2').style.color = '#E0585A';
+            document.getElementById('min-menu-full__btn-1').style.color = '#1F3E76';
+            document.getElementById('min-menu-full__btn-3').style.color = '#1F3E76';
+
+            document.getElementById('min-menu-full__btn-2').style.background = '#FAE8E9';
+            document.getElementById('min-menu-full__btn-1').style.background = 'none';
+            document.getElementById('min-menu-full__btn-3').style.background = 'none';
+
+            document.getElementById('pres-ico').style.display = 'block';
+            document.getElementById('pres-ico-red').style.display = 'none';
+            document.getElementById('pdf-ico-red').style.display = 'block';
+            document.getElementById('pract-ico-red').style.display = 'none';
+            document.getElementById('pract-ico').style.display = 'block';
+            document.getElementById('pdf-ico').style.display = 'none';
+
+
+        }
+
+        function lec_mini(){
+            document.getElementById('pres-ico-mini').style.display = 'block';
+            document.getElementById('pres-ico-red-mini').style.display = 'none';
+            document.getElementById('pdf-ico-red-mini').style.display = 'block';
+            document.getElementById('pract-ico-red-mini').style.display = 'none';
+            document.getElementById('pract-ico-mini').style.display = 'block';
+            document.getElementById('pdf-ico-mini').style.display = 'none'; 
+
+            document.getElementById('min-menu-full__btn-5').style.background = '#FAE8E9';
+            document.getElementById('min-menu-full__btn-4').style.background = 'none';
+            document.getElementById('min-menu-full__btn-6').style.background = 'none';
+
+            document.getElementById('present').style.display = 'none';
+            document.getElementById('lection').style.display = 'block';
+            document.getElementById('pract').style.display = 'none';
+
+
+
+        }
+
+        function pract(){
+            document.getElementById('present').style.display = 'none';
+            document.getElementById('lection').style.display = 'none';
+            document.getElementById('pract').style.display = 'block';
+
+
+            document.getElementById('min-menu-full__btn-3').style.color = '#E0585A';
+            document.getElementById('min-menu-full__btn-2').style.color = '#1F3E76';
+            document.getElementById('min-menu-full__btn-1').style.color = '#1F3E76';
+
+            document.getElementById('min-menu-full__btn-3').style.background = '#FAE8E9';
+            document.getElementById('min-menu-full__btn-2').style.background = 'none';
+            document.getElementById('min-menu-full__btn-1').style.background = 'none';
+
+            document.getElementById('pres-ico').style.display = 'block';
+            document.getElementById('pres-ico-red').style.display = 'none';
+            document.getElementById('pdf-ico-red').style.display = 'none';
+            document.getElementById('pract-ico-red').style.display = 'block';
+            document.getElementById('pract-ico').style.display = 'none';
+            document.getElementById('pdf-ico').style.display = 'block';
+
+
+        }
+
+        function pract_mini(){
+            document.getElementById('present').style.display = 'none';
+            document.getElementById('lection').style.display = 'none';
+            document.getElementById('pract').style.display = 'block';
+
+            document.getElementById('pres-ico-mini').style.display = 'block';
+            document.getElementById('pres-ico-red-mini').style.display = 'none';
+            document.getElementById('pdf-ico-red-mini').style.display = 'none';
+            document.getElementById('pract-ico-red-mini').style.display = 'block';
+            document.getElementById('pract-ico-mini').style.display = 'none';
+            document.getElementById('pdf-ico-mini').style.display = 'block';
+
+            document.getElementById('min-menu-full__btn-6').style.background = '#FAE8E9';
+            document.getElementById('min-menu-full__btn-5').style.background = 'none';
+            document.getElementById('min-menu-full__btn-4').style.background = 'none';
+        }
+
+
+
+        function about(){
+            
+            document.getElementById('main__main-box-2').style.display = 'none';
+            document.getElementById('main__main-box').style.display = 'block';
+            document.getElementById('main__btn-1').style.color = '#E0585A';
+            document.getElementById('main__btn-2').style.color = '#8D9EB9';
+            document.getElementById('main__btn-1').style.border = '2px solid #E1E9F5';
+            document.getElementById('main__btn-1').style.borderBottom = '2px solid #fff';
+            document.getElementById('main__btn-2').style.border = 'none';
+            document.getElementById('main__btn-2').style.borderBottom = '2px solid #E1E9F5';
+        }
+
+        function plan(){
+            document.getElementById('main__main-box').style.display = 'none';
+            document.getElementById('main__main-box-2').style.display = 'flex';
+            document.getElementById('main__btn-1').style.color = '#8D9EB9';
+            document.getElementById('main__btn-1').style.border = 'none';
+            document.getElementById('main__btn-2').style.color = '#E0585A';
+            document.getElementById('main__btn-2').style.border = '2px solid #E1E9F5';
+            document.getElementById('main__btn-2').style.borderBottom = '2px solid #fff';
+            document.getElementById('main__btn-1').style.borderBottom = 'none';
+
+            full();
+        }
+
+
+// СКРИПТ НА НИЖНИЕ КНОПКИ ПРАКТИЧЕСКОГО ЗАНЯТИЯ 
+        function answer(){
+            $(".main__object").css({
+                'flex': '1',
+                'height': 'auto'
+            });
+            $(".main__answer").css({
+                'display': 'block',
+                
+            });
+            
+        }
     </script>
 
     <!--Меню полное-->
     <nav id="nav-full" class="nav-full">
         <div class="nav-full__logo-btn-box">
-            <img src="../img/logo-pfr.png" alt="Логотип ПФР" class="nav-full__logo-pfr">
+            <a href="../../START.html">  <img src="../img/logo-pfr.png" alt="Логотип ПФР" class="nav-full__logo-pfr"> </a>
             <button id="nav-full__back-btn"  onclick="full()"><img src="../img/back_ico.png" alt="Кнопка сворачивания меню" class="nav-full__back-btn"></button>
         </div>
         <h1 class="nav-full__h1">Курс «‎Профилактика коррупции»‎</h1>
@@ -62,7 +244,914 @@
    
     <!--Контент-->
     <main class="main">
+         <!------------------МЕНЮ 2 FULL----------------------------------------------------------->
+       <section id="min-menu-full" class="min-menu-full">
+        <button id="min-menu-full__close" onclick="min_full()">
+            <img src="../img/back_ico.png" alt="Иконка открытия второго меню">
+        </button>
+        <p class="text-h1  red min-menu-full__h1">
+            Раздел 7
+        </p>
+        <p class="text-h1 min-menu-full__h2">
+            Основные виды правонарушений коррупционного характера в системе Пенсионного фонда Российской Федерации. Принятие мер юридической ответственности за коррупционные правонарушения  </p>
+        <div class="min-menu-full_btn-menu">
+            <button class="text-h1 active-btn red" id="min-menu-full__btn-1"  onclick="pres()">
+                <img id="pres-ico-red" src="../img/pres-ico.png" alt="Иконка презентации">
+                <img id="pres-ico" src="../img/prec-ico-red.png" alt="Иконка презентации серая">
+
+                Презентация
+            </button>
+
+            <button class="text-h1" id="min-menu-full__btn-2"  onclick="lec()">
+                <img id="pdf-ico" src="../img/pdf-ico.png" alt="Иконка пдф">
+                <img id="pdf-ico-red" src="../img/pdf-ico-red.png" alt="Иконка пдф красная">
+
+                Лекция
+            </button>
+
+            <button class="text-h1" id="min-menu-full__btn-3"  onclick="pract()">
+                <img id="pract-ico" src="../img/pract-ico.png" alt="Иконка практических занятиц">
+                <img id="pract-ico-red" src="../img/pract-ico-red.png" alt="Иконка практических занятиц красная">
+
+                Практическое занятие
+            </button>
+        </div>
+    </section>
+<!------------------МЕНЮ 2 MINI----------------------------------------------------------->
+    <section id="min-menu-mini" class="min-menu-mini">
+        <button id="min-menu-mini__btn-mini" onclick="min_mini()">
+            <img src="../img/forward-btn.png" alt="Иконка расскрытия меню 2">
+        </button>
+
+        <div class="min-menu-full_btn-menu">
+            <button class="text-h1 active-btn btn-mini" id="min-menu-full__btn-4" onclick="pres_mini()">
+                <img id="pres-ico-red-mini" src="../img/pres-ico.png" alt="Иконка презентации">
+                <img id="pres-ico-mini" src="../img/prec-ico-red.png" alt="Иконка презентации серая">
+            </button>
+
+            <button class="text-h1" id="min-menu-full__btn-5" onclick="lec_mini()">
+                <img id="pdf-ico-mini" src="../img/pdf-ico.png" alt="Иконка пдф">
+                <img id="pdf-ico-red-mini" src="../img/pdf-ico-red.png" alt="Иконка пдф красная">
+            </button>
+
+            <button class="text-h1" id="min-menu-full__btn-6"  onclick="pract_mini()">
+                <img id="pract-ico-mini" src="../img/pract-ico.png" alt="Иконка практических занятиц">
+                <img id="pract-ico-red-mini" src="../img/pract-ico-red.png" alt="Иконка практических занятиц красная">
+
+            </button>
+        </div>
+    </section>
+
+<!-----------------ПРЕЗЕНТАЦИЙ БЛОК ----------------------------------------------------------->
+    <section id="present">
+        <!-----------------СЛАЙДЕР НАЧАЛО ----------------------------------------------------------->
+        <div class="test__cont">
+
+        </div>
         
+        <div class="arr">
+            <a href="#" class="arrow_wrap arrow-rew"><img src="../img/left.png" alt="Стрелка влево"></a>
+            <span class="arr_text">
+                <span class="text-slide">1</span> <span class="next-slide"></span>
+            </span>
+            <a href="#" class="arrow_wrap arrow-fwd"><img src="../img/right.png" alt="Стрелка влево"></a>
+        </div>
+        <div class="main_wraper">
+            <div class="view_wraper">
+              <div class="view_image"></div>
+             
+            </div>
+            <img src="../img/pres_7/1.png" alt="1">
+            <img src="../img/pres_7/2.png" alt="2">
+            <img src="../img/pres_7/3.png" alt="3">
+            <img src="../img/pres_7/4.png" alt="4">
+            <img src="../img/pres_7/5.png" alt="5">
+            <img src="../img/pres_7/6.png" alt="6">
+            <img src="../img/pres_7/7.png" alt="7">
+            <img src="../img/pres_7/8.png" alt="8">
+            <img src="../img/pres_7/9.png" alt="9">
+            <img src="../img/pres_7/10.png" alt="10">
+            
+           
+            
+          </div>
+        
+        
+          <script>
+              var test = document.querySelector('.test__cont');
+          //  var oViewImage = document.querySelector('.view_image');
+            var aImages = Array.prototype.slice.call(document.querySelectorAll('.main_wraper > img'));
+            var aArrow = document.querySelectorAll('.arr > a');
+        
+        aImages.forEach(function(item, index) {
+          item.addEventListener('click', function() {
+           // oViewImage.style.backgroundImage = 'url(' + this.src + ')';
+            test.style.backgroundImage = 'url(' + this.src + ')';
+        
+            if (oSel = document.querySelector('.thumb-select')) {
+              oSel.classList.remove('thumb-select')
+            };
+            this.classList.add('thumb-select');
+            aArrow[0].classList.remove('thumb-hide');
+            aArrow[1].classList.remove('thumb-hide');
+            if (index == 0) {
+              aArrow[0].classList.add('thumb-hide');
+            }
+            if (index == aImages.length - 1) {
+              aArrow[1].classList.add('thumb-hide');
+            }
+            
+            document.querySelector('.arr_text > .text-slide').textContent = this.alt;
+            document.querySelector('.arr_text > .next-slide').textContent =" / 10";
+          });
+        });
+        
+        aArrow[0].addEventListener('click', function() {
+          let i = aImages.length;
+          while (i--) {
+            if (aImages[i].classList.contains('thumb-select')) break;
+          }
+          if (i > 0) {
+            aImages[i - 1].dispatchEvent(new Event('click'));
+            if (aImages[i - 1].classList.contains('thumb-hide')) {
+              aImages[i - 1].classList.remove('thumb-hide');
+            }
+          }
+        });
+        aArrow[1].addEventListener('click', function() {
+          let i = aImages.length;
+          while (i--) {
+            if (aImages[i].classList.contains('thumb-select')) break;
+          }
+          if (i < aImages.length - 1) {
+            aImages[i + 1].dispatchEvent(new Event('click'));
+            if (i + 1 > 7) {
+              aImages[i - 7].classList.add('thumb-hide');
+            }
+          }
+        });
+        
+        aArrow[1].dispatchEvent(new Event('click'));
+          </script>
+            
+        <!-----------------СЛАЙДЕР КОНЕЦ ----------------------------------------------------------->
+          <div class="pres__btn-box">
+              <button class="pres__btn-dwn start-cont__btn"> <a download target="blank" href="../pdf/pres_7.pptx"> Скачать презентацию</a></button>
+          </div>
+    </section>
+<!-----------------ЛЕКЦИЙ БЛОК ----------------------------------------------------------->
+    <section id="lection">
+        <div class="lec__box">
+            <object data="" class="lec__object">
+                <embed class="lec__object" src="../pdf/l-7.pdf" >
+            </object>
+        </div>
+        
+
+        <button class="lec__btn start-cont__btn">
+            <a target="blank" href="../pdf/l-7.pdf" download>
+                Скачать документ на устройство
+            </a>
+            
+        </button>
+    </section>
+    
+<!-----------------ПРАКТИЧЕСКИХ ЗАНЯТИЙ БЛОК ----------------------------------------------------------->
+    <section id="pract">
+        <div class="main__btn-box">
+            <button id="main__btn-1" class="main__btn-1" onclick="about()">
+                Практическое задание 
+            </button>
+            <button id="main__btn-2" class="main__btn-2" onclick="plan()">
+                Тестирование к разделу 7
+            </button>
+        </div>
+
+<!----------------Блок с рамкой (Практические занятия)----------------->
+        <div id="main__main-box" class="main__main-box">
+
+            <div class="main__answer-box">
+                <object data="" class="main__object">
+                    <embed class="main__object" src="../pdf/Pr_07_min.pdf" >
+                </object>
+                <div class="main__answer" id="main__answer">
+                 <span> ОТВЕТ 1:</span>
+                 <br> 
+                  в соответствии с п. 23 Кодекса этики и служебного поведения работника системы ПФР работник системы ПФР в зависимости от тяжести совершенного проступка несет дисциплинарную, административную, гражданско-правовую и уголовную ответственность в соответствии с законодательством Российской Федерации. В действиях работника бухгалтерии усматривается состав преступления: ст.  285.2 УК РФ. Нецелевое расходование средств государственных внебюджетных фондов: специфичный состав для системы ПФР, государственные учреждения которых используют бюджетные средств. В отношении преступления в системе ПФР расходование средств государственных внебюджетных фондов должностным лицом на цели, не соответствующие условиям, определенным законодательством, регулирующим их деятельность, и бюджетам указанных фондов, совершенное в крупном размере, наказывается штрафом в размере от ста тысяч до трехсот тысяч рублей или в размере заработной платы или иного дохода осужденного за период от одного года до двух лет, либо принудительными работами на срок до двух лет с лишением права занимать определенные должности или заниматься определенной деятельностью на срок до трех лет или без такового, либо арестом на срок до шести месяцев, либо лишением свободы на срок до двух лет с лишением права занимать определенные должности или заниматься определенной деятельностью на срок до трех лет или без такового. То же деяние, совершенное: группой лиц по предварительному сговору; в особо крупном размере, наказывается штрафом в размере от двухсот тысяч до пятисот тысяч рублей или в размере заработной платы или иного дохода осужденного за период от одного года до трех лет, либо принудительными работами на срок до пяти лет с лишением права занимать определенные должности или заниматься определенной деятельностью на срок до трех лет или без такового, либо лишением свободы на срок до пяти лет с лишением права занимать определенные должности или заниматься определенной деятельностью на срок до трех лет или без такового. Крупным размером признается сумма бюджетных средств, превышающая один миллион пятьсот тысяч рублей, а особо крупным размером - семь миллионов пятьсот тысяч рублей.
+                   <br> Привлечение к уголовной ответственности не комиссией, а правоохранительными органами, в которые руководителю отделения ПФР надлежит направить информацию для расследования и последующего привлечения к уголовной ответственности виновного работника ПФР.
+
+                 <br>
+                 <span> ОТВЕТ 2:</span>
+                 <br>
+                 Не правомерны, если журналист упомянул в статье фамилии конкретных работников ПФР. Он может быть привлечен к гражданско-правовой ответственности – причинение вреда за разглашением недостоверной информации (если она такова).  Законом установлена обязанность причинителя вреда выплатить потерпевшим компенсацию возмещения вреда, морального вреда разглашением недостоверных сведений (ст. 1068 Гражданского кодекса РФ). 
+                 <br> Если журналист сообщил в статье информацию общего характера, состава правонарушения с его стороны нет.
+
+                 <br>
+
+
+                 <span> ОТВЕТ 3:</span> <br>
+                 ПФР должен прежде выяснить факты нарушений самостоятельно, потом сообщать в правоохранительные органы: Нарушение правил антикоррупционного поведения влечет проведение служебного расследования по обстоятельствам возникновения коррупционно опасной ситуации. Работник системы ПФР в зависимости от тяжести совершенного проступка несет дисциплинарную, административную, гражданско-правовую и уголовную ответственность в соответствии с законодательством Российской Федерации (п. 22, 23 Кодекса этики и служебного поведения работника системы ПФР). Только после того, как правоохранительный орган выяснит все обстоятельства, он может возбудить уголовное дело в отношении работника ПФР. Уголовное дело возбуждается после поступления заявления о преступлении (ст. 140 Уголовного процессуального кодекса РФ).
+                <br>
+
+
+                <span> ОТВЕТ 4:</span> <br>
+                следователю надлежит прежде выяснить факты нарушений самостоятельно, а не по материалам научной статьи. Только после того, как правоохранительный орган выяснит все обстоятельства, он может возбудить уголовное дело в отношении работника ПФР. (ст. 140 Уголовного процессуального кодекса РФ).
+                <br>
+                <span> ОТВЕТ 5:</span> <br>
+                Рассмотрение судом дел по факту привлечения руководителя ПФР не относится к категории дел, в которых не должна быть соблюдена гласность судебного разбирательства (ст. 241 Уголовного процессуального кодекса РФ).
+                </div>
+
+                <div class="main__btn-sec">
+                    <button id="main__show-answer"  class="start-cont__btn" onclick="answer()">Показать ответ</button>
+                    <button class="pract__btn start-cont__btn">
+                        <a target="blank" href="../pdf/Pr_07_min.pdf" download>
+                            Скачать документ на устройство
+                        </a>
+                        
+                    </button>
+                </div>
+            </div>
+            
+           
+
+          
+        </div>
+
+        
+
+<!--------------------------ТЕСТИРОВАНИЕ ------------------------------------------>
+
+        <div id="main__main-box-2" class="main__main-box-2 test">
+
+ <!--------------------------ЛЕВЫЙ БЛОК С ВОПРОСАМИ  ------------------------------------------>            
+           <div id="test__block-left">
+                <p id="text-1-1" class="main__text-cont">
+                    Для начала тестирования нажмите кнопку ПРОДОЛЖИТЬ
+                </p>
+                <button id="btn-1-1" class="test__btn-strt" id="count" onclick="start()">Продолжить</button>
+               
+
+                <form  name="myform" class="myform">
+
+                    <div class="q1__box" id="q1__box">
+                        <p><span class="red">Вопрос 1</span> из 7</p>
+                        
+                        <label class="text-h1 form__label" > В настоящее время уголовно наказуемые деяния коррупционного характера, совершаемые в системе ПФР, предусматриваются в  </label> <br>
+                      <ul class="form__input">
+                        <li class="q1__answ">
+                            <input id="a-2"  type="radio" name="q1" value="a" onclick="qq()"> 
+                            <label class="l-2 l-a-1" for="a-2"> Уголовном кодексе РФ</label> 
+                        </li> 
+                        <li class="q1__answ user">
+                            <input  id="a-1" type="radio" name="q1" value="b" onclick="qq()"> 
+                            <label class="l-1 l-b-1" for="a-1"> Актах, принятых ПФР</label> <br>
+                          </li>
+
+                          
+                          <li class="q1__answ">
+                            <input id="a-3"  type="radio" name="q1" value="c" onclick="qq()"> 
+                            <label  class="l-1 l-c-1" for="a-3">В законах, регулирующих различные вопросы пенсионной системы</label> 
+                        </li>
+                         
+                      </ul>
+             
+                    </div>
+
+                    <div class="q1__box" id="q2__box">
+                        <p><span class="red">Вопрос 2</span> из 7</p>
+                        
+                        <label class="text-h1 form__label" >При установлении в ходе проверки в ПФР обстоятельств, свидетельствующих о наличии признаков преступления или административного правонарушения, совершенного работником ПФР,  материалы об этом представляются в </label> <br>
+                      <ul class="form__input">
+                        
+                          <li class="q1__answ">
+                            <input id="a-6"  type="radio" name="q2" value="c" onclick="qq()"> 
+                            <label class="l-1 l-c-2" for="a-6">Правление ПФР </label> 
+                        </li>
+                        <li class="q1__answ">
+                            <input id="a-5" type="radio" name="q2"  value="a"  onclick="qq()"> 
+                            <label class=" l-2 l-a-2" for="a-5"> Государственные органы в соответствии с их компетенцией</label> <br>
+                          </li>
+                       
+                          <li class="q1__answ">
+                            <input id="a-7"  type="radio" name="q2" value="b" onclick="qq()"> 
+                            <label  class="l-1 l-b-2 " for="a-7">Вышестоящему должностному лицу в ПФР</label> 
+                          </li>
+                      </ul>
+             
+                    </div>
+
+                    <div class="q1__box" id="q3__box">
+                        <p><span class="red">Вопрос 3</span> из 7</p>
+                        
+                        <label class="text-h1 form__label" >Коррупционные проявления в системе ПФР имеют своим объектом сферу</label> <br>
+                      <ul class="form__input">
+                        <li class="q1__answ">
+                            <input id="a-9" type="radio" name="q3" value="a" onclick="qq()"> 
+                            <label class=" l-2 l-a-3" for="a-9"> Публичных финансов, к которым относится бюджет ПФР</label> <br>
+                          </li>
+
+                          <li class="q1__answ">
+                            <input id="a-10"  type="radio" name="q3" value="c" onclick="qq()"> 
+                            <label class="l-1 l-c-3" for="a-10">Частных финансов граждан, платящих страховые взносы в бюджет ПФР</label> 
+                        </li>
+                        
+                          <li class="q1__answ">
+                            <input id="a-11"  type="radio" name="q3" value="b"   onclick="qq()"> 
+                            <label  class="l-1 l-b-3 " for="a-11">Личных финансов работников ПФР</label> 
+                          </li>
+
+                          
+                      </ul>
+             
+                    </div>
+
+                    <div class="q1__box" id="q4__box">
+                        <p><span class="red">Вопрос 4</span> из 7</p>
+                        
+                        <label class="text-h1 form__label" >Методом регламентации ответственности за коррупционные правонарушения работников ПФР в системе ПФР является метод</label> <br>
+                      <ul class="form__input">
+
+                        
+                          <li class="q1__answ">
+                            <input id="a-13" type="radio" name="q4" value="b" onclick="qq()"> 
+                            <label class="l-1 l-b-4" for="a-13">Согласований с полицией о привлечении к ответственности</label> <br>
+                          </li>
+                        
+                          <li class="q1__answ">
+                            <input id="a-15"  type="radio" name="q4" value="c" onclick="qq()"> 
+                            <label class="l-1 l-c-4"  for="a-15">Диспозитивный</label> 
+                        </li>
+                        <li class="q1__answ">
+                            <input id="a-14"  type="radio" name="q4" value="a" onclick="qq()"> 
+                            <label  class="l-2 l-a-4" for="a-14">Императивный </label> 
+                        </li>
+                          
+                      </ul>
+             
+                    </div>
+
+                    <div class="q1__box" id="q5__box">
+                        <p><span class="red">Вопрос 5</span> из 7</p>
+                        
+                        <label class="text-h1 form__label" >В систему органов РФ, уполномоченных привлекать к уголовной ответственности за коррупционные правонарушения в системе ПФР, входят: </label> <br>
+                      <ul class="form__input">
+                          <li class="q1__answ">
+                            <input id="a-17" type="radio" name="q5" value="c"   onclick="qq()"> 
+                            <label  class=" l-1  l-c-5" for="a-17"> Правление ПФР</label> <br>
+                          </li>
+                          <li class="q1__answ">
+                            <input id="a-18"  type="radio" name="q5"  value="a" onclick="qq()"> 
+                            <label class=" l-2  l-a-5 " for="a-18"> Полиция </label> 
+                        </li>
+                          <li class="q1__answ">
+                            <input id="a-119"  type="radio" name="q5"  value="b" onclick="qq()"> 
+                            <label class="l-1 l-b-5" for="a-119">Федеральная налоговая служба</label> 
+                        </li>
+                         
+                      </ul>
+             
+                    </div>
+
+                    <div class="q1__box" id="q6__box">
+                        <p><span class="red">Вопрос 6</span> из 7</p>
+                        
+                        <label class="text-h1 form__label" >Какие из перечисленных ниже отношений связаны с привлечением к ответственности за коррупционные правонарушения работников ПФР в системе ПФР:</label> <br>
+                      <ul class="form__input">
+                          
+                          <li class="q1__answ">
+                            <input id="a-20"  type="radio" name="q6"   value="c" onclick="qq()"> 
+                            <label class="  l-1  l-c-6   " for="a-20">Отношения по принятию Правлением постановлений о методике недопущения правонарушений</label> 
+                        </li>
+                        <li class="q1__answ">
+                            <input id="a-19" type="radio" name="q6"  value="a"   onclick="qq()"> 
+                            <label  class="l-2  l-a-6" for="a-19"> Отношения по применению санкций к работнику ПФР в соответствии с Уголовным кодексом РФ</label> <br>
+                          </li>
+                          <li class="q1__answ">
+                            <input id="a-21"  type="radio" name="q6"  value="b" onclick="qq()"> 
+                            <label class="l-1 l-b-6" for="a-21">Назначение штрафа работнику ПФР</label> 
+                        </li>
+                        
+                      </ul>
+             
+                    </div>
+
+                    <div class="q1__box" id="q7__box">
+                        <p><span class="red">Вопрос 7</span> из 7</p>
+                        
+                        <label class="text-h1 form__label" >Уголовно наказуемым деянием за коррупционные правонарушения работников ПФР в системе ПФР является:</label> <br>
+                      <ul class="form__input">
+                          <li class="q1__answ">
+                            <input id="a-2" type="radio" name="q7" value="c"   onclick="qq()"> 
+                            <label  class=" l-1  l-c-7" for="a-22"> Нарушение норм этики </label> <br>
+                          </li>
+                          <li class="q1__answ">
+                            <input id="a-24"  type="radio" name="q7"  value="a" onclick="qq()"> 
+                            <label class="l-2  l-a-7 " for="a-24">Получение взятки</label> 
+                        </li>
+                          <li class="q1__answ">
+                            <input id="a-23"  type="radio" name="q7"  value="b"   onclick="qq()"> 
+                            <label class=" l-1  l-b-7 " for="a-23">Несообщение информации, повлекшее тяжкий вред </label> 
+                        </li>
+                        
+                         
+                         
+                      </ul>
+             
+                    </div>
+
+
+                  
+
+
+                </form>
+                <div id="pract__res" class="pract__res">
+                    <span class="text-res text-h1">
+                        Результат Вашего тестирования: 
+                    </span>
+                    <span class="pract__res-int red text-h1">
+
+                    </span> <br>
+                    <button id="res__btn-print" class="start-cont__btn myprint" > Распечатать результаты теста</button>
+
+                    <div class="res-print ">
+                        <div class="start-cont__logo-box">
+                            <div class="start-cont__logo-pfr-box">
+                              <img class="start-cont__logo-pfr-img" src="../img/logo-pfr.png" alt="Логотип ПФР">
+                              <span class="start-cont__logo-pfr-text">Пенсионный Фонд Российской Федерации</span>
+                            </div>
+                    
+                            <div class="start-cont__logo-guu">
+                              <img  src="../img/guu-logo.png" alt="Логотип ГУУ">
+                              <h1 class="start-cont__h1">Курс повышения квалификации <br> <span class="start-cont__h2">«Профилактика коррупции»</span> </h1>
+                    
+                            </div>
+                    
+                            
+                          </div>
+                          <br> <br>
+                          <style>
+                              .start-cont__logo-box{
+    display: flex;
+    width: 83%;
+    margin: 4vh 0 0 2vh;
+    justify-content: space-around;
+}
+.start-cont__logo-pfr-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex: 1;
+}
+.start-cont__h1{
+    font-size: 16px;
+    line-height: 20px;
+}
+.start-cont__logo-guu {
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+.start-cont__logo-guu img{
+    width: 25%;
+    margin-right: 2vw;
+}
+.start-cont__logo-pfr-text{
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 20px;
+    color: #2B313C;
+    width: 60%;
+
+}
+                          </style>
+                        <span class="text-res text-h1">
+                            Результат Вашего тестирования: 
+                        </span>
+                        <span class="pract__res-int-print red text-h1">
+
+                        </span> <br>
+                        1.В настоящее время уголовно наказуемые деяния коррупционного характера, совершаемые в системе ПФР, предусматриваются в   <br> <br>
+                        ВАШ ОТВЕТ: <br>
+                        <span class="ans-1-pr">
+
+                        </span> <br> <br> <br>
+                         2.При установлении в ходе проверки в ПФР обстоятельств, свидетельствующих о наличии признаков преступления или административного правонарушения, совершенного работником ПФР,  материалы об этом представляются в <br> <br>
+                         ВАШ ОТВЕТ: <br>
+                        <span class="ans-2-pr">
+                            
+                        </span>  <br> <br> <br>
+
+                        3.Коррупционные проявления в системе ПФР имеют своим объектом сферу <br> <br>
+                        ВАШ ОТВЕТ: <br>
+                        <span class="ans-3-pr">
+                            
+                        </span>  <br> <br> <br>
+                        4.Методом регламентации ответственности за коррупционные правонарушения работников ПФР в системе ПФР является метод<br> <br>
+                        ВАШ ОТВЕТ: <br>
+                        <span class="ans-4-pr">
+                            
+                        </span>  <br> <br> <br>
+                        5.В систему органов РФ, уполномоченных привлекать к уголовной ответственности за коррупционные правонарушения в системе ПФР, входят:  <br> <br>
+                        ВАШ ОТВЕТ: <br>
+                        <span class="ans-5-pr">
+                            
+                        </span>  <br> <br> <br>
+                        6.Какие из перечисленных ниже отношений связаны с привлечением к ответственности за коррупционные правонарушения работников ПФР в системе ПФР:  <br> <br>
+                        ВАШ ОТВЕТ: <br>
+                        <span class="ans-6-pr">
+                            
+                        </span>  <br> <br> <br>
+                        7.Уголовно наказуемым деянием за коррупционные правонарушения работников ПФР в системе ПФР является:<br> <br>
+                        ВАШ ОТВЕТ: <br>
+                        <span class="ans-7-pr">
+                            
+                        </span> 
+                        
+
+                    </div>
+
+                </div>
+                
+                <button id="q1-question" class="start-cont__btn" onclick="check1()"  disabled >Продолжить</button>
+                    
+               
+            </div>
+ <!--------------------------ПРАВЫЙ БЛОК С ВОПРОСАМИ  ------------------------------------------>                    
+            <div id="test__block-right">
+                <ul class="test__raz">
+                    <li class="test__rz-li" id="q-1-a-1">
+                        <span id="q-1-a-1-a" class="test__quest-li  text-h1">
+                           Вопрос 1 
+                           <img id="a-r-1-1" src="../img/right-ico.png" alt="Правильный ответ"> 
+                           <img id="a-f-1-1"  src="../img/false-ico.png" alt="Неправильный ответ">
+                        </span> <br>
+                        В настоящее время уголовно   ...
+                    </li>
+                    <li id="q-1-a-2" class="test__rz-li">
+                        <span id="q-1-a-2-a" class="test__quest-li text-h1">
+                            Вопрос 2
+                            <img id="a-r-1-2" src="../img/right-ico.png" alt="Правильный ответ"> 
+                           <img id="a-f-1-2" src="../img/false-ico.png" alt="Неправильный ответ">
+                        </span> <br>
+                        При установлении в ходе проверки  ...
+                    </li>
+                    <li id="q-1-a-3" class="test__rz-li">
+                        <span id="q-1-a-3-a"  class="test__quest-li  text-h1">
+                            Вопрос 3
+                            <img id="a-r-1-3" src="../img/right-ico.png" alt="Правильный ответ"> 
+                           <img id="a-f-1-3" src="../img/false-ico.png" alt="Неправильный ответ">
+                        </span><br>
+                        Коррупционные проявления в системе   ...
+                    </li>
+                    <li id="q-1-a-4" class="test__rz-li">
+                        <span id="q-1-a-4-a" class="test__quest-li  text-h1">
+                            Вопрос 4
+                            <img id="a-r-1-4" src="../img/right-ico.png" alt="Правильный ответ"> 
+                           <img id="a-f-1-4" src="../img/false-ico.png" alt="Неправильный ответ">
+                        </span><br>
+                        Методом регламентации ответственности    ...
+                    </li>
+                    <li id="q-1-a-5" class="test__rz-li">
+                        <span id="q-1-a-5-a" class="test__quest-li  text-h1">
+                            Вопрос 5
+                            <img id="a-r-1-5" src="../img/right-ico.png" alt="Правильный ответ"> 
+                           <img id="a-f-1-5" src="../img/false-ico.png" alt="Неправильный ответ">
+                        </span><br>
+                        В систему органов РФ, уполномоченных ...
+                    </li>
+                    <li id="q-1-a-6" class="test__rz-li">
+                        <span id="q-1-a-6-a" class="test__quest-li  text-h1">
+                            Вопрос 6
+                            <img id="a-r-1-6" src="../img/right-ico.png" alt="Правильный ответ"> 
+                           <img id="a-f-1-6" src="../img/false-ico.png" alt="Неправильный ответ">
+                        </span><br>
+                        Какие из перечисленных ниже   ...
+                    </li>
+                    <li id="q-1-a-7" class="test__rz-li">
+                        <span id="q-1-a-7-a" class="test__quest-li  text-h1">
+                            Вопрос 7
+                            <img id="a-r-1-7" src="../img/right-ico.png" alt="Правильный ответ"> 
+                           <img id="a-f-1-7" src="../img/false-ico.png" alt="Неправильный ответ">
+                        </span><br>
+                        Уголовно наказуемым деянием за  ...
+                    </li>
+                    
+                   
+                </ul>
+               
+
+            </div>
+
+            <script>
+                //скрипт на выбор ответа
+                function qq(){
+                    document.getElementById("q1-question").style.opacity = "1";
+                    $('#q1-question').removeAttr("disabled");
+
+                
+                    $(".l-1").css({
+                            'opacity' : '0.3'
+                        });    
+                    
+                    $(".l-2").css({
+                            'color' : '#0283FD',
+                            'opacity' : '1',
+                            'font-weight' : 'bold'
+                        });        
+                    $("input").prop('disabled', true);           
+
+                }
+                //скрипт на начало теста 
+                function start(){
+                    document.getElementById("text-1-1").style.display = "none";
+                    document.getElementById("btn-1-1").style.display = "none";
+                    document.myform.style.display = "block";
+                    document.getElementById("q1-question").style.display = "block";
+                }
+                //скрипты на каждый вопрос
+                function q2__style(){
+                    document.getElementById("q3__box").style.display = "block";
+                    document.getElementById("q1-question").style.opacity = "0.3";
+                    document.getElementById("q2__box").style.display = "none";
+
+                    $("#q-1-a-2").css({
+                        'color': '#8D9EB9'
+                    });
+                    $("#q-1-a-2-a").css({
+                        'color': '#8D9EB9'
+                    });
+                    $('#q1-question').removeAttr("disabled");
+                }
+
+                function q3__style(){
+                    document.getElementById("q4__box").style.display = "block";
+                    document.getElementById("q1-question").style.opacity = "0.3";
+                    document.getElementById("q3__box").style.display = "none";
+
+                    $("#q-1-a-3").css({
+                        'color': '#8D9EB9'
+                    });
+                    $("#q-1-a-3-a").css({
+                        'color': '#8D9EB9'
+                    });
+                    $('#q1-question').removeAttr("disabled");
+                }
+
+                function q4__style(){
+                    document.getElementById("q5__box").style.display = "block";
+                    document.getElementById("q1-question").style.opacity = "0.3";
+                    document.getElementById("q4__box").style.display = "none";
+
+                    $("#q-1-a-4").css({
+                        'color': '#8D9EB9'
+                    });
+                    $("#q-1-a-4-a").css({
+                        'color': '#8D9EB9'
+                    });
+                    $('#q1-question').removeAttr("disabled");
+                }
+                 function q5__style(){
+                    document.getElementById("q6__box").style.display = "block";
+                    document.getElementById("q1-question").style.opacity = "0.3";
+                    document.getElementById("q5__box").style.display = "none";
+
+                    $("#q-1-a-5").css({
+                        'color': '#8D9EB9'
+                    });
+                    $("#q-1-a-5-a").css({
+                        'color': '#8D9EB9'
+                    });
+                    $('#q1-question').removeAttr("disabled");
+                }
+                function q6__style(){
+                    document.getElementById("q7__box").style.display = "block";
+                    document.getElementById("q1-question").style.opacity = "0.3";
+                    document.getElementById("q6__box").style.display = "none";
+
+                    $("#q-1-a-6").css({
+                        'color': '#8D9EB9'
+                    });
+                    $("#q-1-a-6-a").css({
+                        'color': '#8D9EB9'
+                    });
+                    $('#q1-question').removeAttr("disabled");
+                }
+               
+
+
+                function q7__style(){
+                    document.getElementById("pract__res").style.display = "block";
+                    document.getElementById("q1-question").style.display = "none";
+                    document.getElementById("q7__box").style.display = "none";
+
+                    $("#q-1-a-7").css({
+                        'color': '#8D9EB9'
+                    });
+                    $("#q-1-a-7-a").css({
+                        'color': '#8D9EB9'
+                    });
+                    
+                }
+
+
+
+
+                //скрипт проверки
+                function check1(){
+                    $(".l-1").css({
+                            'opacity' : '1'
+                        });    
+                    
+                    $(".l-2").css({
+                            'color' : '#8D9EB9',
+                            'opacity' : '1',
+                            'font-weight' : 'normal'
+                        });    
+                    $("input").prop('disabled', false);    
+                    var q1 = document.myform.q1.value;
+                    var q2 = document.myform.q2.value;
+                    var q3 = document.myform.q3.value;
+                    var q4 = document.myform.q4.value;
+                    var q5 = document.myform.q5.value;
+                    var q6 = document.myform.q6.value;
+                    var q7 = document.myform.q7.value;
+                 
+                   
+
+                    var count = 0;
+                    
+                    if(q1 == 'a'){
+                        document.getElementById("a-r-1-1").style.display = "block";
+                        count ++;
+                        var res_1= $(".l-a-1").text();
+
+                    } 
+                    else if(q1 == 'b') 
+                    {
+                        document.getElementById("a-f-1-1").style.display = "block";
+                        var res_1= $(".l-b-1").text();
+
+                    }else if(q1 == 'c')
+                     {
+                        document.getElementById("a-f-1-1").style.display = "block";
+                        var res_1= $(".l-c-1").text();
+                    } 
+                    document.getElementById("q2__box").style.display = "block";
+                    document.getElementById("q1-question").style.opacity = "0.3";
+                    document.getElementById("q1__box").style.display = "none";
+
+                   
+                    if(q2 == 'a'){
+                        document.getElementById("a-r-1-2").style.display = "block";
+                        q2__style();
+                        count ++;
+                        var res_2= $(".l-a-2").text();
+                    } else if(q2 == 'b'){
+                        document.getElementById("a-f-1-2").style.display = "block";
+                        q2__style();
+                        var res_2= $(".l-b-2").text();
+                    } else if(q2 == 'c'){
+                        document.getElementById("a-f-1-2").style.display = "block";
+                        q2__style();
+                        var res_2= $(".l-c-2").text();
+                    }
+
+                    if(q3 == 'a'){
+                        document.getElementById("a-r-1-3").style.display = "block";
+                        q3__style();
+                        count ++;
+                        var res_3= $(".l-a-3").text();
+                    } else if(q3 == 'b'){
+                        document.getElementById("a-f-1-3").style.display = "block";
+                        q3__style();
+                        var res_3= $(".l-b-3").text();
+                    }else if(q3 == 'c'){
+                        document.getElementById("a-f-1-3").style.display = "block";
+                        q3__style();
+                        var res_3= $(".l-c-3").text();
+                    }
+                    if(q4 == 'a'){
+                        document.getElementById("a-r-1-4").style.display = "block";
+                        q4__style();
+                        count ++;
+                        var res_4= $(".l-a-4").text();
+                    } else if(q4 == 'b'){
+                        document.getElementById("a-f-1-4").style.display = "block";
+                        q4__style();
+                        var res_4= $(".l-b-4").text();
+                    } else if(q4 == 'c'){
+                        document.getElementById("a-f-1-4").style.display = "block";
+                        q4__style();
+                        var res_4= $(".l-c-4").text();
+                    }  
+                    if(q5 == 'a'){
+                        document.getElementById("a-r-1-5").style.display = "block";
+                        q5__style();
+                        count ++;
+                        var res_5= $(".l-a-5").text();
+                    } else if(q5 == 'b'){
+                        document.getElementById("a-f-1-5").style.display = "block";
+                        q5__style();
+                        var res_5= $(".l-b-5").text();
+                    } else if(q5 == 'c'){
+                        document.getElementById("a-f-1-5").style.display = "block";
+                        q5__style();
+                        var res_5= $(".l-c-5").text();
+                    }  
+                    
+                    if(q6 == 'a'){
+                        document.getElementById("a-r-1-6").style.display = "block";
+                        q6__style();
+                        count ++;
+                        var res_6= $(".l-a-6").text();
+                    } else if(q6 == 'b'){
+                        document.getElementById("a-f-1-6").style.display = "block";
+                        q6__style();
+                        var res_6= $(".l-b-6").text();
+                    } else if(q6 == 'c'){
+                        document.getElementById("a-f-1-6").style.display = "block";
+                        q6__style();
+                        var res_6= $(".l-c-6").text();
+                    }  
+                    
+                   
+                    if(q7 == 'a'){
+                        document.getElementById("a-r-1-7").style.display = "block";
+                        q7__style();
+                        count ++;
+                        var res_7= $(".l-a-7").text();
+                        var res = Math.round( (100 * count) / 7 );
+                        document.querySelector('.pract__res-int').textContent = "   " + res + "%";
+                    } else if(q7 == 'b'){
+                        document.getElementById("a-f-1-7").style.display = "block";
+                        q7__style();
+                        var res_7= $(".l-b-7").text();
+                        var res = Math.round( (100 * count) / 7 );
+                        document.querySelector('.pract__res-int').textContent = "   " + res + "%";
+                    } else if(q7 == 'c'){
+                        document.getElementById("a-f-1-7").style.display = "block";
+                        q7__style();
+                        var res_7= $(".l-c-7").text();
+                        var res = Math.round( (100 * count) / 7);
+                        document.querySelector('.pract__res-int').textContent = "   " + res + "%";
+                    } 
+
+                   
+                    $("#q-1-a-1").css({
+                        'color': '#8D9EB9'
+                    });
+                    $("#q-1-a-1-a").css({
+                        'color': '#8D9EB9'
+                    });
+                    $('#q1-question').removeAttr("disabled");
+                    localStorage.setItem("res", res);
+                    localStorage.setItem("res_1", res_1);
+                    localStorage.setItem("res_2", res_2);
+                    localStorage.setItem("res_3", res_3);
+                    localStorage.setItem("res_4", res_4);
+                    localStorage.setItem("res_5", res_5);
+                    localStorage.setItem("res_6", res_6);
+                    localStorage.setItem("res_7", res_7);
+                   
+                
+                }
+               
+            
+            </script>
+
+
+<!-- 2. Распечатать любой элемент страницы -->
+<script>
+$(function(){
+$('.myprint').click(function(){             //при клике на что срабатывает печать
+   // document.querySelector('.res-print').style.display = "block";
+    document.querySelector('.pract__res-int-print').textContent = "   " + localStorage.getItem("res") + "%";
+    document.querySelector('.ans-1-pr').textContent = localStorage.getItem("res_1");
+    document.querySelector('.ans-2-pr').textContent = localStorage.getItem("res_2");
+    document.querySelector('.ans-3-pr').textContent = localStorage.getItem("res_3");
+    document.querySelector('.ans-4-pr').textContent = localStorage.getItem("res_4");
+    document.querySelector('.ans-5-pr').textContent = localStorage.getItem("res_5");
+    document.querySelector('.ans-6-pr').textContent = localStorage.getItem("res_6");
+    document.querySelector('.ans-7-pr').textContent = localStorage.getItem("res_7");
+ 
+var html_to_print=$('.res-print').html();    //что печатаем
+var iframe=$('<iframe id="print_frame">');
+    
+$('body').append(iframe);
+var doc = $('#print_frame')[0].contentDocument || $('#print_frame')[0].contentWindow.document;
+var win = $('#print_frame')[0].contentWindow || $('#print_frame')[0];
+doc.getElementsByTagName('body')[0].innerHTML=html_to_print;
+win.print();
+$('iframe').remove();
+});
+});
+</script>
+<style>#print_frame{display: none;}</style>
+
+      
+        </div>
+    </section> 
     </main>
 
 </body>
