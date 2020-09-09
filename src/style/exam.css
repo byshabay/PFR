@@ -1,0 +1,43 @@
+#main__main-box-2{
+    display: flex;
+    overflow-y: scroll;
+}
+
+#test__block-right{
+    display: block;
+}
+/*timer*/
+.countdown {
+    font-family: sans-serif;
+    display: inline-block;
+    font-weight: 100;
+    text-align: end;
+    width: 90%;
+    margin: 5% 0 0;
+    font-size: calc( (100vw - 800px)/(1440 - 800) * (16 - 11) + 11px);
+  }
+   
+  .countdown-number {
+    display: inline-block;
+  }
+   
+  .countdown-time {
+    display: inline-block;
+  }
+   
+  .countdown-text {
+    display: block;
+  }
+  .deadline-message{
+    display: none;
+    font-size: 24px;
+    font-style: italic;
+  }
+   
+  .visible{
+    display: block;
+  }
+   
+  .hidden{
+    display: none;
+  }

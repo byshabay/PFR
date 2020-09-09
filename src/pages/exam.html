@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <title>Итоговое тестирование</title>
     <link rel="stylesheet" href="../style/menu_temp.css">
+    <link rel="stylesheet" href="../style/system.css">
+    <link rel="stylesheet" href="../style/exam.css">
+    <script src="../style/jq.js"></script>
+    <script src="../style/check.js"></script>
+    <script src="../style/q_boxs.js"></script>
+    <script src="../style/jquery-1.9.1.min.js"></script>
     <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
 </head>
 <body class="body">
@@ -24,7 +30,7 @@
     <!--Меню полное-->
     <nav id="nav-full" class="nav-full">
         <div class="nav-full__logo-btn-box">
-            <img src="../img/logo-pfr.png" alt="Логотип ПФР" class="nav-full__logo-pfr">
+            <a href="../../START.html"> <img src="../img/logo-pfr.png" alt="Логотип ПФР" class="nav-full__logo-pfr"></a>
             <button id="nav-full__back-btn"  onclick="full()"><img src="../img/back_ico.png" alt="Кнопка сворачивания меню" class="nav-full__back-btn"></button>
         </div>
         <h1 class="nav-full__h1">Курс «‎Профилактика коррупции»‎</h1>
@@ -62,7 +68,2276 @@
    
     <!--Контент-->
     <main class="main">
+        <section id="pract" style="display: block;">
+            <div class="main__btn-box">
+                <button id="main__btn-1" class="main__btn-1" >
+                    Итоговое тестирование по курсу “Профилактика коррупции”
+                </button>
+            </div>
+           
+    
+    <!--------------------------ТЕСТИРОВАНИЕ ------------------------------------------>
+    
+            <div id="main__main-box-2" class="main__main-box-2 test">
+                
+
+     <!--------------------------ЛЕВЫЙ БЛОК С ВОПРОСАМИ  ------------------------------------------>            
+               <div id="test__block-left">
+                    <p id="text-1-1" class="main__text-cont">
+                        Для начала тестирования нажмите кнопку ПРОДОЛЖИТЬ
+                    </p>
+                    <span class="attempt">
+                        
+                    </span>
+                    <button id="btn-1-1" class="test__btn-strt" id="count" onclick="start()">Продолжить</button>
+                   
+
+                    <form id="myform" name="myform" class="myform form_1">
+                        ВАРИАНТ 1
+                        <!--ТАЙМЕР-->
+                        <div id="countdown" class="countdown">
+                            <div class="countdown-number">
+                              <span class="hours countdown-time"></span>
+                              
+                            </div>
+                            <div class="countdown-number">
+                              <span class="minutes countdown-time"></span>
+                              
+                            </div>
+                            <div class="countdown-number">
+                                <span class="seconds countdown-time"></span>
+                                <span class="countdown-text"></span>
+                              </div>
+                            
+                          </div>
+                          <div id="deadline-message" class="deadline-message">
+                            Time is up!
+                          </div>
+                       
+                        <!--КОНЕЦ ТАЙМЕРА-->
+                        <div class="q1__box" id="q1__box">
+                            <p><span class="red">Вопрос 1</span> из 18</p>
+                            
+                            <label class="text-h1 form__label" >Система институтов государственной вл
+                                асти в сфере противодействия коррупции в Российской Федерации определяетс
+                                я в основном на положениях:</label> <br>
+                          <ul class="form__input">
+                              <li class="q1__answ user">
+                                <input  id="a-1" type="radio" name="q1" value="b" onclick="qq()"> 
+                                <label class="l-1 l-b-1" for="a-1"> Конституции РФ;</label> <br>
+                              </li>
+                              <li class="q1__answ">
+                                <input id="a-2"  type="radio" name="q1" value="a" onclick="qq()"> 
+                                <label class="l-2 l-a-1" for="a-2"> Федерального закона «О противодействии коррупции»;</label> 
+                            </li>
+                              <li class="q1__answ">
+                                <input id="a-3"  type="radio" name="q1" value="c" onclick="qq()"> 
+                                <label  class="l-1 l-c-1" for="a-3">Устава ООН;</label> 
+                            </li>
+                             
+                          </ul>
+                 
+                        </div>
+
+                        <div class="q1__box" id="q2__box">
+                            <p><span class="red">Вопрос 2</span> из 18</p>
+                            
+                            <label class="text-h1 form__label" >Основные направления государственной политики в области противодействия коррупции определяет:</label> <br>
+                          <ul class="form__input">
+                              <li class="q1__answ">
+                                <input id="a-5" type="radio" name="q2" value="b" onclick="qq()"> 
+                                <label class="l-1 l-b-2" for="a-5"> Правительство Российской Федерации; </label> <br>
+                              </li>
+                              <li class="q1__answ">
+                                <input id="a-6"  type="radio" name="q2" value="c" onclick="qq()"> 
+                                <label class="l-1 l-c-2" for="a-6">Федеральное Собрание Российской Федерации;</label> 
+                            </li>
+                              <li class="q1__answ">
+                                <input id="a-7"  type="radio" name="q2" value="a" onclick="qq()"> 
+                                <label  class="l-2 l-a-2" for="a-7">Президент Российской Федерации;</label> 
+                              </li>
+                          </ul>
+                 
+                        </div>
+
+                        <div class="q1__box" id="q3__box">
+                            <p><span class="red">Вопрос 3</span> из 18</p>
+                            
+                            <label class="text-h1 form__label" >Правовую основу противодействия коррупции в Российской Федерации составляют:</label> <br>
+                          <ul class="form__input">
+                              <li class="q1__answ">
+                                <input id="a-9" type="radio" name="q3" value="b" onclick="qq()"> 
+                                <label class="l-1 l-b-3 " for="a-9"> нормативно-правовые акты Российской Федерации </label> <br>
+                              </li>
+                              <li class="q1__answ">
+                                <input id="a-11"  type="radio" name="q3" value="a" onclick="qq()"> 
+                                <label  class="l-2 l-a-3" for="a-11">нормативно-правовые акты Российской Федерации и общепризнанные принципы и нормы международного права и международные договоры РФ;</label> 
+                              </li>
+                              <li class="q1__answ">
+                                <input id="a-10"  type="radio" name="q3" value="c" onclick="qq()"> 
+                                <label class="l-1 l-c-3" for="a-10">Только Конституция Российской Федерации.</label> 
+                            </li>
+                              
+                          </ul>
+                 
+                        </div>
+
+                        <div class="q1__box" id="q4__box">
+                            <p><span class="red">Вопрос 4</span> из 18</p>
+                            
+                            <label class="text-h1 form__label" >Принципы противодействия коррупции в РФ определены в:</label> <br>
+                          <ul class="form__input">
+                            <li class="q1__answ">
+                                <input id="a-14"  type="radio" name="q4" value="a" onclick="qq()"> 
+                                <label  class="l-2 l-a-4" for="a-14">Федеральном законе от 25 декабря 2008 года № 273-ФЗ «О противодействии коррупции»;</label> 
+                            </li>
+                              <li class="q1__answ">
+                                <input id="a-13" type="radio" name="q4" value="b" onclick="qq()"> 
+                                <label class="l-1 l-b-4" for="a-13">Трудовом кодексе Российской Федерации; </label> <br>
+                              </li>
+                              
+                              <li class="q1__answ">
+                                <input id="a-15"  type="radio" name="q4" value="c" onclick="qq()"> 
+                                <label class="l-1 l-c-4"  for="a-15">Уголовном кодексе Российской Федерации.</label> 
+                            </li>
+                              
+                          </ul>
+                 
+                        </div>
+
+                        <div class="q1__box" id="q5__box">
+                            <p><span class="red">Вопрос 5</span> из 18</p>
+                            
+                            <label class="text-h1 form__label" >Меры по профилактике коррупции в РФ определены в: </label> <br>
+                          <ul class="form__input">
+                              <li class="q1__answ">
+                                <input id="a-17" type="radio" name="q5" value="c"   onclick="qq()"> 
+                                <label  class=" l-1  l-c-5" for="a-17">Уголовном кодексе Российской Федерации; </label> <br>
+                              </li>
+                              <li class="q1__answ">
+                                <input id="a-18"  type="radio" name="q5" value="b" onclick="qq()"> 
+                                <label class="l-1 l-b-5" for="a-18">Конвенции Совета Европы об уголовной ответственности за коррупцию от 27 января 1999 г.;</label> 
+                            </li>
+                              <li class="q1__answ">
+                                <input id="a-19"  type="radio" name="q5" value="a" onclick="qq()"> 
+                                <label class="l-2  l-a-5 " for="a-19">Федеральном законе от 25 декабря 2008 года № 273-ФЗ «О противодействии коррупции»;.</label> 
+                            </li>
+                             
+                          </ul>
+                 
+                        </div>
+
+                        <div class="q1__box" id="q6__box">
+                            <p><span class="red">Вопрос 6</span> из 18</p>
+                            
+                            <label class="text-h1 form__label" >
+                                1
+                            </label> <br>
+
+                            <ul class="form__input">
+
+                                <li class="q1__answ">
+                                    <label  class=" l-1  l-c-6"> <input  type="radio" name="q6" value="c"   onclick="qq()"> 
+                                  
+                                        с </label> <br>
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-1 l-b-6" > <input  type="radio" name="q6" value="b" onclick="qq()"> 
+                                        b</label> 
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-2  l-a-6 "> <input   type="radio" name="q6" value="a" onclick="qq()"> 
+                                     a </label> 
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="q1__box" id="q7__box">
+                            <p><span class="red">Вопрос 7</span> из 18</p>
+                            
+                            <label class="text-h1 form__label" >
+                                1
+                            </label> <br>
+
+                            <ul class="form__input">
+
+                                <li class="q1__answ">
+                                    <label  class=" l-1  l-c-7"> <input  type="radio" name="q7" value="c"   onclick="qq()"> 
+                                  
+                                        с </label> <br>
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-1 l-b-7" > <input  type="radio" name="q7" value="b" onclick="qq()"> 
+                                        b</label> 
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-2  l-a-7 "> <input   type="radio" name="q7" value="a" onclick="qq()"> 
+                                     a </label> 
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+
+                        <div class="q1__box" id="q8__box">
+                            <p><span class="red">Вопрос 8</span> из 18</p>
+                            
+                            <label class="text-h1 form__label" >
+                                1
+                            </label> <br>
+
+                            <ul class="form__input">
+
+                                <li class="q1__answ">
+                                    <label  class=" l-1  l-c-8"> <input  type="radio" name="q8" value="c"   onclick="qq()"> 
+                                  
+                                        с </label> <br>
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-1 l-b-8" > <input  type="radio" name="q8" value="b" onclick="qq()"> 
+                                        b</label> 
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-2  l-a-8 "> <input   type="radio" name="q8" value="a" onclick="qq()"> 
+                                     a </label> 
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="q1__box" id="q9__box">
+                            <p><span class="red">Вопрос 9</span> из 18</p>
+                            
+                            <label class="text-h1 form__label" >
+                                1
+                            </label> <br>
+
+                            <ul class="form__input">
+
+                                <li class="q1__answ">
+                                    <label  class=" l-1  l-c-9"> <input  type="radio" name="q9" value="c"   onclick="qq()"> 
+                                  
+                                        с </label> <br>
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-1 l-b-9" > <input  type="radio" name="q9" value="b" onclick="qq()"> 
+                                        b</label> 
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-2  l-a-9 "> <input   type="radio" name="q9" value="a" onclick="qq()"> 
+                                     a </label> 
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="q1__box" id="q10__box">
+                            <p><span class="red">Вопрос 10</span> из 18</p>
+                            
+                            <label class="text-h1 form__label" >
+                                1
+                            </label> <br>
+
+                            <ul class="form__input">
+
+                                <li class="q1__answ">
+                                    <label  class=" l-1  l-c-10"> <input  type="radio" name="q10" value="c"   onclick="qq()"> 
+                                  
+                                        с </label> <br>
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-1 l-b-10" > <input  type="radio" name="q10" value="b" onclick="qq()"> 
+                                        b</label> 
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-2  l-a-10 "> <input   type="radio" name="q10" value="a" onclick="qq()"> 
+                                     a </label> 
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="q1__box" id="q11__box">
+                            <p><span class="red">Вопрос 11</span> из 18</p>
+                            
+                            <label class="text-h1 form__label" >
+                                1
+                            </label> <br>
+
+                            <ul class="form__input">
+
+                                <li class="q1__answ">
+                                    <label  class=" l-1  l-c-11"> <input  type="radio" name="q11" value="c"   onclick="qq()"> 
+                                  
+                                        с </label> <br>
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-1 l-b-11" > <input  type="radio" name="q11" value="b" onclick="qq()"> 
+                                        b</label> 
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-2  l-a-11 "> <input   type="radio" name="q11" value="a" onclick="qq()"> 
+                                     a </label> 
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="q1__box" id="q12__box">
+                            <p><span class="red">Вопрос 12</span> из 18</p>
+                            
+                            <label class="text-h1 form__label" >
+                                1
+                            </label> <br>
+
+                            <ul class="form__input">
+
+                                <li class="q1__answ">
+                                    <label  class=" l-1  l-c-12"> <input  type="radio" name="q12" value="c"   onclick="qq()"> 
+                                  
+                                        с </label> <br>
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-1 l-b-12" > <input  type="radio" name="q12" value="b" onclick="qq()"> 
+                                        b</label> 
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-2  l-a-12 "> <input   type="radio" name="q12" value="a" onclick="qq()"> 
+                                     a </label> 
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="q1__box" id="q13__box">
+                            <p><span class="red">Вопрос 13</span> из 18</p>
+                            
+                            <label class="text-h1 form__label" >
+                                1
+                            </label> <br>
+
+                            <ul class="form__input">
+
+                                <li class="q1__answ">
+                                    <label  class=" l-1  l-c-13"> <input  type="radio" name="q13" value="c"   onclick="qq()"> 
+                                  
+                                        с </label> <br>
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-1 l-b-13" > <input  type="radio" name="q13" value="b" onclick="qq()"> 
+                                        b</label> 
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-2  l-a-13 "> <input   type="radio" name="q13" value="a" onclick="qq()"> 
+                                     a </label> 
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        
+
+                        <div class="q1__box" id="q14__box">
+                            <p><span class="red">Вопрос 14</span> из 18</p>
+                            
+                            <label class="text-h1 form__label" >
+                                1
+                            </label> <br>
+
+                            <ul class="form__input">
+
+                                <li class="q1__answ">
+                                    <label  class=" l-1  l-c-14"> <input  type="radio" name="q14" value="c"   onclick="qq()"> 
+                                  
+                                        с </label> <br>
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-1 l-b-14" > <input  type="radio" name="q14" value="b" onclick="qq()"> 
+                                        b</label> 
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-2  l-a-14 "> <input   type="radio" name="q14" value="a" onclick="qq()"> 
+                                     a </label> 
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="q1__box" id="q15__box">
+                            <p><span class="red">Вопрос 15</span> из 18</p>
+                            
+                            <label class="text-h1 form__label" >
+                                1
+                            </label> <br>
+
+                            <ul class="form__input">
+
+                                <li class="q1__answ">
+                                    <label  class=" l-1  l-c-15"> <input  type="radio" name="q15" value="c"   onclick="qq()"> 
+                                  
+                                        с </label> <br>
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-1 l-b-15" > <input  type="radio" name="q15" value="b" onclick="qq()"> 
+                                        b</label> 
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-2  l-a-15 "> <input   type="radio" name="q15" value="a" onclick="qq()"> 
+                                     a </label> 
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="q1__box" id="q16__box">
+                            <p><span class="red">Вопрос 16</span> из 18</p>
+                            
+                            <label class="text-h1 form__label" >
+                                1
+                            </label> <br>
+
+                            <ul class="form__input">
+
+                                <li class="q1__answ">
+                                    <label  class=" l-1  l-c-16"> <input  type="radio" name="q16" value="c"   onclick="qq()"> 
+                                  
+                                        с </label> <br>
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-1 l-b-16" > <input  type="radio" name="q16" value="b" onclick="qq()"> 
+                                        b</label> 
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-2  l-a-16 "> <input   type="radio" name="q16" value="a" onclick="qq()"> 
+                                     a </label> 
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="q1__box" id="q17__box">
+                            <p><span class="red">Вопрос 17</span> из 18</p>
+                            
+                            <label class="text-h1 form__label" >
+                                1
+                            </label> <br>
+
+                            <ul class="form__input">
+
+                                <li class="q1__answ">
+                                    <label  class=" l-1  l-c-17"> <input  type="radio" name="q17" value="c"   onclick="qq()"> 
+                                  
+                                        с </label> <br>
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-1 l-b-17" > <input  type="radio" name="q17" value="b" onclick="qq()"> 
+                                        b</label> 
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-2  l-a-17 "> <input   type="radio" name="q17" value="a" onclick="qq()"> 
+                                     a </label> 
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+
+                        <div class="q1__box" id="q18__box">
+                            <p><span class="red">Вопрос 18</span> из 18</p>
+                            
+                            <label class="text-h1 form__label" >
+                                1
+                            </label> <br>
+
+                            <ul class="form__input">
+
+                                <li class="q1__answ">
+                                    <label  class=" l-1  l-c-18"> <input  type="radio" name="q18" value="c"   onclick="qq()"> 
+                                  
+                                        с </label> <br>
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-1 l-b-18" > <input  type="radio" name="q18" value="b" onclick="qq()"> 
+                                        b</label> 
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-2  l-a-18 "> <input   type="radio" name="q18" value="a" onclick="qq()"> 
+                                     a </label> 
+                                </li>
+                                
+                            </ul>
+                        </div>
+    
+                    </form>
+                    <form id="myform_2" name="myform_2" class="myform form_2">
+                        <!--ТАЙМЕР-->
+                        ВАРИАНТ 2
+                        <div id="countdown" class="countdown">
+                            <div class="countdown-number">
+                              <span class="hours countdown-time"></span>
+                              
+                            </div>
+                            <div class="countdown-number">
+                              <span class="minutes countdown-time"></span>
+                              
+                            </div>
+                            <div class="countdown-number">
+                                <span class="seconds countdown-time"></span>
+                                <span class="countdown-text"></span>
+                              </div>
+                            
+                          </div>
+                          <div id="deadline-message" class="deadline-message">
+                            Time is up!
+                          </div>
+                       
+                        <!--КОНЕЦ ТАЙМЕРА-->
+                        <div class="q1__box" id="q1__box">
+                            <p><span class="red">Вопрос 1</span> из 18</p>
+                            
+                            <label class="text-h1 form__label" >
+                                1
+                            </label> <br>
+
+                            <ul class="form__input">
+
+                                <li class="q1__answ">
+                                    <label  class=" l-1  l-c-1"> <input  type="radio" name="q1" value="c"   onclick="qq()"> 
+                                  
+                                        с </label> <br>
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-1 l-b-1" > <input  type="radio" name="q1" value="b" onclick="qq()"> 
+                                        b</label> 
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-2  l-a-1 "> <input   type="radio" name="q1" value="a" onclick="qq()"> 
+                                     a </label> 
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="q1__box" id="q2__box">
+                            <p><span class="red">Вопрос 2</span> из 18</p>
+                            
+                            <label class="text-h1 form__label" >
+                                1
+                            </label> <br>
+
+                            <ul class="form__input">
+
+                                <li class="q1__answ">
+                                    <label  class=" l-1  l-c-2"> <input  type="radio" name="q2" value="c"   onclick="qq()"> 
+                                  
+                                        с </label> <br>
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-1 l-b-2" > <input  type="radio" name="q2" value="b" onclick="qq()"> 
+                                        b</label> 
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-2  l-a-2 "> <input   type="radio" name="q2" value="a" onclick="qq()"> 
+                                     a </label> 
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="q1__box" id="q3__box">
+                            <p><span class="red">Вопрос 3</span> из 18</p>
+                            
+                            <label class="text-h1 form__label" >
+                                1
+                            </label> <br>
+
+                            <ul class="form__input">
+
+                                <li class="q1__answ">
+                                    <label  class=" l-1  l-c-3"> <input  type="radio" name="q3" value="c"   onclick="qq()"> 
+                                  
+                                        с </label> <br>
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-1 l-b-3" > <input  type="radio" name="q3" value="b" onclick="qq()"> 
+                                        b</label> 
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-2  l-a-3 "> <input   type="radio" name="q3" value="a" onclick="qq()"> 
+                                     a </label> 
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+
+                        <div class="q1__box" id="q4__box">
+                            <p><span class="red">Вопрос 4</span> из 18</p>
+                            
+                            <label class="text-h1 form__label" >
+                                1
+                            </label> <br>
+
+                            <ul class="form__input">
+
+                                <li class="q1__answ">
+                                    <label  class=" l-1  l-c-4"> <input  type="radio" name="q4" value="c"   onclick="qq()"> 
+                                  
+                                        с </label> <br>
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-1 l-b-4" > <input  type="radio" name="q4" value="b" onclick="qq()"> 
+                                        b</label> 
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-2  l-a-4 "> <input   type="radio" name="q4" value="a" onclick="qq()"> 
+                                     a </label> 
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+
+                        <div class="q1__box" id="q5__box">
+                            <p><span class="red">Вопрос 5</span> из 18</p>
+                            
+                            <label class="text-h1 form__label" >
+                                1
+                            </label> <br>
+
+                            <ul class="form__input">
+
+                                <li class="q1__answ">
+                                    <label  class=" l-1  l-c-5"> <input  type="radio" name="q5" value="c"   onclick="qq()"> 
+                                  
+                                        с </label> <br>
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-1 l-b-5" > <input  type="radio" name="q5" value="b" onclick="qq()"> 
+                                        b</label> 
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-2  l-a-5 "> <input   type="radio" name="q5" value="a" onclick="qq()"> 
+                                     a </label> 
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="q1__box" id="q6__box">
+                            <p><span class="red">Вопрос 6</span> из 18</p>
+                            
+                            <label class="text-h1 form__label" >
+                                1
+                            </label> <br>
+
+                            <ul class="form__input">
+
+                                <li class="q1__answ">
+                                    <label  class=" l-1  l-c-6"> <input  type="radio" name="q6" value="c"   onclick="qq()"> 
+                                  
+                                        с </label> <br>
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-1 l-b-6" > <input  type="radio" name="q6" value="b" onclick="qq()"> 
+                                        b</label> 
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-2  l-a-6 "> <input   type="radio" name="q6" value="a" onclick="qq()"> 
+                                     a </label> 
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="q1__box" id="q7__box">
+                            <p><span class="red">Вопрос 7</span> из 18</p>
+                            
+                            <label class="text-h1 form__label" >
+                                1
+                            </label> <br>
+
+                            <ul class="form__input">
+
+                                <li class="q1__answ">
+                                    <label  class=" l-1  l-c-7"> <input  type="radio" name="q7" value="c"   onclick="qq()"> 
+                                  
+                                        с </label> <br>
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-1 l-b-7" > <input  type="radio" name="q7" value="b" onclick="qq()"> 
+                                        b</label> 
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-2  l-a-7 "> <input   type="radio" name="q7" value="a" onclick="qq()"> 
+                                     a </label> 
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+
+                        <div class="q1__box" id="q8__box">
+                            <p><span class="red">Вопрос 8</span> из 18</p>
+                            
+                            <label class="text-h1 form__label" >
+                                1
+                            </label> <br>
+
+                            <ul class="form__input">
+
+                                <li class="q1__answ">
+                                    <label  class=" l-1  l-c-8"> <input  type="radio" name="q8" value="c"   onclick="qq()"> 
+                                  
+                                        с </label> <br>
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-1 l-b-8" > <input  type="radio" name="q8" value="b" onclick="qq()"> 
+                                        b</label> 
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-2  l-a-8 "> <input   type="radio" name="q8" value="a" onclick="qq()"> 
+                                     a </label> 
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="q1__box" id="q9__box">
+                            <p><span class="red">Вопрос 9</span> из 18</p>
+                            
+                            <label class="text-h1 form__label" >
+                                1
+                            </label> <br>
+
+                            <ul class="form__input">
+
+                                <li class="q1__answ">
+                                    <label  class=" l-1  l-c-9"> <input  type="radio" name="q9" value="c"   onclick="qq()"> 
+                                  
+                                        с </label> <br>
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-1 l-b-9" > <input  type="radio" name="q9" value="b" onclick="qq()"> 
+                                        b</label> 
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-2  l-a-9 "> <input   type="radio" name="q9" value="a" onclick="qq()"> 
+                                     a </label> 
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="q1__box" id="q10__box">
+                            <p><span class="red">Вопрос 10</span> из 18</p>
+                            
+                            <label class="text-h1 form__label" >
+                                1
+                            </label> <br>
+
+                            <ul class="form__input">
+
+                                <li class="q1__answ">
+                                    <label  class=" l-1  l-c-10"> <input  type="radio" name="q10" value="c"   onclick="qq()"> 
+                                  
+                                        с </label> <br>
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-1 l-b-10" > <input  type="radio" name="q10" value="b" onclick="qq()"> 
+                                        b</label> 
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-2  l-a-10 "> <input   type="radio" name="q10" value="a" onclick="qq()"> 
+                                     a </label> 
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="q1__box" id="q11__box">
+                            <p><span class="red">Вопрос 11</span> из 18</p>
+                            
+                            <label class="text-h1 form__label" >
+                                1
+                            </label> <br>
+
+                            <ul class="form__input">
+
+                                <li class="q1__answ">
+                                    <label  class=" l-1  l-c-11"> <input  type="radio" name="q11" value="c"   onclick="qq()"> 
+                                  
+                                        с </label> <br>
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-1 l-b-11" > <input  type="radio" name="q11" value="b" onclick="qq()"> 
+                                        b</label> 
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-2  l-a-11 "> <input   type="radio" name="q11" value="a" onclick="qq()"> 
+                                     a </label> 
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="q1__box" id="q12__box">
+                            <p><span class="red">Вопрос 12</span> из 18</p>
+                            
+                            <label class="text-h1 form__label" >
+                                1
+                            </label> <br>
+
+                            <ul class="form__input">
+
+                                <li class="q1__answ">
+                                    <label  class=" l-1  l-c-12"> <input  type="radio" name="q12" value="c"   onclick="qq()"> 
+                                  
+                                        с </label> <br>
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-1 l-b-12" > <input  type="radio" name="q12" value="b" onclick="qq()"> 
+                                        b</label> 
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-2  l-a-12 "> <input   type="radio" name="q12" value="a" onclick="qq()"> 
+                                     a </label> 
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="q1__box" id="q13__box">
+                            <p><span class="red">Вопрос 13</span> из 18</p>
+                            
+                            <label class="text-h1 form__label" >
+                                1
+                            </label> <br>
+
+                            <ul class="form__input">
+
+                                <li class="q1__answ">
+                                    <label  class=" l-1  l-c-13"> <input  type="radio" name="q13" value="c"   onclick="qq()"> 
+                                  
+                                        с </label> <br>
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-1 l-b-13" > <input  type="radio" name="q13" value="b" onclick="qq()"> 
+                                        b</label> 
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-2  l-a-13 "> <input   type="radio" name="q13" value="a" onclick="qq()"> 
+                                     a </label> 
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        
+
+                        <div class="q1__box" id="q14__box">
+                            <p><span class="red">Вопрос 14</span> из 18</p>
+                            
+                            <label class="text-h1 form__label" >
+                                1
+                            </label> <br>
+
+                            <ul class="form__input">
+
+                                <li class="q1__answ">
+                                    <label  class=" l-1  l-c-14"> <input  type="radio" name="q14" value="c"   onclick="qq()"> 
+                                  
+                                        с </label> <br>
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-1 l-b-14" > <input  type="radio" name="q14" value="b" onclick="qq()"> 
+                                        b</label> 
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-2  l-a-14 "> <input   type="radio" name="q14" value="a" onclick="qq()"> 
+                                     a </label> 
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="q1__box" id="q15__box">
+                            <p><span class="red">Вопрос 15</span> из 18</p>
+                            
+                            <label class="text-h1 form__label" >
+                                1
+                            </label> <br>
+
+                            <ul class="form__input">
+
+                                <li class="q1__answ">
+                                    <label  class=" l-1  l-c-15"> <input  type="radio" name="q15" value="c"   onclick="qq()"> 
+                                  
+                                        с </label> <br>
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-1 l-b-15" > <input  type="radio" name="q15" value="b" onclick="qq()"> 
+                                        b</label> 
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-2  l-a-15 "> <input   type="radio" name="q15" value="a" onclick="qq()"> 
+                                     a </label> 
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="q1__box" id="q16__box">
+                            <p><span class="red">Вопрос 16</span> из 18</p>
+                            
+                            <label class="text-h1 form__label" >
+                                1
+                            </label> <br>
+
+                            <ul class="form__input">
+
+                                <li class="q1__answ">
+                                    <label  class=" l-1  l-c-16"> <input  type="radio" name="q16" value="c"   onclick="qq()"> 
+                                  
+                                        с </label> <br>
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-1 l-b-16" > <input  type="radio" name="q16" value="b" onclick="qq()"> 
+                                        b</label> 
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-2  l-a-16 "> <input   type="radio" name="q16" value="a" onclick="qq()"> 
+                                     a </label> 
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="q1__box" id="q17__box">
+                            <p><span class="red">Вопрос 17</span> из 18</p>
+                            
+                            <label class="text-h1 form__label" >
+                                1
+                            </label> <br>
+
+                            <ul class="form__input">
+
+                                <li class="q1__answ">
+                                    <label  class=" l-1  l-c-17"> <input  type="radio" name="q17" value="c"   onclick="qq()"> 
+                                  
+                                        с </label> <br>
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-1 l-b-17" > <input  type="radio" name="q17" value="b" onclick="qq()"> 
+                                        b</label> 
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-2  l-a-17 "> <input   type="radio" name="q17" value="a" onclick="qq()"> 
+                                     a </label> 
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+
+                        <div class="q1__box" id="q18__box">
+                            <p><span class="red">Вопрос 18</span> из 18</p>
+                            
+                            <label class="text-h1 form__label" >
+                                1
+                            </label> <br>
+
+                            <ul class="form__input">
+
+                                <li class="q1__answ">
+                                    <label  class=" l-1  l-c-18"> <input  type="radio" name="q18" value="c"   onclick="qq()"> 
+                                  
+                                        с </label> <br>
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-1 l-b-18" > <input  type="radio" name="q18" value="b" onclick="qq()"> 
+                                        b</label> 
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-2  l-a-18 "> <input   type="radio" name="q18" value="a" onclick="qq()"> 
+                                     a </label> 
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </form>
+                    <form id="myform_3" name="myform_3" class="myform form_3">
+                        ВАРИАНТ 3
+                        <!--ТАЙМЕР-->
+                        <div id="countdown" class="countdown">
+                            <div class="countdown-number">
+                              <span class="hours countdown-time"></span>
+                              
+                            </div>
+                            <div class="countdown-number">
+                              <span class="minutes countdown-time"></span>
+                              
+                            </div>
+                            <div class="countdown-number">
+                                <span class="seconds countdown-time"></span>
+                                <span class="countdown-text"></span>
+                              </div>
+                            
+                          </div>
+                          <div id="deadline-message" class="deadline-message">
+                            Time is up!
+                          </div>
+                       
+                        <!--КОНЕЦ ТАЙМЕРА-->
+                        <div class="q1__box" id="q1__box">
+                            <p><span class="red">Вопрос 1</span> из 18</p>
+                            
+                            <label class="text-h1 form__label" >
+                                1
+                            </label> <br>
+
+                            <ul class="form__input">
+
+                                <li class="q1__answ">
+                                    <label  class=" l-1  l-c-1"> <input  type="radio" name="q1" value="c"   onclick="qq()"> 
+                                  
+                                        с </label> <br>
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-1 l-b-1" > <input  type="radio" name="q1" value="b" onclick="qq()"> 
+                                        b</label> 
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-2  l-a-1 "> <input   type="radio" name="q1" value="a" onclick="qq()"> 
+                                     a </label> 
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="q1__box" id="q2__box">
+                            <p><span class="red">Вопрос 2</span> из 18</p>
+                            
+                            <label class="text-h1 form__label" >
+                                1
+                            </label> <br>
+
+                            <ul class="form__input">
+
+                                <li class="q1__answ">
+                                    <label  class=" l-1  l-c-2"> <input  type="radio" name="q2" value="c"   onclick="qq()"> 
+                                  
+                                        с </label> <br>
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-1 l-b-2" > <input  type="radio" name="q2" value="b" onclick="qq()"> 
+                                        b</label> 
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-2  l-a-2 "> <input   type="radio" name="q2" value="a" onclick="qq()"> 
+                                     a </label> 
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="q1__box" id="q3__box">
+                            <p><span class="red">Вопрос 3</span> из 18</p>
+                            
+                            <label class="text-h1 form__label" >
+                                1
+                            </label> <br>
+
+                            <ul class="form__input">
+
+                                <li class="q1__answ">
+                                    <label  class=" l-1  l-c-3"> <input  type="radio" name="q3" value="c"   onclick="qq()"> 
+                                  
+                                        с </label> <br>
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-1 l-b-3" > <input  type="radio" name="q3" value="b" onclick="qq()"> 
+                                        b</label> 
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-2  l-a-3 "> <input   type="radio" name="q3" value="a" onclick="qq()"> 
+                                     a </label> 
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+
+                        <div class="q1__box" id="q4__box">
+                            <p><span class="red">Вопрос 4</span> из 18</p>
+                            
+                            <label class="text-h1 form__label" >
+                                1
+                            </label> <br>
+
+                            <ul class="form__input">
+
+                                <li class="q1__answ">
+                                    <label  class=" l-1  l-c-4"> <input  type="radio" name="q4" value="c"   onclick="qq()"> 
+                                  
+                                        с </label> <br>
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-1 l-b-4" > <input  type="radio" name="q4" value="b" onclick="qq()"> 
+                                        b</label> 
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-2  l-a-4 "> <input   type="radio" name="q4" value="a" onclick="qq()"> 
+                                     a </label> 
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+
+                        <div class="q1__box" id="q5__box">
+                            <p><span class="red">Вопрос 5</span> из 18</p>
+                            
+                            <label class="text-h1 form__label" >
+                                1
+                            </label> <br>
+
+                            <ul class="form__input">
+
+                                <li class="q1__answ">
+                                    <label  class=" l-1  l-c-5"> <input  type="radio" name="q5" value="c"   onclick="qq()"> 
+                                  
+                                        с </label> <br>
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-1 l-b-5" > <input  type="radio" name="q5" value="b" onclick="qq()"> 
+                                        b</label> 
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-2  l-a-5 "> <input   type="radio" name="q5" value="a" onclick="qq()"> 
+                                     a </label> 
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="q1__box" id="q6__box">
+                            <p><span class="red">Вопрос 6</span> из 18</p>
+                            
+                            <label class="text-h1 form__label" >
+                                1
+                            </label> <br>
+
+                            <ul class="form__input">
+
+                                <li class="q1__answ">
+                                    <label  class=" l-1  l-c-6"> <input  type="radio" name="q6" value="c"   onclick="qq()"> 
+                                  
+                                        с </label> <br>
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-1 l-b-6" > <input  type="radio" name="q6" value="b" onclick="qq()"> 
+                                        b</label> 
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-2  l-a-6 "> <input   type="radio" name="q6" value="a" onclick="qq()"> 
+                                     a </label> 
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="q1__box" id="q7__box">
+                            <p><span class="red">Вопрос 7</span> из 18</p>
+                            
+                            <label class="text-h1 form__label" >
+                                1
+                            </label> <br>
+
+                            <ul class="form__input">
+
+                                <li class="q1__answ">
+                                    <label  class=" l-1  l-c-7"> <input  type="radio" name="q7" value="c"   onclick="qq()"> 
+                                  
+                                        с </label> <br>
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-1 l-b-7" > <input  type="radio" name="q7" value="b" onclick="qq()"> 
+                                        b</label> 
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-2  l-a-7 "> <input   type="radio" name="q7" value="a" onclick="qq()"> 
+                                     a </label> 
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+
+                        <div class="q1__box" id="q8__box">
+                            <p><span class="red">Вопрос 8</span> из 18</p>
+                            
+                            <label class="text-h1 form__label" >
+                                1
+                            </label> <br>
+
+                            <ul class="form__input">
+
+                                <li class="q1__answ">
+                                    <label  class=" l-1  l-c-8"> <input  type="radio" name="q8" value="c"   onclick="qq()"> 
+                                  
+                                        с </label> <br>
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-1 l-b-8" > <input  type="radio" name="q8" value="b" onclick="qq()"> 
+                                        b</label> 
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-2  l-a-8 "> <input   type="radio" name="q8" value="a" onclick="qq()"> 
+                                     a </label> 
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="q1__box" id="q9__box">
+                            <p><span class="red">Вопрос 9</span> из 18</p>
+                            
+                            <label class="text-h1 form__label" >
+                                1
+                            </label> <br>
+
+                            <ul class="form__input">
+
+                                <li class="q1__answ">
+                                    <label  class=" l-1  l-c-9"> <input  type="radio" name="q9" value="c"   onclick="qq()"> 
+                                  
+                                        с </label> <br>
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-1 l-b-9" > <input  type="radio" name="q9" value="b" onclick="qq()"> 
+                                        b</label> 
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-2  l-a-9 "> <input   type="radio" name="q9" value="a" onclick="qq()"> 
+                                     a </label> 
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="q1__box" id="q10__box">
+                            <p><span class="red">Вопрос 10</span> из 18</p>
+                            
+                            <label class="text-h1 form__label" >
+                                1
+                            </label> <br>
+
+                            <ul class="form__input">
+
+                                <li class="q1__answ">
+                                    <label  class=" l-1  l-c-10"> <input  type="radio" name="q10" value="c"   onclick="qq()"> 
+                                  
+                                        с </label> <br>
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-1 l-b-10" > <input  type="radio" name="q10" value="b" onclick="qq()"> 
+                                        b</label> 
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-2  l-a-10 "> <input   type="radio" name="q10" value="a" onclick="qq()"> 
+                                     a </label> 
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="q1__box" id="q11__box">
+                            <p><span class="red">Вопрос 11</span> из 18</p>
+                            
+                            <label class="text-h1 form__label" >
+                                1
+                            </label> <br>
+
+                            <ul class="form__input">
+
+                                <li class="q1__answ">
+                                    <label  class=" l-1  l-c-11"> <input  type="radio" name="q11" value="c"   onclick="qq()"> 
+                                  
+                                        с </label> <br>
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-1 l-b-11" > <input  type="radio" name="q11" value="b" onclick="qq()"> 
+                                        b</label> 
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-2  l-a-11 "> <input   type="radio" name="q11" value="a" onclick="qq()"> 
+                                     a </label> 
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="q1__box" id="q12__box">
+                            <p><span class="red">Вопрос 12</span> из 18</p>
+                            
+                            <label class="text-h1 form__label" >
+                                1
+                            </label> <br>
+
+                            <ul class="form__input">
+
+                                <li class="q1__answ">
+                                    <label  class=" l-1  l-c-12"> <input  type="radio" name="q12" value="c"   onclick="qq()"> 
+                                  
+                                        с </label> <br>
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-1 l-b-12" > <input  type="radio" name="q12" value="b" onclick="qq()"> 
+                                        b</label> 
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-2  l-a-12 "> <input   type="radio" name="q12" value="a" onclick="qq()"> 
+                                     a </label> 
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="q1__box" id="q13__box">
+                            <p><span class="red">Вопрос 13</span> из 18</p>
+                            
+                            <label class="text-h1 form__label" >
+                                1
+                            </label> <br>
+
+                            <ul class="form__input">
+
+                                <li class="q1__answ">
+                                    <label  class=" l-1  l-c-13"> <input  type="radio" name="q13" value="c"   onclick="qq()"> 
+                                  
+                                        с </label> <br>
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-1 l-b-13" > <input  type="radio" name="q13" value="b" onclick="qq()"> 
+                                        b</label> 
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-2  l-a-13 "> <input   type="radio" name="q13" value="a" onclick="qq()"> 
+                                     a </label> 
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        
+
+                        <div class="q1__box" id="q14__box">
+                            <p><span class="red">Вопрос 14</span> из 18</p>
+                            
+                            <label class="text-h1 form__label" >
+                                1
+                            </label> <br>
+
+                            <ul class="form__input">
+
+                                <li class="q1__answ">
+                                    <label  class=" l-1  l-c-14"> <input  type="radio" name="q14" value="c"   onclick="qq()"> 
+                                  
+                                        с </label> <br>
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-1 l-b-14" > <input  type="radio" name="q14" value="b" onclick="qq()"> 
+                                        b</label> 
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-2  l-a-14 "> <input   type="radio" name="q14" value="a" onclick="qq()"> 
+                                     a </label> 
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="q1__box" id="q15__box">
+                            <p><span class="red">Вопрос 15</span> из 18</p>
+                            
+                            <label class="text-h1 form__label" >
+                                1
+                            </label> <br>
+
+                            <ul class="form__input">
+
+                                <li class="q1__answ">
+                                    <label  class=" l-1  l-c-15"> <input  type="radio" name="q15" value="c"   onclick="qq()"> 
+                                  
+                                        с </label> <br>
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-1 l-b-15" > <input  type="radio" name="q15" value="b" onclick="qq()"> 
+                                        b</label> 
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-2  l-a-15 "> <input   type="radio" name="q15" value="a" onclick="qq()"> 
+                                     a </label> 
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="q1__box" id="q16__box">
+                            <p><span class="red">Вопрос 16</span> из 18</p>
+                            
+                            <label class="text-h1 form__label" >
+                                1
+                            </label> <br>
+
+                            <ul class="form__input">
+
+                                <li class="q1__answ">
+                                    <label  class=" l-1  l-c-16"> <input  type="radio" name="q16" value="c"   onclick="qq()"> 
+                                  
+                                        с </label> <br>
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-1 l-b-16" > <input  type="radio" name="q16" value="b" onclick="qq()"> 
+                                        b</label> 
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-2  l-a-16 "> <input   type="radio" name="q16" value="a" onclick="qq()"> 
+                                     a </label> 
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="q1__box" id="q17__box">
+                            <p><span class="red">Вопрос 17</span> из 18</p>
+                            
+                            <label class="text-h1 form__label" >
+                                1
+                            </label> <br>
+
+                            <ul class="form__input">
+
+                                <li class="q1__answ">
+                                    <label  class=" l-1  l-c-17"> <input  type="radio" name="q17" value="c"   onclick="qq()"> 
+                                  
+                                        с </label> <br>
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-1 l-b-17" > <input  type="radio" name="q17" value="b" onclick="qq()"> 
+                                        b</label> 
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-2  l-a-17 "> <input   type="radio" name="q17" value="a" onclick="qq()"> 
+                                     a </label> 
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+
+                        <div class="q1__box" id="q18__box">
+                            <p><span class="red">Вопрос 18</span> из 18</p>
+                            
+                            <label class="text-h1 form__label" >
+                                1
+                            </label> <br>
+
+                            <ul class="form__input">
+
+                                <li class="q1__answ">
+                                    <label  class=" l-1  l-c-18"> <input  type="radio" name="q18" value="c"   onclick="qq()"> 
+                                  
+                                        с </label> <br>
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-1 l-b-18" > <input  type="radio" name="q18" value="b" onclick="qq()"> 
+                                        b</label> 
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-2  l-a-18 "> <input   type="radio" name="q18" value="a" onclick="qq()"> 
+                                     a </label> 
+                                </li>
+                                
+                            </ul>
+                        </div>
+    
+                    </form>
+                    <div id="pract__res" class="pract__res">
+                        
+                        <span class="text-res text-h1">
+                            Результат Вашего тестирования: 
+                        </span>
+                        <span class="pract__res-int red text-h1">
+
+                        </span> <br>
+                        <button id="res__btn-print" class="start-cont__btn myprint" > Распечатать результаты теста</button>
+                        <button id="new_attempt" class="start-cont__btn" onclick="start()" > Попробовать снова</button>
+
+                        <div class="res-print ">
+                            <div class="start-cont__logo-box">
+                                <div class="start-cont__logo-pfr-box">
+                                  <img class="start-cont__logo-pfr-img" src="../img/logo-pfr.png" alt="Логотип ПФР">
+                                  <span class="start-cont__logo-pfr-text">Пенсионный Фонд Российской Федерации</span>
+                                </div>
+                        
+                                <div class="start-cont__logo-guu">
+                                  <img  src="../img/guu-logo.png" alt="Логотип ГУУ">
+                                  <h1 class="start-cont__h1">Курс повышения квалификации <br> <span class="start-cont__h2">«Профилактика коррупции»</span> </h1>
+                        
+                                </div>
+                        
+                                
+                              </div>
+                              <br> <br>
+                              <style>
+                                  .start-cont__logo-box{
+        display: flex;
+        width: 83%;
+        margin: 4vh 0 0 2vh;
+        justify-content: space-around;
+    }
+    .start-cont__logo-pfr-box{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex: 1;
+    }
+    .start-cont__h1{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .start-cont__logo-guu {
+        display: flex;
+        flex: 1;
+        align-items: center;
+    }
+    .start-cont__logo-guu img{
+        width: 25%;
+        margin-right: 2vw;
+    }
+    .start-cont__logo-pfr-text{
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 20px;
+        color: #2B313C;
+        width: 60%;
+    
+    }
+                              </style>
+                            <span class="text-res text-h1">
+                                Результат Вашего тестирования: 
+                            </span>
+                            <span class="pract__res-int-print red text-h1">
+    
+                            </span> <br>
+                            1. Система институтов государственной власти в сфере противодействия коррупции в Российской Федерации определяется в основном на положениях:  <br> <br>
+                            ВАШ ОТВЕТ: <br>
+                            <span class="ans-1-pr">
+
+                            </span> <br> <br> <br>
+                             2. Основные направления государственной политики в области противодействия коррупции определяет: <br> <br>
+                             ВАШ ОТВЕТ: <br>
+                            <span class="ans-2-pr">
+                                
+                            </span>  <br> <br> <br>
+
+                            3. К какой группе в системе государственных органов, осуществляющих противодействие коррупции относится Счетная палата РФ: <br> <br>
+                            ВАШ ОТВЕТ: <br>
+                            <span class="ans-3-pr">
+                                <script>
+                                    
+                                </script>
+                                
+                            </span>  <br> <br> <br>
+                            4. Первым антикоррупционным нормативно-правовым актом российского законодательства в современной России стал Указ Президента РФ «О борьбе с коррупцией в системе государственной службы», который вышел в: <br> <br>
+                            ВАШ ОТВЕТ: <br>
+                            <span class="ans-4-pr">
+                                
+                            </span>  <br> <br> <br>
+                            5. Основными международно-правовыми актами, которые определяют обязательства РФ в сфере противодействия коррупции, являются: <br> <br>
+                            ВАШ ОТВЕТ: <br>
+                            <span class="ans-5-pr">
+                                
+                            </span> 
+                            
+
+                        </div>
+
+                    </div>
+                    
+                    <button id="q1-question" class="start-cont__btn" onclick="check1()"  disabled >Продолжить</button>
+                        
+                   
+                </div>
+     <!--------------------------ПРАВЫЙ БЛОК С ВОПРОСАМИ  ------------------------------------------>                    
+                <div id="test__block-right">
+                    <ul class="test__raz">
+                        <li class="test__rz-li" id="q-1-a-1">
+                            <span id="q-1-a-1-a" class="test__quest-li  text-h1">
+                               Вопрос 1 
+                               <img id="a-r-1-1" src="../img/right-ico.png" alt="Правильный ответ"> 
+                               <img id="a-f-1-1"  src="../img/false-ico.png" alt="Неправильный ответ">
+                            </span> <br>
+                        </li>
+                        <li id="q-1-a-2" class="test__rz-li">
+                            <span id="q-1-a-2-a" class="test__quest-li text-h1">
+                                Вопрос 2
+                                <img id="a-r-1-2" src="../img/right-ico.png" alt="Правильный ответ"> 
+                               <img id="a-f-1-2" src="../img/false-ico.png" alt="Неправильный ответ">
+                            </span> <br>
+                            
+                        </li>
+                        <li id="q-1-a-3" class="test__rz-li">
+                            <span id="q-1-a-3-a"  class="test__quest-li  text-h1">
+                                Вопрос 3
+                                <img id="a-r-1-3" src="../img/right-ico.png" alt="Правильный ответ"> 
+                               <img id="a-f-1-3" src="../img/false-ico.png" alt="Неправильный ответ">
+                            </span><br>
+                           
+                        </li>
+                        <li id="q-1-a-4" class="test__rz-li">
+                            <span id="q-1-a-4-a" class="test__quest-li  text-h1">
+                                Вопрос 4
+                                <img id="a-r-1-4" src="../img/right-ico.png" alt="Правильный ответ"> 
+                               <img id="a-f-1-4" src="../img/false-ico.png" alt="Неправильный ответ">
+                            </span><br>
+                            
+                        </li>
+                        <li id="q-1-a-5" class="test__rz-li">
+                            <span id="q-1-a-5-a" class="test__quest-li  text-h1">
+                                Вопрос 5
+                                <img id="a-r-1-5" src="../img/right-ico.png" alt="Правильный ответ"> 
+                               <img id="a-f-1-5" src="../img/false-ico.png" alt="Неправильный ответ">
+                            </span><br>
+                           
+                        </li>
+
+                        <li id="q-1-a-6" class="test__rz-li">
+                            <span id="q-1-a-6-a" class="test__quest-li  text-h1">
+                                Вопрос 6
+                                <img id="a-r-1-6" src="../img/right-ico.png" alt="Правильный ответ"> 
+                               <img id="a-f-1-6" src="../img/false-ico.png" alt="Неправильный ответ">
+                            </span><br>
+                           
+                        </li>
+
+                        <li id="q-1-a-7" class="test__rz-li">
+                            <span id="q-1-a-7-a" class="test__quest-li  text-h1">
+                                Вопрос 7
+                                <img id="a-r-1-7" src="../img/right-ico.png" alt="Правильный ответ"> 
+                               <img id="a-f-1-7" src="../img/false-ico.png" alt="Неправильный ответ">
+                            </span><br>
+                           
+                        </li>
+
+                        <li id="q-1-a-8" class="test__rz-li">
+                            <span id="q-1-a-8-a" class="test__quest-li  text-h1">
+                                Вопрос 8
+                                <img id="a-r-1-8" src="../img/right-ico.png" alt="Правильный ответ"> 
+                               <img id="a-f-1-8" src="../img/false-ico.png" alt="Неправильный ответ">
+                            </span><br>
+                           
+                        </li>
+
+                        <li id="q-1-a-9" class="test__rz-li">
+                            <span id="q-1-a-9-a" class="test__quest-li  text-h1">
+                                Вопрос 9
+                                <img id="a-r-1-9" src="../img/right-ico.png" alt="Правильный ответ"> 
+                               <img id="a-f-1-9" src="../img/false-ico.png" alt="Неправильный ответ">
+                            </span><br>
+                           
+                        </li>
+
+                        <li id="q-1-a-10" class="test__rz-li">
+                            <span id="q-1-a-10-a" class="test__quest-li  text-h1">
+                                Вопрос 10
+                                <img id="a-r-1-10" src="../img/right-ico.png" alt="Правильный ответ"> 
+                               <img id="a-f-1-10" src="../img/false-ico.png" alt="Неправильный ответ">
+                            </span><br>
+                           
+                        </li>
+
+                        <li id="q-1-a-11" class="test__rz-li">
+                            <span id="q-1-a-11-a" class="test__quest-li  text-h1">
+                                Вопрос 11
+                                <img id="a-r-1-11" src="../img/right-ico.png" alt="Правильный ответ"> 
+                               <img id="a-f-1-11" src="../img/false-ico.png" alt="Неправильный ответ">
+                            </span><br>
+                           
+                        </li>
+
+                        <li id="q-1-a-12" class="test__rz-li">
+                            <span id="q-1-a-12-a" class="test__quest-li  text-h1">
+                                Вопрос 12
+                                <img id="a-r-1-12" src="../img/right-ico.png" alt="Правильный ответ"> 
+                               <img id="a-f-1-12" src="../img/false-ico.png" alt="Неправильный ответ">
+                            </span><br>
+                           
+                        </li>
+
+                        <li id="q-1-a-13" class="test__rz-li">
+                            <span id="q-1-a-13-a" class="test__quest-li  text-h1">
+                                Вопрос 13
+                                <img id="a-r-1-13" src="../img/right-ico.png" alt="Правильный ответ"> 
+                               <img id="a-f-1-13" src="../img/false-ico.png" alt="Неправильный ответ">
+                            </span><br>
+                           
+                        </li>
+
+                        <li id="q-1-a-14" class="test__rz-li">
+                            <span id="q-1-a-14-a" class="test__quest-li  text-h1">
+                                Вопрос 14
+                                <img id="a-r-1-14" src="../img/right-ico.png" alt="Правильный ответ"> 
+                               <img id="a-f-1-14" src="../img/false-ico.png" alt="Неправильный ответ">
+                            </span><br>
+                           
+                        </li>
+
+                        <li id="q-1-a-15" class="test__rz-li">
+                            <span id="q-1-a-15-a" class="test__quest-li  text-h1">
+                                Вопрос 15
+                                <img id="a-r-1-15" src="../img/right-ico.png" alt="Правильный ответ"> 
+                               <img id="a-f-1-15" src="../img/false-ico.png" alt="Неправильный ответ">
+                            </span><br>
+                           
+                        </li>
+
+                        <li id="q-1-a-16" class="test__rz-li">
+                            <span id="q-1-a-16-a" class="test__quest-li  text-h1">
+                                Вопрос 16
+                                <img id="a-r-1-16" src="../img/right-ico.png" alt="Правильный ответ"> 
+                               <img id="a-f-1-16" src="../img/false-ico.png" alt="Неправильный ответ">
+                            </span><br>
+                           
+                        </li>
+
+                        <li id="q-1-a-17" class="test__rz-li">
+                            <span id="q-1-a-17-a" class="test__quest-li  text-h1">
+                                Вопрос 17
+                                <img id="a-r-1-17" src="../img/right-ico.png" alt="Правильный ответ"> 
+                               <img id="a-f-1-17" src="../img/false-ico.png" alt="Неправильный ответ">
+                            </span><br>
+                           
+                        </li>
+
+                        <li id="q-1-a-18" class="test__rz-li">
+                            <span id="q-1-a-18-a" class="test__quest-li  text-h1">
+                                Вопрос 18
+                                <img id="a-r-1-18" src="../img/right-ico.png" alt="Правильный ответ"> 
+                               <img id="a-f-1-18" src="../img/false-ico.png" alt="Неправильный ответ">
+                            </span><br>
+                           
+                        </li>
+
+                       
+                    </ul>
+                   
+
+                </div>
+
+                <script>
+                    
+                    if(localStorage.getItem("new_attempt")){
+                        document.getElementById("countdown").style.display = "none";
+                        document.getElementById("myform").style.display = "none";
+                        document.getElementById("pract__res").style.display = localStorage.getItem("new_attempt");
+                        document.getElementById("q1-question").style.display = "none";
+                        
+                    $("#myform").css({
+                        'display' : 'none'
+                    });
+    
+                    }
+                  
+                    //скрипт на выбор ответа
+                    function qq(){
+                        document.getElementById("q1-question").style.opacity = "1";
+                        $('#q1-question').removeAttr("disabled");
+
+                    
+                        $(".l-1").css({
+                                'opacity' : '0.3'
+                            });    
+                        
+                        $(".l-2").css({
+                                'color' : '#0283FD',
+                                'opacity' : '1',
+                                'font-weight' : 'bold'
+                            });        
+                        $("input").prop('disabled', true);           
+    
+                    }
+                    //скрипт на начало теста 
+                     if(localStorage.getItem("new_attempt") == "block"){
+                        document.getElementById("countdown").style.display = "none";
+                        document.getElementById("myform").style.display = "none";
+                        document.getElementById("pract__res").style.display = "block";
+                        document.getElementById("q1-question").style.display = "none";
+                        
+                        
+                    $("#myform").css({
+                        'display' : 'none'
+                    });
+                        if(localStorage.getItem("res")){
+                            document.querySelector('.pract__res-int').textContent = "   " + localStorage.getItem("res") + "%";
+                        } else{
+                            document.querySelector('.pract__res-int').textContent = "0%";
+                        }
+                            document.getElementById("text-1-1").style.display = "none";
+                            document.getElementById("btn-1-1").style.display = "none";
+                        }
+                    if(!localStorage.getItem("attempt")){
+                        localStorage.setItem("attempt", "3");
+                        
+                        
+                    } else if(localStorage.getItem("attempt") == "0"){
+                        document.getElementById("countdown").style.display = "none";
+                        document.getElementById("myform").style.display = "none";
+                        document.getElementById("pract__res").style.display = "block";
+                        document.getElementById("q1-question").style.display = "none";
+                        document.getElementById("new_attempt").style.display = "none";
+                        
+                    $("#myform").css({
+                        'display' : 'none'
+                    });
+                        if(localStorage.getItem("res")){
+                            document.querySelector('.pract__res-int').textContent = "   " + localStorage.getItem("res") + "%";
+                        } else{
+                            document.querySelector('.pract__res-int').textContent = "0%";
+                        }
+                            document.getElementById("text-1-1").style.display = "none";
+                            document.getElementById("btn-1-1").style.display = "none";
+                        }
+                    document.querySelector('.attempt').textContent = " Осталось попыток  " + localStorage.getItem("attempt");
+                    
+                    function start(){
+                        if(!localStorage.getItem("arr[0]")){
+                            var arr_1 = generateArrayRandomNumber (1, 3);
+                            localStorage.setItem("data", JSON.stringify(arr_1));
+                            
+                        } else {
+                            var arr_1 = JSON.parse(localStorage.getItem("data"));
+                        }
+                        
+                        
+                        alert(arr_1);
+                        localStorage.setItem("arr[0]", arr_1[0]);
+                        localStorage.setItem("arr[1]", arr_1[1] );
+                        localStorage.setItem("arr[2]", arr_1[2] );
+                        if(localStorage.getItem("attempt") == "3"){
+                            localStorage.setItem("attempt", "2");
+                            if(localStorage.getItem("arr[0]") == "1"){
+                            document.myform.style.display = "block";
+                            initializeClock('myform', new Date(Date.parse(new Date()) +  90 * 60 * 1000));
+                        } else if (localStorage.getItem("arr[0]")  == "2"){
+                            
+                            document.myform_2.style.display = "block";
+                            initializeClock('myform_2', new Date(Date.parse(new Date()) +  90 * 60 * 1000));
+                        } else if (localStorage.getItem("arr[0]")  == "3"){
+                            document.myform_3.style.display = "block";
+                            initializeClock('myform_3', new Date(Date.parse(new Date()) +  90 * 60 * 1000));
+                        }
+                            
+                        } else if(localStorage.getItem("attempt") == "2"){
+                            localStorage.setItem("attempt", "1");
+                            if(localStorage.getItem("arr[1]") == "1"){
+                            document.myform.style.display = "block";
+                            initializeClock('myform', new Date(Date.parse(new Date()) + 90 * 60 * 1000));
+                        } else if (localStorage.getItem("arr[1]")  == "2"){
+                            document.myform_2.style.display = "block";
+                            initializeClock('myform_2', new Date(Date.parse(new Date()) +  90 * 60 * 1000));
+                        } else if (localStorage.getItem("arr[1]")  == "3"){
+                            document.myform_3.style.display = "block";
+                            initializeClock('myform_3', new Date(Date.parse(new Date()) +  90 * 60 * 1000));
+                        }
+                           
+                        }else if(localStorage.getItem("attempt") == "1"){
+                            localStorage.setItem("attempt", "0");
+                            if(localStorage.getItem("arr[2]") == "1"){
+                            document.myform.style.display = "block";
+                            initializeClock('myform', new Date(Date.parse(new Date()) +  90 * 60 * 1000));
+                        } else if (localStorage.getItem("arr[2]")  == "2"){
+                            document.myform_2.style.display = "block";
+                            initializeClock('myform_2', new Date(Date.parse(new Date()) +  90 * 60 * 1000));
+                        } else if (localStorage.getItem("arr[2]")  == "3"){
+                            document.myform_3.style.display = "block";
+                            initializeClock('myform_3', new Date(Date.parse(new Date()) +  90 * 60 * 1000));
+                        }
+                        }
+                        document.getElementById("pract__res").style.display = "none";
+                        document.querySelector('.attempt').textContent = " Осталось попыток  " + localStorage.getItem("attempt");
+                        document.getElementById("text-1-1").style.display = "none";
+                        document.getElementById("btn-1-1").style.display = "none";
+                        document.getElementById("q1-question").style.display = "block";
+
+                        localStorage.removeItem("new_attempt");
+                        localStorage.removeItem("res");
+                        localStorage.removeItem("res_1");
+                        localStorage.removeItem("res_2");
+                        localStorage.removeItem("res_3");
+                        localStorage.removeItem("res_4");
+                        localStorage.removeItem("res_5");
+                        
+                        
+                        
+
+                        
+                        
+                    }
+
+
+                  
+
+
+    
+    
+                   
+                   
+                
+                </script>
+ <script>
+    function generateArrayRandomNumber (min, max) {
+        var totalNumbers = max - min + 1,
+        arrayTotalNumbers = [],
+        arrayRandomNumbers  = [],
+            tempRandomNumber;
+            while (totalNumbers--) {
+    arrayTotalNumbers.push(totalNumbers + min);
+}
+while (arrayTotalNumbers.length) {
+    tempRandomNumber = Math.round(Math.random() * (arrayTotalNumbers.length - 1));
+    arrayRandomNumbers.push(arrayTotalNumbers[tempRandomNumber]);
+    arrayTotalNumbers.splice(tempRandomNumber, 1);
+}
+return arrayRandomNumbers;
+}
+//  Нужно учесть что в диапазоне участвуют и минимальное и максимальное число
+//  тоесть если задать (0, 100) то на выходе получим массив из 101-го числа
+//  от 1 до 100 и плюс число 0
+
+
+
+    function getTimeRemaining(endtime) {
+    var t = Date.parse(endtime) - Date.parse(new Date());
+    var minutes = Math.floor((t / 1000 / 60) % 60);
+    var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+    var seconds = Math.floor((t / 1000) % 60);
+    return {
+      'total': t,
+      'hours': hours,
+      'minutes': minutes,
+      'seconds': seconds
+    };
+  }
+   
+  function initializeClock(id, endtime) {
+    var clock = document.getElementById(id);
+    
+    var hoursSpan = clock.querySelector(".hours");
+    var minutesSpan = clock.querySelector(".minutes");
+    var secondsSpan = clock.querySelector('.seconds');
+   
+   
+    function updateClock() {
+      var t = getTimeRemaining(endtime);
+   
+      if (t.total <= 0) {
+       
+        document.getElementById("countdown").style.display = "none";
+                        document.getElementById("myform").style.display = "none";
+                        document.getElementById("pract__res").style.display = "block";
+                        document.getElementById("q1-question").style.display = "none";
+                        localStorage.setItem("new_attempt", "block");
+                        
+                    $("#myform").css({
+                        'display' : 'none'
+                    });
+                    $("#myform_2").css({
+                        'display' : 'none'
+                    });
+                    $("#myform_3").css({
+                        'display' : 'none'
+                    });
+                        if(localStorage.getItem("res")){
+                            document.querySelector('.pract__res-int').textContent = "   " + localStorage.getItem("res") + "%";
+                        } else{
+                            document.querySelector('.pract__res-int').textContent = "0%";
+                        }
+        clearInterval(timeinterval);
+        return true;
+
+
         
+      }
+   
+      
+      hoursSpan.innerHTML = ("0" + t.hours + " : ");
+      minutesSpan.innerHTML = ("0" + t.minutes).slice(-2);
+      secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+      
+    }
+   
+    updateClock();
+    var timeinterval = setInterval(updateClock, 1000);
+  }
+
+ 
+  </script>
+
+<!-- 2. Распечатать любой элемент страницы -->
+<script>
+    $(function(){
+    $('.myprint').click(function(){             //при клике на что срабатывает печать
+       // document.querySelector('.res-print').style.display = "block";
+       if(localStorage.getItem("res")){
+            document.querySelector('.pract__res-int-print').textContent = "   " + localStorage.getItem("res") + "%";
+        } else{
+            document.querySelector('.pract__res-int-print').textContent = "0%";
+        }
+       
+        
+
+        if(!localStorage.getItem("res_1")){
+            document.querySelector('.ans-1-pr').textContent = "Нет ответа";
+        } else {
+           
+            document.querySelector('.ans-1-pr').textContent = localStorage.getItem("res_1");
+        }
+        if(!localStorage.getItem("res_2")){
+            document.querySelector('.ans-2-pr').textContent = "Нет ответа";
+        } else {
+           
+            document.querySelector('.ans-2-pr').textContent = localStorage.getItem("res_2");
+        }
+        if(!localStorage.getItem("res_3")){
+            document.querySelector('.ans-3-pr').textContent = "Нет ответа";
+        } else {
+           
+            document.querySelector('.ans-3-pr').textContent = localStorage.getItem("res_3");
+        }
+        if(!localStorage.getItem("res_4")){
+            document.querySelector('.ans-4-pr').textContent = "Нет ответа";
+        } else {
+           
+            document.querySelector('.ans-4-pr').textContent = localStorage.getItem("res_4");
+        }
+
+
+        if(!localStorage.getItem("res_5")){
+            document.querySelector('.ans-5-pr').textContent = "Нет ответа";
+        } else {
+           
+            document.querySelector('.ans-5-pr').textContent = localStorage.getItem("res_5");
+        }
+
+        if(!localStorage.getItem("res_6")){
+            document.querySelector('.ans-6-pr').textContent = "Нет ответа";
+        } else {
+           
+            document.querySelector('.ans-6-pr').textContent = localStorage.getItem("res_6");
+        }
+
+        if(!localStorage.getItem("res_7")){
+            document.querySelector('.ans-7-pr').textContent = "Нет ответа";
+        } else {
+           
+            document.querySelector('.ans-7-pr').textContent = localStorage.getItem("res_7");
+        }
+
+        if(!localStorage.getItem("res_8")){
+            document.querySelector('.ans-8-pr').textContent = "Нет ответа";
+        } else {
+           
+            document.querySelector('.ans-8-pr').textContent = localStorage.getItem("res_8");
+        }
+        if(!localStorage.getItem("res_9")){
+            document.querySelector('.ans-9-pr').textContent = "Нет ответа";
+        } else {
+           
+            document.querySelector('.ans-9-pr').textContent = localStorage.getItem("res_9");
+        }
+
+        if(!localStorage.getItem("res_10")){
+            document.querySelector('.ans-10-pr').textContent = "Нет ответа";
+        } else {
+           
+            document.querySelector('.ans-10-pr').textContent = localStorage.getItem("res_10");
+        }
+
+        if(!localStorage.getItem("res_11")){
+            document.querySelector('.ans-11-pr').textContent = "Нет ответа";
+        } else {
+           
+            document.querySelector('.ans-11-pr').textContent = localStorage.getItem("res_11");
+        }
+
+        if(!localStorage.getItem("res_12")){
+            document.querySelector('.ans-12-pr').textContent = "Нет ответа";
+        } else {
+           
+            document.querySelector('.ans-12-pr').textContent = localStorage.getItem("res_12");
+        }
+
+        if(!localStorage.getItem("res_13")){
+            document.querySelector('.ans-13-pr').textContent = "Нет ответа";
+        } else {
+           
+            document.querySelector('.ans-13-pr').textContent = localStorage.getItem("res_13");
+        }
+
+        if(!localStorage.getItem("res_14")){
+            document.querySelector('.ans-14-pr').textContent = "Нет ответа";
+        } else {
+           
+            document.querySelector('.ans-14-pr').textContent = localStorage.getItem("res_14");
+        }
+
+        if(!localStorage.getItem("res_15")){
+            document.querySelector('.ans-15-pr').textContent = "Нет ответа";
+        } else {
+           
+            document.querySelector('.ans-15-pr').textContent = localStorage.getItem("res_15");
+        }
+
+        if(!localStorage.getItem("res_16")){
+            document.querySelector('.ans-16-pr').textContent = "Нет ответа";
+        } else {
+           
+            document.querySelector('.ans-16-pr').textContent = localStorage.getItem("res_16");
+        }
+
+        if(!localStorage.getItem("res_17")){
+            document.querySelector('.ans-17-pr').textContent = "Нет ответа";
+        } else {
+           
+            document.querySelector('.ans-17-pr').textContent = localStorage.getItem("res_17");
+        }
+        if(!localStorage.getItem("res_18")){
+            document.querySelector('.ans-18-pr').textContent = "Нет ответа";
+        } else {
+           
+            document.querySelector('.ans-18-pr').textContent = localStorage.getItem("res_18");
+        }
+
+    var html_to_print=$('.res-print').html();    //что печатаем
+    var iframe=$('<iframe id="print_frame">');
+        
+    $('body').append(iframe);
+    var doc = $('#print_frame')[0].contentDocument || $('#print_frame')[0].contentWindow.document;
+    var win = $('#print_frame')[0].contentWindow || $('#print_frame')[0];
+    doc.getElementsByTagName('body')[0].innerHTML=html_to_print;
+    win.print();
+    $('iframe').remove();
+    });
+    });
+
+
+
+</script>
+<style>#print_frame{display: none;}</style>
+
+          
+            </div>
+        </section>
     </main>
 
 </body>
