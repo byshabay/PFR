@@ -221,6 +221,7 @@ function q18__style(){
     document.getElementById("pract__res").style.display = "block";
     document.getElementById("q1-question").style.display = "none";
     document.getElementById("q18__box").style.display = "none";
+    localStorage.setItem("new_attempt", "block");
 
     $("#q-1-a-18").css({
         'color': '#8D9EB9'

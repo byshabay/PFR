@@ -10,6 +10,8 @@
     <script src="../style/check.js"></script>
     <script src="../style/q_boxs.js"></script>
     <script src="../style/jquery-1.9.1.min.js"></script>
+
+    <script src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"></script>
     <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
 </head>
 <body class="body">
@@ -86,14 +88,12 @@
                     <p id="text-1-1" class="main__text-cont">
                         Для начала тестирования нажмите кнопку ПРОДОЛЖИТЬ
                     </p>
-                    <span class="attempt">
-                        
-                    </span>
+                    
                     <button id="btn-1-1" class="test__btn-strt" id="count" onclick="start()">Продолжить</button>
                    
 
                     <form id="myform" name="myform" class="myform form_1">
-                        ВАРИАНТ 1
+                       
                         <!--ТАЙМЕР-->
                         <div id="countdown" class="countdown">
                             <div class="countdown-number">
@@ -231,26 +231,26 @@
                             <p><span class="red">Вопрос 6</span> из 18</p>
                             
                             <label class="text-h1 form__label" >
-                                1
+                                В соответствии с постановлением Правительства РФ от 5 июля 2013 г. № 568 «О распространении на отдельные категории граждан ограничений, запретов и обязанностей, установленных ФЗ «О противодействии коррупции» работник ПФР не вправе:
                             </label> <br>
 
                             <ul class="form__input">
-
+                                <li class="q1__answ">
+                                    <label class="l-2  l-a-6 "> <input   type="radio" name="q6" value="a" onclick="qq()"> 
+                                        Принимать без письменного разрешения работодателя (его представителя) от иностранных государств, международных организаций награды, почетные и специальные звания (за исключением научных званий), если в его должностные обязанности входит взаимодействие с указанными организациями; </label> 
+                                </li>
                                 <li class="q1__answ">
                                     <label  class=" l-1  l-c-6"> <input  type="radio" name="q6" value="c"   onclick="qq()"> 
                                   
-                                        с </label> <br>
+                                        Принимать без устного разрешения работодателя (его представителя) от иностранных государств, международных организаций награды, почетные и специальные звания (за исключением научных званий), если в его должностные обязанности входит взаимодействие с указанными организациями; </label> <br>
                                 </li>
 
                                 <li class="q1__answ">
                                     <label class="l-1 l-b-6" > <input  type="radio" name="q6" value="b" onclick="qq()"> 
-                                        b</label> 
+                                        Принимать без письменного разрешения таможенных органов (его представителя) от иностранных государств, международных организаций награды, почетные и специальные звания (за исключением научных званий), если в его должностные обязанности входит взаимодействие с указанными организациями.</label> 
                                 </li>
 
-                                <li class="q1__answ">
-                                    <label class="l-2  l-a-6 "> <input   type="radio" name="q6" value="a" onclick="qq()"> 
-                                     a </label> 
-                                </li>
+                                
                                 
                             </ul>
                         </div>
@@ -259,7 +259,7 @@
                             <p><span class="red">Вопрос 7</span> из 18</p>
                             
                             <label class="text-h1 form__label" >
-                                1
+                                В соответствии с постановлением Правительства РФ от 5 июля 2013 г. № 568 «О распространении на отдельные категории граждан ограничений, запретов и обязанностей, установленных ФЗ «О противодействии коррупции» работник ПФР:
                             </label> <br>
 
                             <ul class="form__input">
@@ -267,17 +267,18 @@
                                 <li class="q1__answ">
                                     <label  class=" l-1  l-c-7"> <input  type="radio" name="q7" value="c"   onclick="qq()"> 
                                   
-                                        с </label> <br>
+                                        	Может входить в состав органов управления, попечительских или наблюдательных советов, иных органов иностранных некоммерческих неправительственных организаций и действующих на территории РФ их структурных подразделений, если иное не предусмотрено международным договором РФ или законодательством Российской Федерации; </label> <br>
                                 </li>
 
                                 <li class="q1__answ">
                                     <label class="l-1 l-b-7" > <input  type="radio" name="q7" value="b" onclick="qq()"> 
-                                        b</label> 
+                                       С письменного разрешения работодателя (его представителя) может входить в состав органов управления, попечительских или наблюдательных советов, иных органов иностранных некоммерческих неправительственных организаций и действующих на территории РФ их структурных подразделений, если иное не предусмотрено международным договором РФ или законодательством РФ;</label> 
                                 </li>
 
                                 <li class="q1__answ">
                                     <label class="l-2  l-a-7 "> <input   type="radio" name="q7" value="a" onclick="qq()"> 
-                                     a </label> 
+                                    Не вправе входить в состав органов управления, попечительских или наблюдательных советов, иных органов иностранных некоммерческих неправительственных организаций и действующих на территории РФ их структурных подразделений, если иное не предусмотрено международным договором РФ или законодательством РФ.
+                                    </label> 
                                 </li>
                                 
                             </ul>
@@ -288,7 +289,7 @@
                             <p><span class="red">Вопрос 8</span> из 18</p>
                             
                             <label class="text-h1 form__label" >
-                                1
+                                В соответствии с постановлением Правительства РФ от 5 июля 2013 г. № 568 «О распространении на отдельные категории граждан ограничений, запретов и обязанностей, установленных ФЗ «О противодействии коррупции» работник ПФР:
                             </label> <br>
 
                             <ul class="form__input">
@@ -296,17 +297,17 @@
                                 <li class="q1__answ">
                                     <label  class=" l-1  l-c-8"> <input  type="radio" name="q8" value="c"   onclick="qq()"> 
                                   
-                                        с </label> <br>
+                                        	Имеет право заниматься с письменного разрешения работодателя (его представителя) оплачиваемой деятельностью, финансируемой исключительно за счет средств иностранных государств, международных и иностранных организаций, иностранных граждан и лиц без гражданства, если иное не предусмотрено международным договором РФ или законодательством РФ; </label> <br>
                                 </li>
 
                                 <li class="q1__answ">
                                     <label class="l-1 l-b-8" > <input  type="radio" name="q8" value="b" onclick="qq()"> 
-                                        b</label> 
+                                      	Имеет право заниматься с письменного разрешения председателя ПФР оплачиваемой деятельностью, финансируемой исключительно за счет средств иностранных государств, международных и иностранных организаций, иностранных граждан и лиц без гражданства, если иное не предусмотрено международным договором РФ или законодательством РФ;</label> 
                                 </li>
 
                                 <li class="q1__answ">
                                     <label class="l-2  l-a-8 "> <input   type="radio" name="q8" value="a" onclick="qq()"> 
-                                     a </label> 
+                                        	Не вправе заниматься без письменного разрешения работодателя (его представителя) оплачиваемой деятельностью, финансируемой исключительно за счет средств иностранных государств, международных и иностранных организаций, иностранных граждан и лиц без гражданства, если иное не предусмотрено международным договором РФ или законодательством РФ. </label> 
                                 </li>
                                 
                             </ul>
@@ -316,26 +317,26 @@
                             <p><span class="red">Вопрос 9</span> из 18</p>
                             
                             <label class="text-h1 form__label" >
-                                1
+                                В соответствии с постановлением Правительства РФ от 5 июля 2013 г. № 568 «О распространении на отдельные категории граждан ограничений, запретов и обязанностей, установленных ФЗ «О противодействии коррупции»:
                             </label> <br>
 
                             <ul class="form__input">
-
+                                <li class="q1__answ">
+                                    <label class="l-2  l-a-9 "> <input   type="radio" name="q9" value="a" onclick="qq()"> 
+                                       	Работнику запрещается получать в связи с исполнением трудовых обязанностей вознаграждения от физических и юридических лиц (подарки, денежное вознаграждение, ссуды, услуги, оплату развлечений, отдыха, транспортных расходов и иные вознаграждения). </label> 
+                                </li>
                                 <li class="q1__answ">
                                     <label  class=" l-1  l-c-9"> <input  type="radio" name="q9" value="c"   onclick="qq()"> 
                                   
-                                        с </label> <br>
+                                       	Работнику не запрещается получать в связи с исполнением трудовых обязанностей вознаграждения до 1 тыс. руб. от физических и юридических лиц (подарки, денежное вознаграждение, ссуды, услуги, оплату развлечений, отдыха, транспортных расходов и иные вознаграждения). </label> <br>
                                 </li>
 
                                 <li class="q1__answ">
                                     <label class="l-1 l-b-9" > <input  type="radio" name="q9" value="b" onclick="qq()"> 
-                                        b</label> 
+                                       	Работнику не запрещается получать в связи с исполнением трудовых обязанностей вознаграждения до 3 тыс. руб. от физических и юридических лиц (подарки, денежное вознаграждение, ссуды, услуги, оплату развлечений, отдыха, транспортных расходов и иные вознаграждения).</label> 
                                 </li>
 
-                                <li class="q1__answ">
-                                    <label class="l-2  l-a-9 "> <input   type="radio" name="q9" value="a" onclick="qq()"> 
-                                     a </label> 
-                                </li>
+                               
                                 
                             </ul>
                         </div>
@@ -344,7 +345,7 @@
                             <p><span class="red">Вопрос 10</span> из 18</p>
                             
                             <label class="text-h1 form__label" >
-                                1
+                                Представление работниками системы ПФР сведений о доходах, расходах, об имуществе и обязательствах имущественного характера и членов своей семьи относится к обязанностям какого характера?
                             </label> <br>
 
                             <ul class="form__input">
@@ -352,18 +353,19 @@
                                 <li class="q1__answ">
                                     <label  class=" l-1  l-c-10"> <input  type="radio" name="q10" value="c"   onclick="qq()"> 
                                   
-                                        с </label> <br>
+                                        Имущественного </label> <br>
+                                </li>
+                                <li class="q1__answ">
+                                    <label class="l-2  l-a-10 "> <input   type="radio" name="q10" value="a" onclick="qq()"> 
+                                        Информационного </label> 
                                 </li>
 
                                 <li class="q1__answ">
                                     <label class="l-1 l-b-10" > <input  type="radio" name="q10" value="b" onclick="qq()"> 
-                                        b</label> 
+                                        Дисциплинарно-служебного</label> 
                                 </li>
 
-                                <li class="q1__answ">
-                                    <label class="l-2  l-a-10 "> <input   type="radio" name="q10" value="a" onclick="qq()"> 
-                                     a </label> 
-                                </li>
+                                
                                 
                             </ul>
                         </div>
@@ -372,26 +374,26 @@
                             <p><span class="red">Вопрос 11</span> из 18</p>
                             
                             <label class="text-h1 form__label" >
-                                1
+                                Какие управленческие решения работников ПФР относятся к мерам по выполнению обязанностей представлять сведения о своих доходах, имущественных обязательствах, доходах членов семьи и связанных с этим обязанностей:
                             </label> <br>
 
                             <ul class="form__input">
-
+                                <li class="q1__answ">
+                                    <label class="l-2  l-a-11 "> <input   type="radio" name="q11" value="a" onclick="qq()"> 
+                                        Представление требуемых сведений о доходах в соответствии с законом </label> 
+                                </li>
                                 <li class="q1__answ">
                                     <label  class=" l-1  l-c-11"> <input  type="radio" name="q11" value="c"   onclick="qq()"> 
                                   
-                                        с </label> <br>
+                                        Разработка финансовых планов внутрисемейного бюджета относительно того, какую информацию представлять о деньгах семьи в ПФР  </label> <br>
                                 </li>
 
                                 <li class="q1__answ">
                                     <label class="l-1 l-b-11" > <input  type="radio" name="q11" value="b" onclick="qq()"> 
-                                        b</label> 
+                                        Координация усилий относительно снижения уровня иных доходов, помимо заработной платы в ПФР</label> 
                                 </li>
 
-                                <li class="q1__answ">
-                                    <label class="l-2  l-a-11 "> <input   type="radio" name="q11" value="a" onclick="qq()"> 
-                                     a </label> 
-                                </li>
+                                
                                 
                             </ul>
                         </div>
@@ -400,26 +402,26 @@
                             <p><span class="red">Вопрос 12</span> из 18</p>
                             
                             <label class="text-h1 form__label" >
-                                1
+                                В целях недопущения возникновения конфликта интересов в сферах деятельности ПФР, осуществление которых подвержено коррупционным рискам, работник системы ПФР обязан
                             </label> <br>
 
                             <ul class="form__input">
-
+                                
+                                <li class="q1__answ">
+                                    <label class="l-2  l-a-12 "> <input   type="radio" name="q12" value="a" onclick="qq()"> 
+                                        Уведомлять работодателя (его представителя) и своего непосредственного начальника о возникшем конфликте интересов или о возможности его возникновения, как только ему станет об этом известно; </label> 
+                                </li>
                                 <li class="q1__answ">
                                     <label  class=" l-1  l-c-12"> <input  type="radio" name="q12" value="c"   onclick="qq()"> 
                                   
-                                        с </label> <br>
+                                        Уведомлять работника организаций о возникшем конфликте интересов или о возможности его возникновения, как только ему станет об этом известно; </label> <br>
                                 </li>
 
                                 <li class="q1__answ">
                                     <label class="l-1 l-b-12" > <input  type="radio" name="q12" value="b" onclick="qq()"> 
-                                        b</label> 
+                                        Уведомлять департамент кадровой политики о возможном конфликте вне зависимости от характера конфликта</label> 
                                 </li>
 
-                                <li class="q1__answ">
-                                    <label class="l-2  l-a-12 "> <input   type="radio" name="q12" value="a" onclick="qq()"> 
-                                     a </label> 
-                                </li>
                                 
                             </ul>
                         </div>
@@ -428,7 +430,7 @@
                             <p><span class="red">Вопрос 13</span> из 18</p>
                             
                             <label class="text-h1 form__label" >
-                                1
+                                Предотвращение или урегулирование конфликта интересов в сферах деятельности ПФР может состоять в
                             </label> <br>
 
                             <ul class="form__input">
@@ -436,17 +438,17 @@
                                 <li class="q1__answ">
                                     <label  class=" l-1  l-c-13"> <input  type="radio" name="q13" value="c"   onclick="qq()"> 
                                   
-                                        с </label> <br>
+                                        Увольнении работника системы ПФР, являющегося стороной конфликта интересов </label> <br>
                                 </li>
 
                                 <li class="q1__answ">
                                     <label class="l-1 l-b-13" > <input  type="radio" name="q13" value="b" onclick="qq()"> 
-                                        b</label> 
+                                        Письменного предупреждения работника системы ПФР, являющегося стороной конфликта интересов о недопущении нарушения с его стороны</label> 
                                 </li>
 
                                 <li class="q1__answ">
                                     <label class="l-2  l-a-13 "> <input   type="radio" name="q13" value="a" onclick="qq()"> 
-                                     a </label> 
+                                        Изменении должностного положения работника системы ПФР, являющегося стороной конфликта интересов </label> 
                                 </li>
                                 
                             </ul>
@@ -457,26 +459,26 @@
                             <p><span class="red">Вопрос 14</span> из 18</p>
                             
                             <label class="text-h1 form__label" >
-                                1
+                                Что подразумевает соблюдение норм служебной этики работниками отделений ПФР? 
                             </label> <br>
 
                             <ul class="form__input">
-
+                                <li class="q1__answ">
+                                    <label class="l-2  l-a-14 "> <input   type="radio" name="q14" value="a" onclick="qq()"> 
+                                        Соблюдение работниками ПФР морально-нравственных и правовых норм </label> 
+                                </li>
                                 <li class="q1__answ">
                                     <label  class=" l-1  l-c-14"> <input  type="radio" name="q14" value="c"   onclick="qq()"> 
                                   
-                                        с </label> <br>
+                                        Совокупность мер защиты финансов, сосредоточенных в бюджете ПФР, предпринимаемых работниками ПФР в пределах своих обязанностей по службе </label> <br>
                                 </li>
 
                                 <li class="q1__answ">
                                     <label class="l-1 l-b-14" > <input  type="radio" name="q14" value="b" onclick="qq()"> 
-                                        b</label> 
+                                        Эффективная работа работников ПФР с обращениями граждан в пределах своих обязанностей по службе</label> 
                                 </li>
 
-                                <li class="q1__answ">
-                                    <label class="l-2  l-a-14 "> <input   type="radio" name="q14" value="a" onclick="qq()"> 
-                                     a </label> 
-                                </li>
+                                
                                 
                             </ul>
                         </div>
@@ -485,26 +487,26 @@
                             <p><span class="red">Вопрос 15</span> из 18</p>
                             
                             <label class="text-h1 form__label" >
-                                1
+                                Служебная этика работников ПФР включает, в основном, нормы … характера.
                             </label> <br>
 
                             <ul class="form__input">
-
+                                <li class="q1__answ">
+                                    <label class="l-2  l-a-15 "> <input   type="radio" name="q15" value="a" onclick="qq()"> 
+                                        Обязательного </label> 
+                                </li>
                                 <li class="q1__answ">
                                     <label  class=" l-1  l-c-15"> <input  type="radio" name="q15" value="c"   onclick="qq()"> 
                                   
-                                        с </label> <br>
+                                        Рекомендательного </label> <br>
                                 </li>
 
                                 <li class="q1__answ">
                                     <label class="l-1 l-b-15" > <input  type="radio" name="q15" value="b" onclick="qq()"> 
-                                        b</label> 
+                                        Дисциплинарно-служебного</label> 
                                 </li>
 
-                                <li class="q1__answ">
-                                    <label class="l-2  l-a-15 "> <input   type="radio" name="q15" value="a" onclick="qq()"> 
-                                     a </label> 
-                                </li>
+                                
                                 
                             </ul>
                         </div>
@@ -513,7 +515,7 @@
                             <p><span class="red">Вопрос 16</span> из 18</p>
                             
                             <label class="text-h1 form__label" >
-                                1
+                                В настоящее время уголовно наказуемые деяния коррупционного характера, совершаемые в системе ПФР, предусматриваются в 
                             </label> <br>
 
                             <ul class="form__input">
@@ -521,18 +523,18 @@
                                 <li class="q1__answ">
                                     <label  class=" l-1  l-c-16"> <input  type="radio" name="q16" value="c"   onclick="qq()"> 
                                   
-                                        с </label> <br>
+                                        Актах, принятых ПФР </label> <br>
                                 </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-1 l-b-16" > <input  type="radio" name="q16" value="b" onclick="qq()"> 
-                                        b</label> 
-                                </li>
-
                                 <li class="q1__answ">
                                     <label class="l-2  l-a-16 "> <input   type="radio" name="q16" value="a" onclick="qq()"> 
-                                     a </label> 
+                                        Уголовном кодексе РФ</label> 
                                 </li>
+                                <li class="q1__answ">
+                                    <label class="l-1 l-b-16" > <input  type="radio" name="q16" value="b" onclick="qq()"> 
+                                         В законах, регулирующих различные вопросы пенсионной системы</label> 
+                                </li>
+
+                                
                                 
                             </ul>
                         </div>
@@ -541,7 +543,7 @@
                             <p><span class="red">Вопрос 17</span> из 18</p>
                             
                             <label class="text-h1 form__label" >
-                                1
+                                При установлении в ходе проверки в ПФР обстоятельств, свидетельствующих о наличии признаков преступления или административного правонарушения, соврешенного работником ПФР,  материалы об этом представляются в 
                             </label> <br>
 
                             <ul class="form__input">
@@ -549,18 +551,18 @@
                                 <li class="q1__answ">
                                     <label  class=" l-1  l-c-17"> <input  type="radio" name="q17" value="c"   onclick="qq()"> 
                                   
-                                        с </label> <br>
+                                        Правление ПФР </label> <br>
                                 </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-1 l-b-17" > <input  type="radio" name="q17" value="b" onclick="qq()"> 
-                                        b</label> 
-                                </li>
-
                                 <li class="q1__answ">
                                     <label class="l-2  l-a-17 "> <input   type="radio" name="q17" value="a" onclick="qq()"> 
-                                     a </label> 
+                                        Государственные органы в соответствии с их компетенцией </label> 
                                 </li>
+                                <li class="q1__answ">
+                                    <label class="l-1 l-b-17" > <input  type="radio" name="q17" value="b" onclick="qq()"> 
+                                        Вышестоящему должностному лицу в ПФР</label> 
+                                </li>
+
+                                
                                 
                             </ul>
                         </div>
@@ -570,7 +572,7 @@
                             <p><span class="red">Вопрос 18</span> из 18</p>
                             
                             <label class="text-h1 form__label" >
-                                1
+                                Коррупционные проявления в системе ПФР имеют своим объектом сферу
                             </label> <br>
 
                             <ul class="form__input">
@@ -578,1088 +580,24 @@
                                 <li class="q1__answ">
                                     <label  class=" l-1  l-c-18"> <input  type="radio" name="q18" value="c"   onclick="qq()"> 
                                   
-                                        с </label> <br>
+                                        Частных финансов граждан, платящих страховые взносы в бюджет ПФР </label> <br>
                                 </li>
 
                                 <li class="q1__answ">
                                     <label class="l-1 l-b-18" > <input  type="radio" name="q18" value="b" onclick="qq()"> 
-                                        b</label> 
+                                        Личных финансов работников ПФР</label> 
                                 </li>
 
                                 <li class="q1__answ">
                                     <label class="l-2  l-a-18 "> <input   type="radio" name="q18" value="a" onclick="qq()"> 
-                                     a </label> 
+                                        Публичных финансов, к которым относится бюджет ПФР </label> 
                                 </li>
                                 
                             </ul>
                         </div>
     
                     </form>
-                    <form id="myform_2" name="myform_2" class="myform form_2">
-                        <!--ТАЙМЕР-->
-                        ВАРИАНТ 2
-                        <div id="countdown" class="countdown">
-                            <div class="countdown-number">
-                              <span class="hours countdown-time"></span>
-                              
-                            </div>
-                            <div class="countdown-number">
-                              <span class="minutes countdown-time"></span>
-                              
-                            </div>
-                            <div class="countdown-number">
-                                <span class="seconds countdown-time"></span>
-                                <span class="countdown-text"></span>
-                              </div>
-                            
-                          </div>
-                          <div id="deadline-message" class="deadline-message">
-                            Time is up!
-                          </div>
-                       
-                        <!--КОНЕЦ ТАЙМЕРА-->
-                        <div class="q1__box" id="q1__box">
-                            <p><span class="red">Вопрос 1</span> из 18</p>
-                            
-                            <label class="text-h1 form__label" >
-                                1
-                            </label> <br>
-
-                            <ul class="form__input">
-
-                                <li class="q1__answ">
-                                    <label  class=" l-1  l-c-1"> <input  type="radio" name="q1" value="c"   onclick="qq()"> 
-                                  
-                                        с </label> <br>
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-1 l-b-1" > <input  type="radio" name="q1" value="b" onclick="qq()"> 
-                                        b</label> 
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-2  l-a-1 "> <input   type="radio" name="q1" value="a" onclick="qq()"> 
-                                     a </label> 
-                                </li>
-                                
-                            </ul>
-                        </div>
-
-                        <div class="q1__box" id="q2__box">
-                            <p><span class="red">Вопрос 2</span> из 18</p>
-                            
-                            <label class="text-h1 form__label" >
-                                1
-                            </label> <br>
-
-                            <ul class="form__input">
-
-                                <li class="q1__answ">
-                                    <label  class=" l-1  l-c-2"> <input  type="radio" name="q2" value="c"   onclick="qq()"> 
-                                  
-                                        с </label> <br>
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-1 l-b-2" > <input  type="radio" name="q2" value="b" onclick="qq()"> 
-                                        b</label> 
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-2  l-a-2 "> <input   type="radio" name="q2" value="a" onclick="qq()"> 
-                                     a </label> 
-                                </li>
-                                
-                            </ul>
-                        </div>
-
-                        <div class="q1__box" id="q3__box">
-                            <p><span class="red">Вопрос 3</span> из 18</p>
-                            
-                            <label class="text-h1 form__label" >
-                                1
-                            </label> <br>
-
-                            <ul class="form__input">
-
-                                <li class="q1__answ">
-                                    <label  class=" l-1  l-c-3"> <input  type="radio" name="q3" value="c"   onclick="qq()"> 
-                                  
-                                        с </label> <br>
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-1 l-b-3" > <input  type="radio" name="q3" value="b" onclick="qq()"> 
-                                        b</label> 
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-2  l-a-3 "> <input   type="radio" name="q3" value="a" onclick="qq()"> 
-                                     a </label> 
-                                </li>
-                                
-                            </ul>
-                        </div>
-
-
-                        <div class="q1__box" id="q4__box">
-                            <p><span class="red">Вопрос 4</span> из 18</p>
-                            
-                            <label class="text-h1 form__label" >
-                                1
-                            </label> <br>
-
-                            <ul class="form__input">
-
-                                <li class="q1__answ">
-                                    <label  class=" l-1  l-c-4"> <input  type="radio" name="q4" value="c"   onclick="qq()"> 
-                                  
-                                        с </label> <br>
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-1 l-b-4" > <input  type="radio" name="q4" value="b" onclick="qq()"> 
-                                        b</label> 
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-2  l-a-4 "> <input   type="radio" name="q4" value="a" onclick="qq()"> 
-                                     a </label> 
-                                </li>
-                                
-                            </ul>
-                        </div>
-
-
-                        <div class="q1__box" id="q5__box">
-                            <p><span class="red">Вопрос 5</span> из 18</p>
-                            
-                            <label class="text-h1 form__label" >
-                                1
-                            </label> <br>
-
-                            <ul class="form__input">
-
-                                <li class="q1__answ">
-                                    <label  class=" l-1  l-c-5"> <input  type="radio" name="q5" value="c"   onclick="qq()"> 
-                                  
-                                        с </label> <br>
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-1 l-b-5" > <input  type="radio" name="q5" value="b" onclick="qq()"> 
-                                        b</label> 
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-2  l-a-5 "> <input   type="radio" name="q5" value="a" onclick="qq()"> 
-                                     a </label> 
-                                </li>
-                                
-                            </ul>
-                        </div>
-
-                        <div class="q1__box" id="q6__box">
-                            <p><span class="red">Вопрос 6</span> из 18</p>
-                            
-                            <label class="text-h1 form__label" >
-                                1
-                            </label> <br>
-
-                            <ul class="form__input">
-
-                                <li class="q1__answ">
-                                    <label  class=" l-1  l-c-6"> <input  type="radio" name="q6" value="c"   onclick="qq()"> 
-                                  
-                                        с </label> <br>
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-1 l-b-6" > <input  type="radio" name="q6" value="b" onclick="qq()"> 
-                                        b</label> 
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-2  l-a-6 "> <input   type="radio" name="q6" value="a" onclick="qq()"> 
-                                     a </label> 
-                                </li>
-                                
-                            </ul>
-                        </div>
-
-                        <div class="q1__box" id="q7__box">
-                            <p><span class="red">Вопрос 7</span> из 18</p>
-                            
-                            <label class="text-h1 form__label" >
-                                1
-                            </label> <br>
-
-                            <ul class="form__input">
-
-                                <li class="q1__answ">
-                                    <label  class=" l-1  l-c-7"> <input  type="radio" name="q7" value="c"   onclick="qq()"> 
-                                  
-                                        с </label> <br>
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-1 l-b-7" > <input  type="radio" name="q7" value="b" onclick="qq()"> 
-                                        b</label> 
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-2  l-a-7 "> <input   type="radio" name="q7" value="a" onclick="qq()"> 
-                                     a </label> 
-                                </li>
-                                
-                            </ul>
-                        </div>
-
-
-                        <div class="q1__box" id="q8__box">
-                            <p><span class="red">Вопрос 8</span> из 18</p>
-                            
-                            <label class="text-h1 form__label" >
-                                1
-                            </label> <br>
-
-                            <ul class="form__input">
-
-                                <li class="q1__answ">
-                                    <label  class=" l-1  l-c-8"> <input  type="radio" name="q8" value="c"   onclick="qq()"> 
-                                  
-                                        с </label> <br>
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-1 l-b-8" > <input  type="radio" name="q8" value="b" onclick="qq()"> 
-                                        b</label> 
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-2  l-a-8 "> <input   type="radio" name="q8" value="a" onclick="qq()"> 
-                                     a </label> 
-                                </li>
-                                
-                            </ul>
-                        </div>
-
-                        <div class="q1__box" id="q9__box">
-                            <p><span class="red">Вопрос 9</span> из 18</p>
-                            
-                            <label class="text-h1 form__label" >
-                                1
-                            </label> <br>
-
-                            <ul class="form__input">
-
-                                <li class="q1__answ">
-                                    <label  class=" l-1  l-c-9"> <input  type="radio" name="q9" value="c"   onclick="qq()"> 
-                                  
-                                        с </label> <br>
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-1 l-b-9" > <input  type="radio" name="q9" value="b" onclick="qq()"> 
-                                        b</label> 
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-2  l-a-9 "> <input   type="radio" name="q9" value="a" onclick="qq()"> 
-                                     a </label> 
-                                </li>
-                                
-                            </ul>
-                        </div>
-
-                        <div class="q1__box" id="q10__box">
-                            <p><span class="red">Вопрос 10</span> из 18</p>
-                            
-                            <label class="text-h1 form__label" >
-                                1
-                            </label> <br>
-
-                            <ul class="form__input">
-
-                                <li class="q1__answ">
-                                    <label  class=" l-1  l-c-10"> <input  type="radio" name="q10" value="c"   onclick="qq()"> 
-                                  
-                                        с </label> <br>
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-1 l-b-10" > <input  type="radio" name="q10" value="b" onclick="qq()"> 
-                                        b</label> 
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-2  l-a-10 "> <input   type="radio" name="q10" value="a" onclick="qq()"> 
-                                     a </label> 
-                                </li>
-                                
-                            </ul>
-                        </div>
-
-                        <div class="q1__box" id="q11__box">
-                            <p><span class="red">Вопрос 11</span> из 18</p>
-                            
-                            <label class="text-h1 form__label" >
-                                1
-                            </label> <br>
-
-                            <ul class="form__input">
-
-                                <li class="q1__answ">
-                                    <label  class=" l-1  l-c-11"> <input  type="radio" name="q11" value="c"   onclick="qq()"> 
-                                  
-                                        с </label> <br>
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-1 l-b-11" > <input  type="radio" name="q11" value="b" onclick="qq()"> 
-                                        b</label> 
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-2  l-a-11 "> <input   type="radio" name="q11" value="a" onclick="qq()"> 
-                                     a </label> 
-                                </li>
-                                
-                            </ul>
-                        </div>
-
-                        <div class="q1__box" id="q12__box">
-                            <p><span class="red">Вопрос 12</span> из 18</p>
-                            
-                            <label class="text-h1 form__label" >
-                                1
-                            </label> <br>
-
-                            <ul class="form__input">
-
-                                <li class="q1__answ">
-                                    <label  class=" l-1  l-c-12"> <input  type="radio" name="q12" value="c"   onclick="qq()"> 
-                                  
-                                        с </label> <br>
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-1 l-b-12" > <input  type="radio" name="q12" value="b" onclick="qq()"> 
-                                        b</label> 
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-2  l-a-12 "> <input   type="radio" name="q12" value="a" onclick="qq()"> 
-                                     a </label> 
-                                </li>
-                                
-                            </ul>
-                        </div>
-
-                        <div class="q1__box" id="q13__box">
-                            <p><span class="red">Вопрос 13</span> из 18</p>
-                            
-                            <label class="text-h1 form__label" >
-                                1
-                            </label> <br>
-
-                            <ul class="form__input">
-
-                                <li class="q1__answ">
-                                    <label  class=" l-1  l-c-13"> <input  type="radio" name="q13" value="c"   onclick="qq()"> 
-                                  
-                                        с </label> <br>
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-1 l-b-13" > <input  type="radio" name="q13" value="b" onclick="qq()"> 
-                                        b</label> 
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-2  l-a-13 "> <input   type="radio" name="q13" value="a" onclick="qq()"> 
-                                     a </label> 
-                                </li>
-                                
-                            </ul>
-                        </div>
-                        
-
-                        <div class="q1__box" id="q14__box">
-                            <p><span class="red">Вопрос 14</span> из 18</p>
-                            
-                            <label class="text-h1 form__label" >
-                                1
-                            </label> <br>
-
-                            <ul class="form__input">
-
-                                <li class="q1__answ">
-                                    <label  class=" l-1  l-c-14"> <input  type="radio" name="q14" value="c"   onclick="qq()"> 
-                                  
-                                        с </label> <br>
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-1 l-b-14" > <input  type="radio" name="q14" value="b" onclick="qq()"> 
-                                        b</label> 
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-2  l-a-14 "> <input   type="radio" name="q14" value="a" onclick="qq()"> 
-                                     a </label> 
-                                </li>
-                                
-                            </ul>
-                        </div>
-
-                        <div class="q1__box" id="q15__box">
-                            <p><span class="red">Вопрос 15</span> из 18</p>
-                            
-                            <label class="text-h1 form__label" >
-                                1
-                            </label> <br>
-
-                            <ul class="form__input">
-
-                                <li class="q1__answ">
-                                    <label  class=" l-1  l-c-15"> <input  type="radio" name="q15" value="c"   onclick="qq()"> 
-                                  
-                                        с </label> <br>
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-1 l-b-15" > <input  type="radio" name="q15" value="b" onclick="qq()"> 
-                                        b</label> 
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-2  l-a-15 "> <input   type="radio" name="q15" value="a" onclick="qq()"> 
-                                     a </label> 
-                                </li>
-                                
-                            </ul>
-                        </div>
-
-                        <div class="q1__box" id="q16__box">
-                            <p><span class="red">Вопрос 16</span> из 18</p>
-                            
-                            <label class="text-h1 form__label" >
-                                1
-                            </label> <br>
-
-                            <ul class="form__input">
-
-                                <li class="q1__answ">
-                                    <label  class=" l-1  l-c-16"> <input  type="radio" name="q16" value="c"   onclick="qq()"> 
-                                  
-                                        с </label> <br>
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-1 l-b-16" > <input  type="radio" name="q16" value="b" onclick="qq()"> 
-                                        b</label> 
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-2  l-a-16 "> <input   type="radio" name="q16" value="a" onclick="qq()"> 
-                                     a </label> 
-                                </li>
-                                
-                            </ul>
-                        </div>
-
-                        <div class="q1__box" id="q17__box">
-                            <p><span class="red">Вопрос 17</span> из 18</p>
-                            
-                            <label class="text-h1 form__label" >
-                                1
-                            </label> <br>
-
-                            <ul class="form__input">
-
-                                <li class="q1__answ">
-                                    <label  class=" l-1  l-c-17"> <input  type="radio" name="q17" value="c"   onclick="qq()"> 
-                                  
-                                        с </label> <br>
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-1 l-b-17" > <input  type="radio" name="q17" value="b" onclick="qq()"> 
-                                        b</label> 
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-2  l-a-17 "> <input   type="radio" name="q17" value="a" onclick="qq()"> 
-                                     a </label> 
-                                </li>
-                                
-                            </ul>
-                        </div>
-
-
-                        <div class="q1__box" id="q18__box">
-                            <p><span class="red">Вопрос 18</span> из 18</p>
-                            
-                            <label class="text-h1 form__label" >
-                                1
-                            </label> <br>
-
-                            <ul class="form__input">
-
-                                <li class="q1__answ">
-                                    <label  class=" l-1  l-c-18"> <input  type="radio" name="q18" value="c"   onclick="qq()"> 
-                                  
-                                        с </label> <br>
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-1 l-b-18" > <input  type="radio" name="q18" value="b" onclick="qq()"> 
-                                        b</label> 
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-2  l-a-18 "> <input   type="radio" name="q18" value="a" onclick="qq()"> 
-                                     a </label> 
-                                </li>
-                                
-                            </ul>
-                        </div>
-                    </form>
-                    <form id="myform_3" name="myform_3" class="myform form_3">
-                        ВАРИАНТ 3
-                        <!--ТАЙМЕР-->
-                        <div id="countdown" class="countdown">
-                            <div class="countdown-number">
-                              <span class="hours countdown-time"></span>
-                              
-                            </div>
-                            <div class="countdown-number">
-                              <span class="minutes countdown-time"></span>
-                              
-                            </div>
-                            <div class="countdown-number">
-                                <span class="seconds countdown-time"></span>
-                                <span class="countdown-text"></span>
-                              </div>
-                            
-                          </div>
-                          <div id="deadline-message" class="deadline-message">
-                            Time is up!
-                          </div>
-                       
-                        <!--КОНЕЦ ТАЙМЕРА-->
-                        <div class="q1__box" id="q1__box">
-                            <p><span class="red">Вопрос 1</span> из 18</p>
-                            
-                            <label class="text-h1 form__label" >
-                                1
-                            </label> <br>
-
-                            <ul class="form__input">
-
-                                <li class="q1__answ">
-                                    <label  class=" l-1  l-c-1"> <input  type="radio" name="q1" value="c"   onclick="qq()"> 
-                                  
-                                        с </label> <br>
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-1 l-b-1" > <input  type="radio" name="q1" value="b" onclick="qq()"> 
-                                        b</label> 
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-2  l-a-1 "> <input   type="radio" name="q1" value="a" onclick="qq()"> 
-                                     a </label> 
-                                </li>
-                                
-                            </ul>
-                        </div>
-
-                        <div class="q1__box" id="q2__box">
-                            <p><span class="red">Вопрос 2</span> из 18</p>
-                            
-                            <label class="text-h1 form__label" >
-                                1
-                            </label> <br>
-
-                            <ul class="form__input">
-
-                                <li class="q1__answ">
-                                    <label  class=" l-1  l-c-2"> <input  type="radio" name="q2" value="c"   onclick="qq()"> 
-                                  
-                                        с </label> <br>
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-1 l-b-2" > <input  type="radio" name="q2" value="b" onclick="qq()"> 
-                                        b</label> 
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-2  l-a-2 "> <input   type="radio" name="q2" value="a" onclick="qq()"> 
-                                     a </label> 
-                                </li>
-                                
-                            </ul>
-                        </div>
-
-                        <div class="q1__box" id="q3__box">
-                            <p><span class="red">Вопрос 3</span> из 18</p>
-                            
-                            <label class="text-h1 form__label" >
-                                1
-                            </label> <br>
-
-                            <ul class="form__input">
-
-                                <li class="q1__answ">
-                                    <label  class=" l-1  l-c-3"> <input  type="radio" name="q3" value="c"   onclick="qq()"> 
-                                  
-                                        с </label> <br>
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-1 l-b-3" > <input  type="radio" name="q3" value="b" onclick="qq()"> 
-                                        b</label> 
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-2  l-a-3 "> <input   type="radio" name="q3" value="a" onclick="qq()"> 
-                                     a </label> 
-                                </li>
-                                
-                            </ul>
-                        </div>
-
-
-                        <div class="q1__box" id="q4__box">
-                            <p><span class="red">Вопрос 4</span> из 18</p>
-                            
-                            <label class="text-h1 form__label" >
-                                1
-                            </label> <br>
-
-                            <ul class="form__input">
-
-                                <li class="q1__answ">
-                                    <label  class=" l-1  l-c-4"> <input  type="radio" name="q4" value="c"   onclick="qq()"> 
-                                  
-                                        с </label> <br>
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-1 l-b-4" > <input  type="radio" name="q4" value="b" onclick="qq()"> 
-                                        b</label> 
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-2  l-a-4 "> <input   type="radio" name="q4" value="a" onclick="qq()"> 
-                                     a </label> 
-                                </li>
-                                
-                            </ul>
-                        </div>
-
-
-                        <div class="q1__box" id="q5__box">
-                            <p><span class="red">Вопрос 5</span> из 18</p>
-                            
-                            <label class="text-h1 form__label" >
-                                1
-                            </label> <br>
-
-                            <ul class="form__input">
-
-                                <li class="q1__answ">
-                                    <label  class=" l-1  l-c-5"> <input  type="radio" name="q5" value="c"   onclick="qq()"> 
-                                  
-                                        с </label> <br>
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-1 l-b-5" > <input  type="radio" name="q5" value="b" onclick="qq()"> 
-                                        b</label> 
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-2  l-a-5 "> <input   type="radio" name="q5" value="a" onclick="qq()"> 
-                                     a </label> 
-                                </li>
-                                
-                            </ul>
-                        </div>
-
-                        <div class="q1__box" id="q6__box">
-                            <p><span class="red">Вопрос 6</span> из 18</p>
-                            
-                            <label class="text-h1 form__label" >
-                                1
-                            </label> <br>
-
-                            <ul class="form__input">
-
-                                <li class="q1__answ">
-                                    <label  class=" l-1  l-c-6"> <input  type="radio" name="q6" value="c"   onclick="qq()"> 
-                                  
-                                        с </label> <br>
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-1 l-b-6" > <input  type="radio" name="q6" value="b" onclick="qq()"> 
-                                        b</label> 
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-2  l-a-6 "> <input   type="radio" name="q6" value="a" onclick="qq()"> 
-                                     a </label> 
-                                </li>
-                                
-                            </ul>
-                        </div>
-
-                        <div class="q1__box" id="q7__box">
-                            <p><span class="red">Вопрос 7</span> из 18</p>
-                            
-                            <label class="text-h1 form__label" >
-                                1
-                            </label> <br>
-
-                            <ul class="form__input">
-
-                                <li class="q1__answ">
-                                    <label  class=" l-1  l-c-7"> <input  type="radio" name="q7" value="c"   onclick="qq()"> 
-                                  
-                                        с </label> <br>
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-1 l-b-7" > <input  type="radio" name="q7" value="b" onclick="qq()"> 
-                                        b</label> 
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-2  l-a-7 "> <input   type="radio" name="q7" value="a" onclick="qq()"> 
-                                     a </label> 
-                                </li>
-                                
-                            </ul>
-                        </div>
-
-
-                        <div class="q1__box" id="q8__box">
-                            <p><span class="red">Вопрос 8</span> из 18</p>
-                            
-                            <label class="text-h1 form__label" >
-                                1
-                            </label> <br>
-
-                            <ul class="form__input">
-
-                                <li class="q1__answ">
-                                    <label  class=" l-1  l-c-8"> <input  type="radio" name="q8" value="c"   onclick="qq()"> 
-                                  
-                                        с </label> <br>
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-1 l-b-8" > <input  type="radio" name="q8" value="b" onclick="qq()"> 
-                                        b</label> 
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-2  l-a-8 "> <input   type="radio" name="q8" value="a" onclick="qq()"> 
-                                     a </label> 
-                                </li>
-                                
-                            </ul>
-                        </div>
-
-                        <div class="q1__box" id="q9__box">
-                            <p><span class="red">Вопрос 9</span> из 18</p>
-                            
-                            <label class="text-h1 form__label" >
-                                1
-                            </label> <br>
-
-                            <ul class="form__input">
-
-                                <li class="q1__answ">
-                                    <label  class=" l-1  l-c-9"> <input  type="radio" name="q9" value="c"   onclick="qq()"> 
-                                  
-                                        с </label> <br>
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-1 l-b-9" > <input  type="radio" name="q9" value="b" onclick="qq()"> 
-                                        b</label> 
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-2  l-a-9 "> <input   type="radio" name="q9" value="a" onclick="qq()"> 
-                                     a </label> 
-                                </li>
-                                
-                            </ul>
-                        </div>
-
-                        <div class="q1__box" id="q10__box">
-                            <p><span class="red">Вопрос 10</span> из 18</p>
-                            
-                            <label class="text-h1 form__label" >
-                                1
-                            </label> <br>
-
-                            <ul class="form__input">
-
-                                <li class="q1__answ">
-                                    <label  class=" l-1  l-c-10"> <input  type="radio" name="q10" value="c"   onclick="qq()"> 
-                                  
-                                        с </label> <br>
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-1 l-b-10" > <input  type="radio" name="q10" value="b" onclick="qq()"> 
-                                        b</label> 
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-2  l-a-10 "> <input   type="radio" name="q10" value="a" onclick="qq()"> 
-                                     a </label> 
-                                </li>
-                                
-                            </ul>
-                        </div>
-
-                        <div class="q1__box" id="q11__box">
-                            <p><span class="red">Вопрос 11</span> из 18</p>
-                            
-                            <label class="text-h1 form__label" >
-                                1
-                            </label> <br>
-
-                            <ul class="form__input">
-
-                                <li class="q1__answ">
-                                    <label  class=" l-1  l-c-11"> <input  type="radio" name="q11" value="c"   onclick="qq()"> 
-                                  
-                                        с </label> <br>
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-1 l-b-11" > <input  type="radio" name="q11" value="b" onclick="qq()"> 
-                                        b</label> 
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-2  l-a-11 "> <input   type="radio" name="q11" value="a" onclick="qq()"> 
-                                     a </label> 
-                                </li>
-                                
-                            </ul>
-                        </div>
-
-                        <div class="q1__box" id="q12__box">
-                            <p><span class="red">Вопрос 12</span> из 18</p>
-                            
-                            <label class="text-h1 form__label" >
-                                1
-                            </label> <br>
-
-                            <ul class="form__input">
-
-                                <li class="q1__answ">
-                                    <label  class=" l-1  l-c-12"> <input  type="radio" name="q12" value="c"   onclick="qq()"> 
-                                  
-                                        с </label> <br>
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-1 l-b-12" > <input  type="radio" name="q12" value="b" onclick="qq()"> 
-                                        b</label> 
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-2  l-a-12 "> <input   type="radio" name="q12" value="a" onclick="qq()"> 
-                                     a </label> 
-                                </li>
-                                
-                            </ul>
-                        </div>
-
-                        <div class="q1__box" id="q13__box">
-                            <p><span class="red">Вопрос 13</span> из 18</p>
-                            
-                            <label class="text-h1 form__label" >
-                                1
-                            </label> <br>
-
-                            <ul class="form__input">
-
-                                <li class="q1__answ">
-                                    <label  class=" l-1  l-c-13"> <input  type="radio" name="q13" value="c"   onclick="qq()"> 
-                                  
-                                        с </label> <br>
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-1 l-b-13" > <input  type="radio" name="q13" value="b" onclick="qq()"> 
-                                        b</label> 
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-2  l-a-13 "> <input   type="radio" name="q13" value="a" onclick="qq()"> 
-                                     a </label> 
-                                </li>
-                                
-                            </ul>
-                        </div>
-                        
-
-                        <div class="q1__box" id="q14__box">
-                            <p><span class="red">Вопрос 14</span> из 18</p>
-                            
-                            <label class="text-h1 form__label" >
-                                1
-                            </label> <br>
-
-                            <ul class="form__input">
-
-                                <li class="q1__answ">
-                                    <label  class=" l-1  l-c-14"> <input  type="radio" name="q14" value="c"   onclick="qq()"> 
-                                  
-                                        с </label> <br>
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-1 l-b-14" > <input  type="radio" name="q14" value="b" onclick="qq()"> 
-                                        b</label> 
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-2  l-a-14 "> <input   type="radio" name="q14" value="a" onclick="qq()"> 
-                                     a </label> 
-                                </li>
-                                
-                            </ul>
-                        </div>
-
-                        <div class="q1__box" id="q15__box">
-                            <p><span class="red">Вопрос 15</span> из 18</p>
-                            
-                            <label class="text-h1 form__label" >
-                                1
-                            </label> <br>
-
-                            <ul class="form__input">
-
-                                <li class="q1__answ">
-                                    <label  class=" l-1  l-c-15"> <input  type="radio" name="q15" value="c"   onclick="qq()"> 
-                                  
-                                        с </label> <br>
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-1 l-b-15" > <input  type="radio" name="q15" value="b" onclick="qq()"> 
-                                        b</label> 
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-2  l-a-15 "> <input   type="radio" name="q15" value="a" onclick="qq()"> 
-                                     a </label> 
-                                </li>
-                                
-                            </ul>
-                        </div>
-
-                        <div class="q1__box" id="q16__box">
-                            <p><span class="red">Вопрос 16</span> из 18</p>
-                            
-                            <label class="text-h1 form__label" >
-                                1
-                            </label> <br>
-
-                            <ul class="form__input">
-
-                                <li class="q1__answ">
-                                    <label  class=" l-1  l-c-16"> <input  type="radio" name="q16" value="c"   onclick="qq()"> 
-                                  
-                                        с </label> <br>
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-1 l-b-16" > <input  type="radio" name="q16" value="b" onclick="qq()"> 
-                                        b</label> 
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-2  l-a-16 "> <input   type="radio" name="q16" value="a" onclick="qq()"> 
-                                     a </label> 
-                                </li>
-                                
-                            </ul>
-                        </div>
-
-                        <div class="q1__box" id="q17__box">
-                            <p><span class="red">Вопрос 17</span> из 18</p>
-                            
-                            <label class="text-h1 form__label" >
-                                1
-                            </label> <br>
-
-                            <ul class="form__input">
-
-                                <li class="q1__answ">
-                                    <label  class=" l-1  l-c-17"> <input  type="radio" name="q17" value="c"   onclick="qq()"> 
-                                  
-                                        с </label> <br>
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-1 l-b-17" > <input  type="radio" name="q17" value="b" onclick="qq()"> 
-                                        b</label> 
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-2  l-a-17 "> <input   type="radio" name="q17" value="a" onclick="qq()"> 
-                                     a </label> 
-                                </li>
-                                
-                            </ul>
-                        </div>
-
-
-                        <div class="q1__box" id="q18__box">
-                            <p><span class="red">Вопрос 18</span> из 18</p>
-                            
-                            <label class="text-h1 form__label" >
-                                1
-                            </label> <br>
-
-                            <ul class="form__input">
-
-                                <li class="q1__answ">
-                                    <label  class=" l-1  l-c-18"> <input  type="radio" name="q18" value="c"   onclick="qq()"> 
-                                  
-                                        с </label> <br>
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-1 l-b-18" > <input  type="radio" name="q18" value="b" onclick="qq()"> 
-                                        b</label> 
-                                </li>
-
-                                <li class="q1__answ">
-                                    <label class="l-2  l-a-18 "> <input   type="radio" name="q18" value="a" onclick="qq()"> 
-                                     a </label> 
-                                </li>
-                                
-                            </ul>
-                        </div>
-    
-                    </form>
+   
                     <div id="pract__res" class="pract__res">
                         
                         <span class="text-res text-h1">
@@ -1667,9 +605,35 @@
                         </span>
                         <span class="pract__res-int red text-h1">
 
-                        </span> <br>
-                        <button id="res__btn-print" class="start-cont__btn myprint" > Распечатать результаты теста</button>
-                        <button id="new_attempt" class="start-cont__btn" onclick="start()" > Попробовать снова</button>
+                        </span> <br> <br><br>
+                        <span class="attempt">
+                            
+                        </span> <br><br> <br><br>
+                        <span class="attem_text ">
+                            <span class="attem red text-h1"> Важно!</span> <br>
+                            Для проверки Вашего итогового тестирования необходимо отправить результаты на почту <span class="red text-h1">
+                                example@example.com
+                            </span> 
+                        </span>
+                         <br>
+                         <form action="javascript:sendMail();" name="pmForm" id="pmForm" method="post">
+                            <span class="mail_id">Введите Ваш идентификационный номер:</span>
+                            <input name="pmSubject" id="pmSubject" type="text" maxlength="64" style="width:60%;" placeholder="0000-0000-0000-0000" />
+                            <input name="pmSubmit" class="start-cont__btn pmbtn" type="submit" value="Отправить" />
+                         </form>
+
+                            
+                        
+                               
+                         <script>
+                             function sendMail() {
+                                window.open('mailto:lala2011lala2011@mail.ru?subject=' + document.getElementById('pmSubject').value +  '&body=' + "ВСТАВЬТЕ СЮДА РЕЗУЛЬТАТЫ ВАШЕГО ТЕСТИРОВАНИЯ" );
+                             }
+                         </script>
+                         
+                        <span class="attention"></span>
+                        <button id="res__btn-print" class="start-cont__btn myprint" > Распечатать результаты теста</button> <br>
+                        <button id="new_attempt" class="start-cont__btn" onclick="start()" style="margin: 5% 0 0" > Попробовать снова</button>
 
                         <div class="res-print ">
                             <div class="start-cont__logo-box">
@@ -1729,7 +693,7 @@
                             <span class="pract__res-int-print red text-h1">
     
                             </span> <br>
-                            1. Система институтов государственной власти в сфере противодействия коррупции в Российской Федерации определяется в основном на положениях:  <br> <br>
+                            1.  Система институтов государственной власти в сфере противодействия коррупции в Российской Федерации определяется в основном на положениях: <br> <br>
                             ВАШ ОТВЕТ: <br>
                             <span class="ans-1-pr">
 
@@ -1740,7 +704,7 @@
                                 
                             </span>  <br> <br> <br>
 
-                            3. К какой группе в системе государственных органов, осуществляющих противодействие коррупции относится Счетная палата РФ: <br> <br>
+                            3. Правовую основу противодействия коррупции в Российской Федерации составляют: <br> <br>
                             ВАШ ОТВЕТ: <br>
                             <span class="ans-3-pr">
                                 <script>
@@ -1748,22 +712,87 @@
                                 </script>
                                 
                             </span>  <br> <br> <br>
-                            4. Первым антикоррупционным нормативно-правовым актом российского законодательства в современной России стал Указ Президента РФ «О борьбе с коррупцией в системе государственной службы», который вышел в: <br> <br>
+                            4.Принципы противодействия коррупции в РФ определены в:  <br> <br>
                             ВАШ ОТВЕТ: <br>
                             <span class="ans-4-pr">
                                 
                             </span>  <br> <br> <br>
-                            5. Основными международно-правовыми актами, которые определяют обязательства РФ в сфере противодействия коррупции, являются: <br> <br>
+                            5. Меры по профилактике коррупции в РФ определены в:  <br> <br>
                             ВАШ ОТВЕТ: <br>
                             <span class="ans-5-pr">
                                 
-                            </span> 
+                            </span> <br> <br> <br>
+                             6. В соответствии с постановлением Правительства РФ от 5 июля 2013 г. № 568 «О распространении на отдельные категории граждан ограничений, запретов и обязанностей, установленных ФЗ «О противодействии коррупции» работник ПФР не вправе: <br> <br>
+                            ВАШ ОТВЕТ: <br>
+                            <span class="ans-6-pr">
+                                
+                            </span>  <br> <br> <br>
+                            7. В соответствии с постановлением Правительства РФ от 5 июля 2013 г. № 568 «О распространении на отдельные категории граждан ограничений, запретов и обязанностей, установленных ФЗ «О противодействии коррупции» работник ПФР: <br> <br>
+                            ВАШ ОТВЕТ: <br>
+                            <span class="ans-7-pr">
+                                
+                            </span>  <br> <br> <br>
+                            8. В соответствии с постановлением Правительства РФ от 5 июля 2013 г. № 568 «О распространении на отдельные категории граждан ограничений, запретов и обязанностей, установленных ФЗ «О противодействии коррупции» работник ПФР: <br> <br>
+                            ВАШ ОТВЕТ: <br>
+                            <span class="ans-8-pr">
+                                
+                            </span>  <br> <br> <br>
+                            9.В соответствии с постановлением Правительства РФ от 5 июля 2013 г. № 568 «О распространении на отдельные категории граждан ограничений, запретов и обязанностей, установленных ФЗ «О противодействии коррупции»:  <br> <br>
+                            ВАШ ОТВЕТ: <br>
+                            <span class="ans-9-pr">
+                                
+                            </span>  <br> <br> <br>
+                            10. Представление работниками системы ПФР сведений о доходах, расходах, об имуществе и обязательствах имущественного характера и членов своей семьи относится к обязанностям какого характера? <br> <br>
+                            ВАШ ОТВЕТ: <br>
+                            <span class="ans-10-pr">
+                                
+                            </span>  <br> <br> <br>
+                            11. Какие управленческие решения работников ПФР относятся к мерам по выполнению обязанностей представлять сведения о своих доходах, имущественных обязательствах, доходах членов семьи и связанных с этим обязанностей: <br> <br>
+                            ВАШ ОТВЕТ: <br>
+                            <span class="ans-11-pr">
+                                
+                            </span>  <br> <br> <br>
+                            12. В целях недопущения возникновения конфликта интересов в сферах деятельности ПФР, осуществление которых подвержено коррупционным рискам, работник системы ПФР обязан  <br> <br>
+                            ВАШ ОТВЕТ: <br>
+                            <span class="ans-12-pr">
+                                
+                            </span>  <br> <br> <br>
+                            13. Предотвращение или урегулирование конфликта интересов в сферах деятельности ПФР может состоять в <br> <br>
+                            ВАШ ОТВЕТ: <br>
+                            <span class="ans-13-pr">
+                                
+                            </span>  <br> <br> <br>
+                            14. Что подразумевает соблюдение норм служебной этики работниками отделений ПФР?  <br> <br>
+                            ВАШ ОТВЕТ: <br>
+                            <span class="ans-14-pr">
+                                
+                            </span>  <br> <br> <br>
+                            15. Служебная этика работников ПФР включает, в основном, нормы … характера. <br> <br>
+                            ВАШ ОТВЕТ: <br>
+                            <span class="ans-15-pr">
+                                
+                            </span>  <br> <br> <br>
+                            16.В настоящее время уголовно наказуемые деяния коррупционного характера, совершаемые в системе ПФР, предусматриваются в  <br> <br>
+                            ВАШ ОТВЕТ: <br>
+                            <span class="ans-16-pr">
+                                
+                            </span>  <br> <br> <br>
+                            17.При установлении в ходе проверки в ПФР обстоятельств, свидетельствующих о наличии признаков преступления или административного правонарушения, соврешенного работником ПФР,  материалы об этом представляются в   <br> <br>
+                            ВАШ ОТВЕТ: <br>
+                            <span class="ans-17-pr">
+                                
+                            </span>  <br> <br> <br>
+                            18.  Коррупционные проявления в системе ПФР имеют своим объектом сферу <br> <br>
+                            ВАШ ОТВЕТ: <br>
+                            <span class="ans-18-pr">
+                                
+                            </span>  <br> <br> <br>
+                            
                             
 
                         </div>
 
                     </div>
-                    
                     <button id="q1-question" class="start-cont__btn" onclick="check1()"  disabled >Продолжить</button>
                         
                    
@@ -1947,7 +976,7 @@
                     });
     
                     }
-                  
+                 
                     //скрипт на выбор ответа
                     function qq(){
                         document.getElementById("q1-question").style.opacity = "1";
@@ -2019,7 +1048,6 @@
                         }
                         
                         
-                        alert(arr_1);
                         localStorage.setItem("arr[0]", arr_1[0]);
                         localStorage.setItem("arr[1]", arr_1[1] );
                         localStorage.setItem("arr[2]", arr_1[2] );
@@ -2028,13 +1056,13 @@
                             if(localStorage.getItem("arr[0]") == "1"){
                             document.myform.style.display = "block";
                             initializeClock('myform', new Date(Date.parse(new Date()) +  90 * 60 * 1000));
-                        } else if (localStorage.getItem("arr[0]")  == "2"){
+                             } else if (localStorage.getItem("arr[0]")  == "2"){
                             
-                            document.myform_2.style.display = "block";
-                            initializeClock('myform_2', new Date(Date.parse(new Date()) +  90 * 60 * 1000));
-                        } else if (localStorage.getItem("arr[0]")  == "3"){
-                            document.myform_3.style.display = "block";
-                            initializeClock('myform_3', new Date(Date.parse(new Date()) +  90 * 60 * 1000));
+                            document.myform.style.display = "block";
+                            initializeClock('myform', new Date(Date.parse(new Date()) +  90 * 60 * 1000));
+                            } else if (localStorage.getItem("arr[0]")  == "3"){
+                            document.myform.style.display = "block";
+                            initializeClock('myform', new Date(Date.parse(new Date()) +  90 * 60 * 1000));
                         }
                             
                         } else if(localStorage.getItem("attempt") == "2"){
@@ -2042,12 +1070,12 @@
                             if(localStorage.getItem("arr[1]") == "1"){
                             document.myform.style.display = "block";
                             initializeClock('myform', new Date(Date.parse(new Date()) + 90 * 60 * 1000));
-                        } else if (localStorage.getItem("arr[1]")  == "2"){
-                            document.myform_2.style.display = "block";
-                            initializeClock('myform_2', new Date(Date.parse(new Date()) +  90 * 60 * 1000));
-                        } else if (localStorage.getItem("arr[1]")  == "3"){
-                            document.myform_3.style.display = "block";
-                            initializeClock('myform_3', new Date(Date.parse(new Date()) +  90 * 60 * 1000));
+                             } else if (localStorage.getItem("arr[1]")  == "2"){
+                            document.myform.style.display = "block";
+                            initializeClock('myform', new Date(Date.parse(new Date()) +  90 * 60 * 1000));
+                            } else if (localStorage.getItem("arr[1]")  == "3"){
+                            document.myform.style.display = "block";
+                            initializeClock('myform', new Date(Date.parse(new Date()) +  90 * 60 * 1000));
                         }
                            
                         }else if(localStorage.getItem("attempt") == "1"){
@@ -2055,13 +1083,13 @@
                             if(localStorage.getItem("arr[2]") == "1"){
                             document.myform.style.display = "block";
                             initializeClock('myform', new Date(Date.parse(new Date()) +  90 * 60 * 1000));
-                        } else if (localStorage.getItem("arr[2]")  == "2"){
-                            document.myform_2.style.display = "block";
-                            initializeClock('myform_2', new Date(Date.parse(new Date()) +  90 * 60 * 1000));
-                        } else if (localStorage.getItem("arr[2]")  == "3"){
-                            document.myform_3.style.display = "block";
-                            initializeClock('myform_3', new Date(Date.parse(new Date()) +  90 * 60 * 1000));
-                        }
+                            } else if (localStorage.getItem("arr[2]")  == "2"){
+                            document.myform.style.display = "block";
+                            initializeClock('myform', new Date(Date.parse(new Date()) +  90 * 60 * 1000));
+                             } else if (localStorage.getItem("arr[2]")  == "3"){
+                            document.myform.style.display = "block";
+                            initializeClock('myform', new Date(Date.parse(new Date()) +  90 * 60 * 1000));
+                             }
                         }
                         document.getElementById("pract__res").style.display = "none";
                         document.querySelector('.attempt').textContent = " Осталось попыток  " + localStorage.getItem("attempt");
@@ -2076,6 +1104,19 @@
                         localStorage.removeItem("res_3");
                         localStorage.removeItem("res_4");
                         localStorage.removeItem("res_5");
+                        localStorage.removeItem("res_6");
+                        localStorage.removeItem("res_7");
+                        localStorage.removeItem("res_8");
+                        localStorage.removeItem("res_9");
+                        localStorage.removeItem("res_10");
+                        localStorage.removeItem("res_11");
+                        localStorage.removeItem("res_12");
+                        localStorage.removeItem("res_13");
+                        localStorage.removeItem("res_14");
+                        localStorage.removeItem("res_15");
+                        localStorage.removeItem("res_16");
+                        localStorage.removeItem("res_17");
+                        localStorage.removeItem("res_18");
                         
                         
                         
