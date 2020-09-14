@@ -10,6 +10,8 @@
     <script src="../style/check.js"></script>
     <script src="../style/q_boxs.js"></script>
     <script src="../style/jquery-1.9.1.min.js"></script>
+    <script src="../style/data.js"></script>
+    <script src="../style/close.js"></script>
 
     <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
 </head>
@@ -25,6 +27,7 @@
             document.getElementById('nav-full').style.display = 'block';
             document.getElementById('nav-mini').style.display = 'none';
         }
+
 
     </script>
 
@@ -87,8 +90,9 @@
                     <p id="text-1-1" class="main__text-cont">
                         Для начала тестирования нажмите кнопку ПРОДОЛЖИТЬ
                     </p>
-                    
-                    <button id="btn-1-1" class="test__btn-strt" id="count" onclick="start()">Продолжить</button>
+                     
+                    <button  onclick="start_2()" id="btn-1-1" class="test__btn-strt" id="count"> <a href="../test/index.html">Продолжить</a> </button> <!--onclick="start()"-->
+                   
                    
 
                     <form id="myform" name="myform" class="myform form_1">
@@ -115,9 +119,9 @@
                        
                         <!--КОНЕЦ ТАЙМЕРА-->
                         <div class="q1__box" id="q1__box">
-                            <p><span class="red">Вопрос 1</span> из 18</p>
+                            <p><span class="red">Вопрос 1</span> из 20</p>
                             
-                            <label class="text-h1 form__label" >Система институтов государственной вл
+                            <label class="text-h1 form__label" id="v_1" >Система институтов государственной вл
                                 асти в сфере противодействия коррупции в Российской Федерации определяетс
                                 я в основном на положениях:</label> <br>
                           <ul class="form__input">
@@ -139,7 +143,7 @@
                         </div>
 
                         <div class="q1__box" id="q2__box">
-                            <p><span class="red">Вопрос 2</span> из 18</p>
+                            <p><span class="red">Вопрос 2</span> из 20</p>
                             
                             <label class="text-h1 form__label" >Основные направления государственной политики в области противодействия коррупции определяет:</label> <br>
                           <ul class="form__input">
@@ -160,7 +164,7 @@
                         </div>
 
                         <div class="q1__box" id="q3__box">
-                            <p><span class="red">Вопрос 3</span> из 18</p>
+                            <p><span class="red">Вопрос 3</span> из 20</p>
                             
                             <label class="text-h1 form__label" >Правовую основу противодействия коррупции в Российской Федерации составляют:</label> <br>
                           <ul class="form__input">
@@ -182,7 +186,7 @@
                         </div>
 
                         <div class="q1__box" id="q4__box">
-                            <p><span class="red">Вопрос 4</span> из 18</p>
+                            <p><span class="red">Вопрос 4</span> из 20</p>
                             
                             <label class="text-h1 form__label" >Принципы противодействия коррупции в РФ определены в:</label> <br>
                           <ul class="form__input">
@@ -205,7 +209,7 @@
                         </div>
 
                         <div class="q1__box" id="q5__box">
-                            <p><span class="red">Вопрос 5</span> из 18</p>
+                            <p><span class="red">Вопрос 5</span> из 20</p>
                             
                             <label class="text-h1 form__label" >Меры по профилактике коррупции в РФ определены в: </label> <br>
                           <ul class="form__input">
@@ -227,7 +231,7 @@
                         </div>
 
                         <div class="q1__box" id="q6__box">
-                            <p><span class="red">Вопрос 6</span> из 18</p>
+                            <p><span class="red">Вопрос 6</span> из 20</p>
                             
                             <label class="text-h1 form__label" >
                                 В соответствии с постановлением Правительства РФ от 5 июля 2013 г. № 568 «О распространении на отдельные категории граждан ограничений, запретов и обязанностей, установленных ФЗ «О противодействии коррупции» работник ПФР не вправе:
@@ -255,7 +259,7 @@
                         </div>
 
                         <div class="q1__box" id="q7__box">
-                            <p><span class="red">Вопрос 7</span> из 18</p>
+                            <p><span class="red">Вопрос 7</span> из 20</p>
                             
                             <label class="text-h1 form__label" >
                                 В соответствии с постановлением Правительства РФ от 5 июля 2013 г. № 568 «О распространении на отдельные категории граждан ограничений, запретов и обязанностей, установленных ФЗ «О противодействии коррупции» работник ПФР:
@@ -285,7 +289,7 @@
 
 
                         <div class="q1__box" id="q8__box">
-                            <p><span class="red">Вопрос 8</span> из 18</p>
+                            <p><span class="red">Вопрос 8</span> из 20</p>
                             
                             <label class="text-h1 form__label" >
                                 В соответствии с постановлением Правительства РФ от 5 июля 2013 г. № 568 «О распространении на отдельные категории граждан ограничений, запретов и обязанностей, установленных ФЗ «О противодействии коррупции» работник ПФР:
@@ -313,7 +317,7 @@
                         </div>
 
                         <div class="q1__box" id="q9__box">
-                            <p><span class="red">Вопрос 9</span> из 18</p>
+                            <p><span class="red">Вопрос 9</span> из 20</p>
                             
                             <label class="text-h1 form__label" >
                                 В соответствии с постановлением Правительства РФ от 5 июля 2013 г. № 568 «О распространении на отдельные категории граждан ограничений, запретов и обязанностей, установленных ФЗ «О противодействии коррупции»:
@@ -341,7 +345,7 @@
                         </div>
 
                         <div class="q1__box" id="q10__box">
-                            <p><span class="red">Вопрос 10</span> из 18</p>
+                            <p><span class="red">Вопрос 10</span> из 20</p>
                             
                             <label class="text-h1 form__label" >
                                 Представление работниками системы ПФР сведений о доходах, расходах, об имуществе и обязательствах имущественного характера и членов своей семьи относится к обязанностям какого характера?
@@ -370,7 +374,7 @@
                         </div>
 
                         <div class="q1__box" id="q11__box">
-                            <p><span class="red">Вопрос 11</span> из 18</p>
+                            <p><span class="red">Вопрос 11</span> из 20</p>
                             
                             <label class="text-h1 form__label" >
                                 Какие управленческие решения работников ПФР относятся к мерам по выполнению обязанностей представлять сведения о своих доходах, имущественных обязательствах, доходах членов семьи и связанных с этим обязанностей:
@@ -398,7 +402,7 @@
                         </div>
 
                         <div class="q1__box" id="q12__box">
-                            <p><span class="red">Вопрос 12</span> из 18</p>
+                            <p><span class="red">Вопрос 12</span> из 20</p>
                             
                             <label class="text-h1 form__label" >
                                 В целях недопущения возникновения конфликта интересов в сферах деятельности ПФР, осуществление которых подвержено коррупционным рискам, работник системы ПФР обязан
@@ -426,7 +430,7 @@
                         </div>
 
                         <div class="q1__box" id="q13__box">
-                            <p><span class="red">Вопрос 13</span> из 18</p>
+                            <p><span class="red">Вопрос 13</span> из 20</p>
                             
                             <label class="text-h1 form__label" >
                                 Предотвращение или урегулирование конфликта интересов в сферах деятельности ПФР может состоять в
@@ -455,7 +459,7 @@
                         
 
                         <div class="q1__box" id="q14__box">
-                            <p><span class="red">Вопрос 14</span> из 18</p>
+                            <p><span class="red">Вопрос 14</span> из 20</p>
                             
                             <label class="text-h1 form__label" >
                                 Что подразумевает соблюдение норм служебной этики работниками отделений ПФР? 
@@ -483,7 +487,7 @@
                         </div>
 
                         <div class="q1__box" id="q15__box">
-                            <p><span class="red">Вопрос 15</span> из 18</p>
+                            <p><span class="red">Вопрос 15</span> из 20</p>
                             
                             <label class="text-h1 form__label" >
                                 Служебная этика работников ПФР включает, в основном, нормы … характера.
@@ -511,7 +515,7 @@
                         </div>
 
                         <div class="q1__box" id="q16__box">
-                            <p><span class="red">Вопрос 16</span> из 18</p>
+                            <p><span class="red">Вопрос 16</span> из 20</p>
                             
                             <label class="text-h1 form__label" >
                                 В настоящее время уголовно наказуемые деяния коррупционного характера, совершаемые в системе ПФР, предусматриваются в 
@@ -539,7 +543,7 @@
                         </div>
 
                         <div class="q1__box" id="q17__box">
-                            <p><span class="red">Вопрос 17</span> из 18</p>
+                            <p><span class="red">Вопрос 17</span> из 20</p>
                             
                             <label class="text-h1 form__label" >
                                 При установлении в ходе проверки в ПФР обстоятельств, свидетельствующих о наличии признаков преступления или административного правонарушения, соврешенного работником ПФР,  материалы об этом представляются в 
@@ -568,7 +572,7 @@
 
 
                         <div class="q1__box" id="q18__box">
-                            <p><span class="red">Вопрос 18</span> из 18</p>
+                            <p><span class="red">Вопрос 18</span> из 20</p>
                             
                             <label class="text-h1 form__label" >
                                 Коррупционные проявления в системе ПФР имеют своим объектом сферу
@@ -594,29 +598,84 @@
                                 
                             </ul>
                         </div>
+                        <div class="q1__box" id="q19__box">
+                            <p><span class="red">Вопрос 19</span> из 20</p>
+                            
+                            <label class="text-h1 form__label " >
+                                К какой группе в системе государственных органов, осуществляющих противодействие коррупции относится Счетная палата РФ:
+                            </label> <br>
+
+                            <ul class="form__input">
+
+                                <li class="q1__answ">
+                                    <label  class=" l-1  l-c-19"> <input  type="radio" name="q19" value="c"   onclick="qq()"> 
+                                  
+                                        Высшие органы власти; </label> <br>
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-1 l-b-19" > <input  type="radio" name="q19" value="b" onclick="qq()"> 
+                                        Правоохранительные органы;</label> 
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-2  l-a-19"> <input   type="radio" name="q19" value="a" onclick="qq()"> 
+                                        Федеральные органы.</label> 
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="q1__box" id="q20__box">
+                            <p><span class="red">Вопрос 20</span> из 20</p>
+                            
+                            <label class="text-h1 form__label" >
+                                Первым антикоррупционным нормативно-правовым актом российского законодательства в современной России стал Указ Президента РФ «О борьбе с коррупцией в системе государственной службы», который вышел в:
+                            </label> <br>
+
+                            <ul class="form__input">
+                                <li class="q1__answ">
+                                    <label class="l-2  l-a-20 "> <input   type="radio" name="q20" value="a" onclick="qq()"> 
+                                        1992 г. </label> 
+                                </li> 
+                                <li class="q1__answ">
+                                    <label  class=" l-1  l-c-20"> <input  type="radio" name="q20" value="c"   onclick="qq()"> 
+                                        1990 г. </label> <br>
+                                </li>
+
+                                <li class="q1__answ">
+                                    <label class="l-1 l-b-20" > <input  type="radio" name="q20" value="b" onclick="qq()"> 
+                                         1994 г.</label> 
+                                </li>
+
+                               
+                                
+                            </ul>
+                        </div>
     
                     </form>
    
                     <div id="pract__res" class="pract__res">
                         
-                        <span class="text-res text-h1">
+                       <!-- <span class="text-res text-h1">
                             Результат Вашего тестирования: 
                         </span>
                         <span class="pract__res-int red text-h1">
 
-                        </span> <br> <br><br>
-                        <span class="attempt">
+                        </span> <br> <br><br>-->
+                        <span class="attempt text-h1">
                             
-                        </span> <br><br> <br><br>
+                        </span> <br><br> <br><br> 
                         <span class="attem_text ">
-                            <span class="attem red text-h1"> Важно!</span> <br>
+
+                            <span class="attem red text-h1"> Важно!</span> <br> <br>
                             Для проверки Вашего итогового тестирования необходимо отправить результаты на почту <span class="red text-h1">
                                 profi.guu@yandex.ru
                             </span> 
                         </span>
-                         <br>
-                         <form action="javascript:sendMail();" name="pmForm" id="pmForm" method="post">
-                            <span class="mail_id">Введите Ваш идентификационный номер:</span>
+                         <br> <br> <br>
+                         <form action="javascript:sendMail();" name="pmForm" id="pmForm" method="post"> 
+                            <span class="mail_id">Введите Ваш идентификационный номер:</span> <br> <br>
                             <input name="pmSubject" id="pmSubject" type="text" maxlength="64" style="width:60%;" placeholder="0000-0000-0000-0000" />
                             <input name="pmSubmit" class="start-cont__btn pmbtn" type="submit" value="Отправить" />
                          </form>
@@ -626,13 +685,13 @@
                                
                          <script>
                              function sendMail() {
-                                window.open('mailto:profi.guu@yandex.ru?subject=' + document.getElementById('pmSubject').value +  '&body=' + "ВСТАВЬТЕ СЮДА ФАЙЛ С РЕЗУЛЬТАТМИ ВАШЕГО ТЕСТИРОВАНИЯ" );
+                                window.open('mailto:profi.guu@yandex.ru?subject=' + document.getElementById('pmSubject').value +  '&body=' + "ВСТАВЬТЕ СЮДА ФАЙЛ С РЕЗУЛЬТАТАМИ ВАШЕГО ТЕСТИРОВАНИЯ" );
                              }
                          </script>
                          
                         <span class="attention"></span>
-                        <button id="res__btn-print" class="start-cont__btn myprint" > Распечатать результаты теста</button> <br>
-                        <button id="new_attempt" class="start-cont__btn" onclick="start()" style="margin: 5% 0 0" > Попробовать снова</button>
+                     <!--   <button id="res__btn-print" class="start-cont__btn myprint" > Сохранить или распечатать результаты теста</button> <br>-->
+                        <button id="new_attempt" class="start-cont__btn" onclick="start_2()" style="margin: 5% 0 0" > <a href="../test/index.html"> Попробовать снова</a></button>
 
                         <div class="res-print ">
                             <div class="start-cont__logo-box">
@@ -786,18 +845,28 @@
                             <span class="ans-18-pr">
                                 
                             </span>  <br> <br> <br>
+                            19.  К какой группе в системе государственных органов, осуществляющих противодействие коррупции относится Счетная палата РФ: <br> <br>
+                            ВАШ ОТВЕТ: <br>
+                            <span class="ans-19-pr">
+                                
+                            </span>  <br> <br> <br>
+                            20. Первым антикоррупционным нормативно-правовым актом российского законодательства в современной России стал Указ Президента РФ «О борьбе с коррупцией в системе государственной службы», который вышел в: <br> <br>
+                            ВАШ ОТВЕТ: <br>
+                            <span class="ans-20-pr">
+                                
+                            </span>  <br> <br> <br>
                             
                             
 
                         </div>
 
                     </div>
-                    <button id="q1-question" class="start-cont__btn" onclick="check1()"  disabled >Продолжить</button>
+                    <button id="q1-question" class="start-cont__btn" onclick="check1()"  >Продолжить</button>
                         
                    
                 </div>
      <!--------------------------ПРАВЫЙ БЛОК С ВОПРОСАМИ  ------------------------------------------>                    
-                <div id="test__block-right">
+                <div id="test__block-right"  style="display: none;">
                     <ul class="test__raz">
                         <li class="test__rz-li" id="q-1-a-1">
                             <span id="q-1-a-1-a" class="test__quest-li  text-h1">
@@ -955,6 +1024,25 @@
                             </span><br>
                            
                         </li>
+                        <li id="q-1-a-19" class="test__rz-li">
+                            <span id="q-1-a-19-a" class="test__quest-li  text-h1">
+                                Вопрос 19
+                                <img id="a-r-1-19" src="../img/right-ico.png" alt="Правильный ответ"> 
+                               <img id="a-f-1-19" src="../img/false-ico.png" alt="Неправильный ответ">
+                            </span><br>
+                           
+                        </li>
+
+                        <li id="q-1-a-20" class="test__rz-li">
+                            <span id="q-1-a-20-a" class="test__quest-li  text-h1">
+                                Вопрос 20
+                                <img id="a-r-1-20" src="../img/right-ico.png" alt="Правильный ответ"> 
+                               <img id="a-f-1-20" src="../img/false-ico.png" alt="Неправильный ответ">
+                            </span><br>
+                           
+                        </li>
+
+
 
                        
                     </ul>
@@ -975,23 +1063,15 @@
                     });
     
                     }
+                    //скрипт на загрузку других вариантов
+                    document.addEventListener('DOMContentLoaded', function(){
+                       document.getElementById("v_1").innerHTML = q_1;
+                    });
                  
                     //скрипт на выбор ответа
                     function qq(){
                         document.getElementById("q1-question").style.opacity = "1";
-                        $('#q1-question').removeAttr("disabled");
-
-                    
-                        $(".l-1").css({
-                                'opacity' : '0.3'
-                            });    
-                        
-                        $(".l-2").css({
-                                'color' : '#0283FD',
-                                'opacity' : '1',
-                                'font-weight' : 'bold'
-                            });        
-                        $("input").prop('disabled', true);           
+                                  
     
                     }
                     //скрипт на начало теста 
@@ -1005,11 +1085,11 @@
                     $("#myform").css({
                         'display' : 'none'
                     });
-                        if(localStorage.getItem("res")){
+                       /* if(localStorage.getItem("res")){
                             document.querySelector('.pract__res-int').textContent = "   " + localStorage.getItem("res") + "%";
                         } else{
                             document.querySelector('.pract__res-int').textContent = "0%";
-                        }
+                        }*/
                             document.getElementById("text-1-1").style.display = "none";
                             document.getElementById("btn-1-1").style.display = "none";
                         }
@@ -1027,16 +1107,32 @@
                     $("#myform").css({
                         'display' : 'none'
                     });
-                        if(localStorage.getItem("res")){
+                       /* if(localStorage.getItem("res")){
                             document.querySelector('.pract__res-int').textContent = "   " + localStorage.getItem("res") + "%";
                         } else{
                             document.querySelector('.pract__res-int').textContent = "0%";
-                        }
+                        }*/
                             document.getElementById("text-1-1").style.display = "none";
                             document.getElementById("btn-1-1").style.display = "none";
                         }
                     document.querySelector('.attempt').textContent = " Осталось попыток  " + localStorage.getItem("attempt");
                     
+                    function start_2(){
+                        localStorage.setItem("new_attempt", "block");
+                        alert("Не забудьте сохранить свои результаты");
+                        if(localStorage.getItem("attempt") == "3"){
+                            localStorage.setItem("attempt", "2");
+                        } else if(localStorage.getItem("attempt") == "2"){
+                            localStorage.setItem("attempt", "1");
+                        }else if(localStorage.getItem("attempt") == "1"){
+                            localStorage.setItem("attempt", "0");
+                        }else if(localStorage.getItem("attempt") == "4"){
+                            localStorage.setItem("attempt", "3");
+                        }
+
+                        
+}
+
                     function start(){
                         if(!localStorage.getItem("arr[0]")){
                             var arr_1 = generateArrayRandomNumber (1, 3);
@@ -1116,11 +1212,8 @@
                         localStorage.removeItem("res_16");
                         localStorage.removeItem("res_17");
                         localStorage.removeItem("res_18");
-                        
-                        
-                        
-
-                        
+                        localStorage.removeItem("res_19");
+                        localStorage.removeItem("res_20");
                         
                     }
 
@@ -1220,8 +1313,19 @@ return arrayRandomNumbers;
     var timeinterval = setInterval(updateClock, 1000);
   }
 
- 
+
+
+  
   </script>
+
+<script>
+
+    
+
+</script>
+
+
+
 
 <!-- 2. Распечатать любой элемент страницы -->
 <script>
@@ -1357,6 +1461,21 @@ return arrayRandomNumbers;
            
             document.querySelector('.ans-18-pr').textContent = localStorage.getItem("res_18");
         }
+        if(!localStorage.getItem("res_19")){
+            document.querySelector('.ans-19-pr').textContent = "Нет ответа";
+        } else {
+           
+            document.querySelector('.ans-19-pr').textContent = localStorage.getItem("res_19");
+        }
+        if(!localStorage.getItem("res_20")){
+            document.querySelector('.ans-20-pr').textContent = "Нет ответа";
+        } else {
+           
+            document.querySelector('.ans-20-pr').textContent = localStorage.getItem("res_20");
+        }
+
+
+
 
     var html_to_print=$('.res-print').html();    //что печатаем
     var iframe=$('<iframe id="print_frame">');

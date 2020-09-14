@@ -2,7 +2,6 @@
   function q2__style(){
   
     document.getElementById("q3__box").style.display = "block";
-    document.getElementById("q1-question").style.opacity = "0.3";
     document.getElementById("q2__box").style.display = "none";
 
 
@@ -18,7 +17,6 @@
 
 function q3__style(){
     document.getElementById("q4__box").style.display = "block";
-    document.getElementById("q1-question").style.opacity = "0.3";
     document.getElementById("q3__box").style.display = "none";
 
     $("#q-1-a-3").css({
@@ -32,7 +30,6 @@ function q3__style(){
 
 function q4__style(){
     document.getElementById("q5__box").style.display = "block";
-    document.getElementById("q1-question").style.opacity = "0.3";
     document.getElementById("q4__box").style.display = "none";
 
     $("#q-1-a-4").css({
@@ -45,7 +42,6 @@ function q4__style(){
 }
 function q5__style(){
     document.getElementById("q6__box").style.display = "block";
-    document.getElementById("q1-question").style.opacity = "0.3";
     document.getElementById("q5__box").style.display = "none";
 
     $("#q-1-a-5").css({
@@ -58,7 +54,6 @@ function q5__style(){
 }
 function q6__style(){
     document.getElementById("q7__box").style.display = "block";
-    document.getElementById("q1-question").style.opacity = "0.3";
     document.getElementById("q6__box").style.display = "none";
 
     $("#q-1-a-6").css({
@@ -71,7 +66,6 @@ function q6__style(){
 }
 function q7__style(){
     document.getElementById("q8__box").style.display = "block";
-    document.getElementById("q1-question").style.opacity = "0.3";
     document.getElementById("q7__box").style.display = "none";
 
     $("#q-1-a-7").css({
@@ -84,7 +78,7 @@ function q7__style(){
 }
 function q8__style(){
     document.getElementById("q9__box").style.display = "block";
-    document.getElementById("q1-question").style.opacity = "0.3";
+
     document.getElementById("q8__box").style.display = "none";
 
     $("#q-1-a-8").css({
@@ -97,7 +91,6 @@ function q8__style(){
 }
 function q9__style(){
     document.getElementById("q10__box").style.display = "block";
-    document.getElementById("q1-question").style.opacity = "0.3";
     document.getElementById("q9__box").style.display = "none";
 
     $("#q-1-a-9").css({
@@ -110,7 +103,6 @@ function q9__style(){
 }
 function q10__style(){
     document.getElementById("q11__box").style.display = "block";
-    document.getElementById("q1-question").style.opacity = "0.3";
     document.getElementById("q10__box").style.display = "none";
 
     $("#q-1-a-10").css({
@@ -123,7 +115,6 @@ function q10__style(){
 }
 function q11__style(){
     document.getElementById("q12__box").style.display = "block";
-    document.getElementById("q1-question").style.opacity = "0.3";
     document.getElementById("q11__box").style.display = "none";
 
     $("#q-1-a-11").css({
@@ -136,7 +127,6 @@ function q11__style(){
 }
 function q12__style(){
     document.getElementById("q13__box").style.display = "block";
-    document.getElementById("q1-question").style.opacity = "0.3";
     document.getElementById("q12__box").style.display = "none";
 
     $("#q-1-a-12").css({
@@ -150,7 +140,6 @@ function q12__style(){
 
 function q13__style(){
     document.getElementById("q14__box").style.display = "block";
-    document.getElementById("q1-question").style.opacity = "0.3";
     document.getElementById("q13__box").style.display = "none";
 
     $("#q-1-a-13").css({
@@ -164,7 +153,6 @@ function q13__style(){
 
 function q14__style(){
     document.getElementById("q15__box").style.display = "block";
-    document.getElementById("q1-question").style.opacity = "0.3";
     document.getElementById("q14__box").style.display = "none";
 
     $("#q-1-a-14").css({
@@ -178,7 +166,6 @@ function q14__style(){
 
 function q15__style(){
     document.getElementById("q16__box").style.display = "block";
-    document.getElementById("q1-question").style.opacity = "0.3";
     document.getElementById("q15__box").style.display = "none";
 
     $("#q-1-a-15").css({
@@ -192,7 +179,6 @@ function q15__style(){
 
 function q16__style(){
     document.getElementById("q17__box").style.display = "block";
-    document.getElementById("q1-question").style.opacity = "0.3";
     document.getElementById("q16__box").style.display = "none";
 
     $("#q-1-a-16").css({
@@ -206,7 +192,6 @@ function q16__style(){
 
 function q17__style(){
     document.getElementById("q18__box").style.display = "block";
-    document.getElementById("q1-question").style.opacity = "0.3";
     document.getElementById("q17__box").style.display = "none";
 
     $("#q-1-a-17").css({
@@ -218,10 +203,8 @@ function q17__style(){
     $('#q1-question').removeAttr("disabled");
 }
 function q18__style(){
-    document.getElementById("pract__res").style.display = "block";
-    document.getElementById("q1-question").style.display = "none";
+    document.getElementById("q19__box").style.display = "block";
     document.getElementById("q18__box").style.display = "none";
-    localStorage.setItem("new_attempt", "block");
 
     $("#q-1-a-18").css({
         'color': '#8D9EB9'
@@ -229,5 +212,31 @@ function q18__style(){
     $("#q-1-a-18-a").css({
         'color': '#8D9EB9'
     });
+    $('#q1-question').removeAttr("disabled");
+}
+function q19__style(){
+    document.getElementById("q20__box").style.display = "block";
+    document.getElementById("q19__box").style.display = "none";
+
+    $("#q-1-a-19").css({
+        'color': '#8D9EB9'
+    });
+    $("#q-1-a-19-a").css({
+        'color': '#8D9EB9'
+    });
+    $('#q1-question').removeAttr("disabled");
+}
+function q20__style(){
+    document.getElementById("pract__res").style.display = "block";
+    document.getElementById("q20__box").style.display = "none";
+    localStorage.setItem("new_attempt", "block");
+
+    $("#q-1-a-20").css({
+        'color': '#8D9EB9'
+    });
+    $("#q-1-a-20-a").css({
+        'color': '#8D9EB9'
+    });
     
 }
+

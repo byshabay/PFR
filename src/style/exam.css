@@ -45,6 +45,7 @@
     padding: 13% 0 0 5% ;
     text-align: start;
     width: 95%;
+    height: 50%;
   }
   #pmSubject{
     border: 1px solid #8D9EB9;
@@ -54,4 +55,15 @@ padding:  5px;
   }
   .pmbtn{
     margin: 0;
+  }
+  .main__text-cont{
+    margin-top: 20%;
+  }
+  .attem_text{
+  line-height:22px;
+
+  }
+  #btn-1-1 a, #new_attempt a{
+    text-decoration: none;
+    color: #E0585A;;
   }

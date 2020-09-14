@@ -54,13 +54,19 @@
 .rrr{
     display: flex;
     align-items: baseline;
-    margin-top: -31%;
     width: 49vw;
-    margin: -38% 0 0 20vw;
+    max-width: 1000px;
+    flex-wrap: wrap;
+    margin: -25% 0 5vh 36%;
     font-size: calc( (100vw - 800px)/(1440 - 800) * (16 - 12) + 12px);
     justify-content: space-around;
 
 
+}
+@media(min-width: 2300px){
+    .rrr{
+        margin-left: 15vw;
+    }
 }
 /*Основной текст*/
 .start-cont__h1{
@@ -74,6 +80,7 @@
     height: 4px;
     margin: 0;
     width: 50vw;
+    max-width: 1300px;
     border: 0;
 }
 
@@ -142,6 +149,7 @@ p{
 }
 .start-cont__bkg-ing-comp{
     width: 25vw;
+    max-width: 300px;
     /* margin-left: 52vw;
     margin-bottom: 3%;
     position: absolute;

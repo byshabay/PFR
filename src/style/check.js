@@ -29,6 +29,8 @@
             var q16= document.myform.q16.value;
             var q17= document.myform.q17.value;
             var q18 = document.myform.q18.value;
+            var q19= document.myform.q19.value;
+            var q20 = document.myform.q20.value;
 
 
 
@@ -55,7 +57,6 @@
     } 
 
     document.getElementById("q2__box").style.display = "block";
-    document.getElementById("q1-question").style.opacity = "0.3";
     document.getElementById("q1__box").style.display = "none";
 
    
@@ -297,21 +298,52 @@
         q18__style();
         count ++;
         var res_18= $(".l-a-18").text();
-        var res = Math.round( (100 * count) / 18 );
-        document.querySelector('.pract__res-int').textContent = "   " + res + "%";
     } else if(q18 == 'b'){
         document.getElementById("a-f-1-18").style.display = "block";
         q18__style();
         var res_18= $(".l-b-18").text();
-        var res = Math.round( (100 * count) / 18 );
-        document.querySelector('.pract__res-int').textContent = "   " + res + "%";
     } else if(q18 == 'c'){
         document.getElementById("a-f-1-18").style.display = "block";
         q18__style();
         var res_18= $(".l-c-18").text();
-        var res = Math.round( (100 * count) / 18 );
+    } 
+    if(q19 == 'a'){
+        document.getElementById("a-r-1-19").style.display = "block";
+        q19__style();
+        count ++;
+        var res_19= $(".l-a-19").text();
+    } else if(q19 == 'b'){
+        document.getElementById("a-f-1-19").style.display = "block";
+        q19__style();
+        var res_19= $(".l-b-19").text();
+    } else if(q19 == 'c'){
+        document.getElementById("a-f-1-19").style.display = "block";
+        q19__style();
+        var res_19= $(".l-c-19").text();
+    } 
+    
+    if(q20 == 'a'){
+        document.getElementById("a-r-1-20").style.display = "block";
+        q20__style();
+        count ++;
+        var res_20= $(".l-a-20").text();
+        var res = Math.round( (100 * count) / 20 );
+        document.querySelector('.pract__res-int').textContent = "   " + res + "%";
+    } else if(q20 == 'b'){
+        document.getElementById("a-f-1-20").style.display = "block";
+        q20__style();
+        var res_20= $(".l-b-20").text();
+        var res = Math.round( (100 * count) / 20 );
+        document.querySelector('.pract__res-int').textContent = "   " + res + "%";
+    } else if(q20 == 'c'){
+        document.getElementById("a-f-1-20").style.display = "block";
+        q20__style();
+        var res_20= $(".l-c-20").text();
+        var res = Math.round( (100 * count) / 20 );
         document.querySelector('.pract__res-int').textContent = "   " + res + "%";
     } 
+
+
 
     
     $("#q-1-a-1").css({
@@ -320,7 +352,7 @@
     $("#q-1-a-1-a").css({
         'color': '#8D9EB9'
     });
-    var res = Math.round( (100 * count) / 18 );
+    var res = Math.round( (100 * count) / 20 );
     $('#q1-question').removeAttr("disabled");
     localStorage.setItem("res", res);
     localStorage.setItem("res_1", res_1);
@@ -343,6 +375,8 @@
     localStorage.setItem("res_16", res_16);
     localStorage.setItem("res_17", res_17);
     localStorage.setItem("res_18", res_18);
+    localStorage.setItem("res_19", res_19);
+    localStorage.setItem("res_20", res_20);
 
 
 }
