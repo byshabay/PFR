@@ -169,7 +169,7 @@
             document.getElementById('main__main-box-2').style.display = 'none';
             document.getElementById('main__main-box').style.display = 'block';
             document.getElementById('main__btn-1').style.color = '#E0585A';
-            document.getElementById('main__btn-2').style.color = '#8D9EB9';
+            document.getElementById('main__btn-2').style.color = '#1F3E76';
             document.getElementById('main__btn-1').style.border = '2px solid #E1E9F5';
             document.getElementById('main__btn-1').style.borderBottom = '2px solid #fff';
             document.getElementById('main__btn-2').style.border = 'none';
@@ -179,7 +179,7 @@
         function plan(){
             document.getElementById('main__main-box').style.display = 'none';
             document.getElementById('main__main-box-2').style.display = 'flex';
-            document.getElementById('main__btn-1').style.color = '#8D9EB9';
+            document.getElementById('main__btn-1').style.color = '#1F3E76';
             document.getElementById('main__btn-1').style.border = 'none';
             document.getElementById('main__btn-2').style.color = '#E0585A';
             document.getElementById('main__btn-2').style.border = '2px solid #E1E9F5';
@@ -191,12 +191,44 @@
 
 
 // СКРИПТ НА НИЖНИЕ КНОПКИ ПРАКТИЧЕСКОГО ЗАНЯТИЯ 
-        function answer(){
+function answer(){
             $(".main__object").css({
                 'flex': '1',
                 'height': 'auto'
             });
-            document.getElementById('main__answer').style.display = 'block';
+            $("#main__answer").css({
+                'display': 'block'
+                
+            });
+            $("#main__show-answer").css({
+                'display': 'none'
+                
+            });
+            $("#main__dt-show-answer").css({
+                'display': 'block'
+                
+            });
+            
+            
+        }
+        function answer1(){
+            $(".main__object").css({
+                
+                'height': '90%'
+            });
+            $("#main__answer").css({
+                'display': 'none'
+                
+            });
+            $("#main__show-answer").css({
+                'display': 'block'
+                
+            });
+            $("#main__dt-show-answer").css({
+                'display': 'none'
+                
+            });
+            
             
         }
 
@@ -306,102 +338,11 @@
 
 <!-----------------ПРЕЗЕНТАЦИЙ БЛОК ----------------------------------------------------------->
         <section id="present">
-            <!-----------------СЛАЙДЕР НАЧАЛО ----------------------------------------------------------->
-            <div class="test__cont">
-
-            </div>
-            
-            <div class="arr">
-                <a href="#" class="arrow_wrap arrow-rew"><img src="../img/left.png" alt="Стрелка влево"></a>
-                <span class="arr_text">
-                    <span class="text-slide">1</span> <span class="next-slide"></span>
-                </span>
-                <a href="#" class="arrow_wrap arrow-fwd"><img src="../img/right.png" alt="Стрелка влево"></a>
-            </div>
-            <div class="main_wraper">
-                <div class="view_wraper">
-                  <div class="view_image"></div>
-                 
-                </div>
-                <img src="../img/pres_1/1.png" alt="1">
-                <img src="../img/pres_1/2.png" alt="2">
-                <img src="../img/pres_1/3.png" alt="3">
-                <img src="../img/pres_1/4.png" alt="4">
-                <img src="../img/pres_1/5.png" alt="5">
-                <img src="../img/pres_1/6.png" alt="6">
-                <img src="../img/pres_1/7.png" alt="7">
-                <img src="../img/pres_1/8.png" alt="8">
-                <img src="../img/pres_1/9.png" alt="9">
-                <img src="../img/pres_1/10.png" alt="10">
-                <img src="../img/pres_1/11.png" alt="11">
-                <img src="../img/pres_1/12.png" alt="12">
-                <img src="../img/pres_1/13.png" alt="13">
-                <img src="../img/pres_1/14.png" alt="14">
-                <img src="../img/pres_1/15.png" alt="15">
-                <img src="../img/pres_1/16.png" alt="16">
-              </div>
-            
-            
-              <script>
-                  var test = document.querySelector('.test__cont');
-              //  var oViewImage = document.querySelector('.view_image');
-                var aImages = Array.prototype.slice.call(document.querySelectorAll('.main_wraper > img'));
-                var aArrow = document.querySelectorAll('.arr > a');
-            
-            aImages.forEach(function(item, index) {
-              item.addEventListener('click', function() {
-               // oViewImage.style.backgroundImage = 'url(' + this.src + ')';
-                test.style.backgroundImage = 'url(' + this.src + ')';
-            
-                if (oSel = document.querySelector('.thumb-select')) {
-                  oSel.classList.remove('thumb-select')
-                };
-                this.classList.add('thumb-select');
-                aArrow[0].classList.remove('thumb-hide');
-                aArrow[1].classList.remove('thumb-hide');
-                if (index == 0) {
-                  aArrow[0].classList.add('thumb-hide');
-                }
-                if (index == aImages.length - 1) {
-                  aArrow[1].classList.add('thumb-hide');
-                }
-                
-                document.querySelector('.arr_text > .text-slide').textContent = this.alt;
-                document.querySelector('.arr_text > .next-slide').textContent =" / 16";
-              });
-            });
-            
-            aArrow[0].addEventListener('click', function() {
-              let i = aImages.length;
-              while (i--) {
-                if (aImages[i].classList.contains('thumb-select')) break;
-              }
-              if (i > 0) {
-                aImages[i - 1].dispatchEvent(new Event('click'));
-                if (aImages[i - 1].classList.contains('thumb-hide')) {
-                  aImages[i - 1].classList.remove('thumb-hide');
-                }
-              }
-            });
-            aArrow[1].addEventListener('click', function() {
-              let i = aImages.length;
-              while (i--) {
-                if (aImages[i].classList.contains('thumb-select')) break;
-              }
-              if (i < aImages.length - 1) {
-                aImages[i + 1].dispatchEvent(new Event('click'));
-                if (i + 1 > 7) {
-                  aImages[i - 7].classList.add('thumb-hide');
-                }
-              }
-            });
-            
-            aArrow[1].dispatchEvent(new Event('click'));
-              </script>
-                
-            <!-----------------СЛАЙДЕР КОНЕЦ ----------------------------------------------------------->
+            <object data="" class="main__object">
+                <embed class="main__object" src="../pdf/pres_1.pdf" >
+            </object>
               <div class="pres__btn-box">
-                  <button class="pres__btn-dwn start-cont__btn"> <a download target="blank" href="../pdf/pres_1.pptx"> Скачать презентацию</a></button>
+                  <button class="pres__btn-dwn start-cont__btn"> <a download target="blank" href="../pdf/pres_1.pdf">  Открыть презентацию</a></button>
               </div>
         </section>
 <!-----------------ЛЕКЦИЙ БЛОК ----------------------------------------------------------->
@@ -415,7 +356,7 @@
 
             <button class="lec__btn start-cont__btn">
                 <a target="blank" href="../pdf/l-1.pdf" download>
-                    Скачать документ на устройство
+                    Открыть лекцию
                 </a>
                 
             </button>
@@ -456,9 +397,10 @@
 
                     <div class="main__btn-sec">
                         <button id="main__show-answer"  class="start-cont__btn" onclick="answer()">Показать ответ</button>
+                        <button id="main__dt-show-answer"  class="start-cont__btn" onclick="answer1()"> Скрыть ответ</button>
                         <button class="pract__btn start-cont__btn">
                             <a target="blank" href="../pdf/Pr_01_min.pdf" download>
-                                Скачать документ на устройство
+                                Открыть занятие
                             </a>
                             
                         </button>

@@ -4,7 +4,7 @@
 
 .main__btn-1, .main__btn-2{
     background-color: #fff;
-    color: #8D9EB9;
+    color: #1F3E76;
     font-weight: bold;
     padding: 1vh 2vh;
     border: 0px solid white;
@@ -12,6 +12,8 @@
     outline: none;
     border-bottom: none;
     z-index: 10;
+    width: 45%;
+    font-size: calc( (100vw - 800px)/(1440 - 800) * (25 - 20) + 20px);
     
 }
 .main__btn-2{
@@ -39,7 +41,7 @@
 .main__table, .main_table-2{
     border-collapse: collapse;
     width: 95%;
-    font-size: calc( (100vw - 800px)/(1440 - 800) * (14 - 10) + 10px);
+    font-size: calc( (100vw - 800px)/(1440 - 800) * (18 - 14) + 14px);
     line-height:calc( (100vw - 800px)/(1440 - 800) * (20 - 12) + 12px);
 
 }

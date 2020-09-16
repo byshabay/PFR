@@ -150,10 +150,12 @@ button{
     margin-top: 5%;
     justify-content: space-around;
 }
-#main__show-answer, .pract__btn{
+#main__show-answer, .pract__btn, #main__dt-show-answer{
     margin-left: 0% !important;
 }
-
+#main__dt-show-answer{
+    display: none;
+}
 .pract__btn a {
     text-decoration: none;
     color:#E0585A;
@@ -172,7 +174,7 @@ button{
 /*возможно общие*/
 .main__btn-1, .main__btn-2{
     background-color: #fff;
-    color: #8D9EB9;
+    color: #1F3E76;
     font-weight: bold;
     padding: 1vh 2vh;
     border: 0px solid white;
@@ -180,7 +182,8 @@ button{
     outline: none;
     border-bottom: none;
     z-index: 10;
-    font-size: calc( (100vw - 800px)/(1440 - 800) * (13 - 11) + 11px);
+    width: 45%;
+    font-size: calc( (100vw - 800px)/(1440 - 800) * (25 - 20) + 20px);
     
 }
 .main__btn-1{
