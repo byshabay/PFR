@@ -1,3 +1,4 @@
+//ФОРМА С ВОПРОСАМИ
 var myArray = [
     {
         "first" : "Вопрос 1",
@@ -14,6 +15,9 @@ var myArray = [
 ]
  
 var out = document.getElementById('myForm');
+
+
+
 build(myArray)
 
 function build(data){
@@ -33,6 +37,26 @@ function build(data){
         out.innerHTML += question
     }
 }
+
+//ПРАВЫЙ БЛОК С ВОПРОСАМИ 
+
+var rightMenu = document.getElementById('test__raz');
+
+right(myArray)
+function right(data){
+    for(var i = 0; i < data.length; i++){
+        var menuItem = `<li class="test__rz-li">
+                           <span class="test__quest-li  text-h1"> Вопрос ` + (i+1) +`</span>
+                           <br>  ${data[i].first} 
+                        </li>
+        `
+
+        rightMenu.innerHTML += menuItem
+    }
+   
+}
+
+
 
 
 

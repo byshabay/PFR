@@ -1,9 +1,48 @@
-${data[i].answer1}
-                                                        ${data[i].answer2}
-                                                        ${data[i].answer3}
-                                                        ${data[i].answer4}
+<ul class="test__raz">
+                        <li class="test__rz-li" id="q-1-a-1">
+                            <span id="q-1-a-1-a" class="test__quest-li  text-h1">
+                               Вопрос 1 
+                               <img id="a-r-1-1" src="../img/right-ico.png" alt="Правильный ответ"> 
+                               <img id="a-f-1-1"  src="../img/false-ico.png" alt="Неправильный ответ">
+                            </span> <br>
+                            Система институтов государственной власти в сфере противодействия...
+                        </li>
+                        <li id="q-1-a-2" class="test__rz-li">
+                            <span id="q-1-a-2-a" class="test__quest-li text-h1">
+                                Вопрос 2
+                                <img id="a-r-1-2" src="../img/right-ico.png" alt="Правильный ответ"> 
+                               <img id="a-f-1-2" src="../img/false-ico.png" alt="Неправильный ответ">
+                            </span> <br>
+                            Основные направления государственной политики в области противодейс...
+                        </li>
+                        <li id="q-1-a-3" class="test__rz-li">
+                            <span id="q-1-a-3-a"  class="test__quest-li  text-h1">
+                                Вопрос 3
+                                <img id="a-r-1-3" src="../img/right-ico.png" alt="Правильный ответ"> 
+                               <img id="a-f-1-3" src="../img/false-ico.png" alt="Неправильный ответ">
+                            </span><br>
+                            К какой группе в системе государственных органов, осуществляющих про...
+                        </li>
+                        <li id="q-1-a-4" class="test__rz-li">
+                            <span id="q-1-a-4-a" class="test__quest-li  text-h1">
+                                Вопрос 4
+                                <img id="a-r-1-4" src="../img/right-ico.png" alt="Правильный ответ"> 
+                               <img id="a-f-1-4" src="../img/false-ico.png" alt="Неправильный ответ">
+                            </span><br>
+                            Первым антикоррупционным нормативно-правовым актом российского зако...
+                        </li>
+                        <li id="q-1-a-5" class="test__rz-li">
+                            <span id="q-1-a-5-a" class="test__quest-li  text-h1">
+                                Вопрос 5
+                                <img id="a-r-1-5" src="../img/right-ico.png" alt="Правильный ответ"> 
+                               <img id="a-f-1-5" src="../img/false-ico.png" alt="Неправильный ответ">
+                            </span><br>
+                            Администрацией Президента РФ формируются следующие подразделения по пр...
+                        </li>
+                       
+                    </ul>
 
-<div class="q1__box" id="q1__box">
+<div class="q1__box" id="q1__box"> 
 
 
                             <p><span class="red">Вопрос 1</span> из 5</p>
@@ -113,4 +152,3 @@ ${data[i].answer1}
                  
                         </div>
     
-                    </form>
