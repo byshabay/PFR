@@ -22,19 +22,23 @@ build(myArray)
 
 function build(data){
     for(var i = 0; i < data.length; i++){
-        var question = `
-                    <p> Вопрос ` + (i+1) +` из ` + ( data.length) +`
-                    <p>  ${data[i].first} </p>`
+        var question = `<div class="q1__box" id="q`+(i+1)+`__box"> 
+                    <p> <span class="red">Вопрос ` + (i+1) +`</span> из ` + ( data.length) +`
+                   </p> <label  class="text-h1 form__label">  ${data[i].first} </label> <br>  <ul class="form__input">`
         for (var j = 0; j < 4; j++){
-            var  label =`<input  id = "`+ i + `.` + j +`" name = "` + i +`" type = "radio"> 
+            var  label =`
+            <li class="q1__answ">
+            <input  id = "`+ i + `.` + j +`" name = q"` + i +`" type = "radio" onclick="qq()"> 
                     <label for = "` + i + `.` + j +`">
                         ${data[i].sec[j]}
                     </label> <br>
+                    </li>
                    `
             question += label
         }
         
-        out.innerHTML += question
+        out.innerHTML += question + ` </ul>
+        </div>`
     }
 }
 
