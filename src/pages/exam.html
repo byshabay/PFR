@@ -1093,7 +1093,7 @@
                             document.getElementById("text-1-1").style.display = "none";
                             document.getElementById("btn-1-1").style.display = "none";
                         }
-                    if(!localStorage.getItem("attempt")){
+                   /* if(!localStorage.getItem("attempt")){
                         localStorage.setItem("attempt", "3");
                         
                         
@@ -1112,10 +1112,10 @@
                         } else{
                             document.querySelector('.pract__res-int').textContent = "0%";
                         }*/
-                            document.getElementById("text-1-1").style.display = "none";
+                     /*       document.getElementById("text-1-1").style.display = "none";
                             document.getElementById("btn-1-1").style.display = "none";
-                        }
-                    document.querySelector('.attempt').textContent = " Осталось попыток  " + localStorage.getItem("attempt");
+                        }*/
+                  //  document.querySelector('.attempt').textContent = " Осталось попыток  " + localStorage.getItem("attempt");
                     
                     function start_2(){
                         localStorage.setItem("new_attempt", "block");
@@ -1187,7 +1187,7 @@
                              }
                         }
                         document.getElementById("pract__res").style.display = "none";
-                        document.querySelector('.attempt').textContent = " Осталось попыток  " + localStorage.getItem("attempt");
+                       // document.querySelector('.attempt').textContent = " Осталось попыток  " + localStorage.getItem("attempt");
                         document.getElementById("text-1-1").style.display = "none";
                         document.getElementById("btn-1-1").style.display = "none";
                         document.getElementById("q1-question").style.display = "block";
