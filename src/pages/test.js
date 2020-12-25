@@ -67,36 +67,20 @@ function build(data){
         for (var j = 0; j < 3; j++){
             var  label =`
             <li class="q1__answ">
-            <input value =  ${data[i].sec[j].value}  id = "`+ i + `.` + j +`" name = q` + (i+1) +`" type = "radio" onclick = "val('${data[i].sec[j].value}')"> 
+            <input value =  ${data[i].sec[j].value}  id = "`+ i + `.` + j +`" name = q` + (i+1) +`" type = "radio" onclick = "val('` + i + `.` + j +`')"> 
                     <label for = "` + i + `.` + j +`">
                         ${data[i].sec[j].text}
                         
                     </label> <br>
                     </li>
                    `
-            question += label
-            // var answer = data[i].sec[j].value;
-            // if(answer == "a"){
-            //     answer.click(function(){
-            //             alert('нажатие!');
-            //             });
-            // }
-
-          
+            question += label      
         }
         
         out.innerHTML += question + ` </ul>
         </div>`
-
-        
-       
     }
     var button = document.getElementById("q1-question");
-
-    // $('ul li').click(function(){
-    //     alert('нажатие!');
-    //     });
-
     $("#q1-question").click(function(){
         
         document.getElementById("pract__res").style.display = "block";
@@ -107,19 +91,45 @@ function build(data){
                 count ++;
             }
         }
-        document.querySelector('.pract__res-int').textContent = " Правильных ответов  " + count + " из " +  data.length;
-
-        });
         
- 
+        document.querySelector('.pract__res-int').textContent = " Правильных ответов  " + count + " из " +  data.length;
+        document.querySelector('.pract__res-int-print').textContent = " Правильных ответов  " + count + " из " +  data.length;
+        });
     return count;
    
 }
 let arrRes = [];
+let arrResText = [];
 function val(data){
-    arrRes.push(data);
+    var text = data.charAt(0);
+    var value = data.charAt(2);
+    arrRes.push(myArray[text].sec[value].value);
+    arrResText.push(myArray[text].sec[value].text);
+}
+function prints(data){
+    var print =  document.getElementById("print_din");
+    for(var i = 0; i < data.length; i++){
+        var answ = `<span> 
+        <p>` + (i+1) +`. ${data[i].first} : <p> <br> <br>
+        ВАШ ОТВЕТ: <br>
+        <span>
+        ` + arrResText[i] +`
+        </span> <br> <br> <br>
+         `
+         print.innerHTML += answ;
+
+    }
+   
+    
 }
 
+function start(){
+    document.getElementById("text-1-1").style.display = "none";
+    document.getElementById("btn-1-1").style.display = "none";
+    document.myform.style.display = "block";
+    document.getElementById("q1-question").style.display = "block";
+  //  build(myArray, 0)
+}  
 
 
 

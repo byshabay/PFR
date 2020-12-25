@@ -514,7 +514,41 @@ button{
 
 
 
+  .start-cont__logo-box{
+    display: flex;
+    width: 83%;
+    margin: 4vh 0 0 2vh;
+    justify-content: space-around;
+}
+.start-cont__logo-pfr-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex: 1;
+}
+.start-cont__h1{
+    font-size: 16px;
+    line-height: 20px;
+}
+.start-cont__logo-guu {
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+.start-cont__logo-guu img{
+    width: 25%;
+    margin-right: 2vw;
+}
+.start-cont__logo-pfr-text{
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 20px;
+    color: #2B313C;
+    width: 60%;
 
+}
+#print_frame{display: none;}
 
 
 
