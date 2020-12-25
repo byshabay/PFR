@@ -362,7 +362,6 @@ button{
 #q1-question{
     display: none;
     margin: 5% auto 0;
-    opacity: 0.3;
 }
 
 #a-l ~ #q1-question{

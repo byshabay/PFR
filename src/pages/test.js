@@ -58,14 +58,16 @@ var out = document.getElementById('myForm');
 build(myArray)
 
 function build(data){
+    var count = 0;
     for(var i = 0; i < data.length; i++){
+        
         var question = `<div class="q1__box" id="q`+(i+1)+`__box"> 
                     <p> <span class="red">Вопрос ` + (i+1) +`</span> из ` + ( data.length) +`
                    </p> <label  class="text-h1 form__label">  ${data[i].first} </label> <br> `
         for (var j = 0; j < 3; j++){
             var  label =`
             <li class="q1__answ">
-            <input value =  ${data[i].sec[j].value}  id = "`+ i + `.` + j +`" name = q` + (i+1) +`" type = "radio"> 
+            <input value =  ${data[i].sec[j].value}  id = "`+ i + `.` + j +`" name = q` + (i+1) +`" type = "radio" onclick = "val('${data[i].sec[j].value}')"> 
                     <label for = "` + i + `.` + j +`">
                         ${data[i].sec[j].text}
                         
@@ -73,46 +75,51 @@ function build(data){
                     </li>
                    `
             question += label
+            // var answer = data[i].sec[j].value;
+            // if(answer == "a"){
+            //     answer.click(function(){
+            //             alert('нажатие!');
+            //             });
+            // }
+
+          
         }
         
         out.innerHTML += question + ` </ul>
         </div>`
-    }
-}
 
-function check1(data){
-    var count = 0;
-    for(var t = 0; t < data.length; t++){
-        for(var r = 0; r < 3; r++){
-            if (data[t].sec[r].value == 'a'){
-                count++;
+        
+       
+    }
+    var button = document.getElementById("q1-question");
+
+    // $('ul li').click(function(){
+    //     alert('нажатие!');
+    //     });
+
+    $("#q1-question").click(function(){
+        
+        document.getElementById("pract__res").style.display = "block";
+        document.getElementById("q1-question").style.display = "none";
+        document.getElementById("myForm").style.display = "none";
+        for(var t = 0; t < data.length; t++){
+            if (arrRes[t] == 'a'){
+                count ++;
             }
         }
+        document.querySelector('.pract__res-int').textContent = " Правильных ответов  " + count + " из " +  data.length;
+
+        });
         
-    }
-    var res = Math.round( (100 * count) /  data.length );
-    document.querySelector('.pract__res-int').textContent = "   " + res + "%";
+ 
+    return count;
+   
+}
+let arrRes = [];
+function val(data){
+    arrRes.push(data);
 }
 
-
-
-// function check1(data){
-//     var button = document.getElementById("q1-question");
-//     button.innerHTML = "here";
-//     $(".l-1").css({
-//         'opacity' : '1'
-//     });    
-
-// $(".l-2").css({
-//         'color' : '#8D9EB9',
-//         'opacity' : '1',
-//         'font-weight' : 'normal'
-//     });    
-// $("input").prop('disabled', false);  
-//     document.getElementById("q"+(i+2)+"__box").style.display = "block";
-//     document.getElementById("q1-question").style.opacity = "0.3";
-//     document.getElementById(+"q"+(i+1)+"__box").style.display = "none";
-// }
 
 
 
