@@ -392,14 +392,14 @@ button{
     margin-top: 4vh;
     margin-left: -0.7vw ;
 }
-
+/* 
 #q2__box, #q3__box, #q4__box, #q5__box, #q6__box, #q7__box, 
 #q8__box, #q7__box, #q8__box, #q9__box, #q10__box, #q11__box,
 #q12__box, #q13__box, #q14__box, #q15__box, #q16__box,
  #q17__box,#q18__box,#q20__box,#q19__box
 {
     display: none;
-}
+} */
 
 
 .q2__box, .q3__box, .q4__box, .q5__box, .q6__box, .q7__box, 
