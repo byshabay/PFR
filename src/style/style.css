@@ -96,8 +96,6 @@
 
 .start-cont__text-1{
     font-weight: normal;
-  /*  font-size: calc( (100vw - 800px)/(1440 - 800) * (16 - 10) + 10px);
-    line-height: 135.2%;*/
     color: #1F3E76;    
 }
 
@@ -141,7 +139,7 @@
 }
 
 p{
-    margin-bottom: 0s;
+    margin-bottom: 0;
 }
 /*КОМПЬЮТЕР НА ФОНЕ*/
 *{
